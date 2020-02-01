@@ -3,7 +3,8 @@ Top:    cd37e742d89248b53973fa9fdf594fe8d07ab8b5
 Author: scott snyder <sss@karma>
 Date:   2020-02-01 14:34:12 -0500
 
-Fixes for finding tbb.
+Fixes for building with tbb.
+
 
 
 ---
