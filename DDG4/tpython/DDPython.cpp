@@ -305,7 +305,7 @@ void DDPython::prompt()  const   {
 void DDPython::afterFork()  const  {
   if ( ::Py_IsInitialized() ) {
     cout << "[INFO] Re-init python after forking....." << endl;
-    ::PyOS_AfterFork();  
+    ::PyOS_AfterFork_Child();  
     ::PyEval_InitThreads();
     ::PyEval_ReleaseLock();
   }
