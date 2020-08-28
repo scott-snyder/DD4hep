@@ -1,23 +1,6 @@
-Bottom: cd37e742d89248b53973fa9fdf594fe8d07ab8b5
-Top:    59f4f7886304ee30c5b7827c6e8eb8d6aed29100
+Bottom: ac8ee733035966d014bcd9140bb1b35e20af279c
+Top:    9a6a27949ae0d8c36ca595cdb2ee91635e9e355a
 Author: scott snyder <sss@karma>
 Date:   2020-02-01 14:35:06 -0500
 
 Fix use of deprecated python function.
-
-
----
-
-diff --git a/DDG4/tpython/DDPython.cpp b/DDG4/tpython/DDPython.cpp
-index 9a627860..4dca934a 100644
---- a/DDG4/tpython/DDPython.cpp
-+++ b/DDG4/tpython/DDPython.cpp
-@@ -305,7 +305,7 @@ void DDPython::prompt()  const   {
- void DDPython::afterFork()  const  {
-   if ( ::Py_IsInitialized() ) {
-     cout << "[INFO] Re-init python after forking....." << endl;
--    ::PyOS_AfterFork();  
-+    ::PyOS_AfterFork_Child();  
-     ::PyEval_InitThreads();
-     ::PyEval_ReleaseLock();
-   }
