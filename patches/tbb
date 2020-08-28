@@ -1,7 +1,0 @@
-Bottom: ac8ee733035966d014bcd9140bb1b35e20af279c
-Top:    ac8ee733035966d014bcd9140bb1b35e20af279c
-Author: scott snyder <sss@karma>
-Date:   2020-02-01 14:34:12 -0500
-
-Fixes for building with tbb.
-
