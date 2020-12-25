@@ -1,0 +1,6 @@
+Bottom: 67ac14c1ed1cc3695ce5a4d38725f70e34051762
+Top:    67ac14c1ed1cc3695ce5a4d38725f70e34051762
+Author: scott snyder <sss@karma>
+Date:   2020-12-25 12:55:56 -0500
+
+Fix strncpy bounds warnings.
