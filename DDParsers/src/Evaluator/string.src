@@ -31,7 +31,7 @@ struct string {
   // Constructor from character string.
   string(const char* s) {
     size_t len = strlen(s)+1;
-    p = new srep; p->s = new char[len]; strncpy(p->s, s, len);
+    p = new srep; p->s = new char[len]; memcpy(p->s, s, len);
   }
 
   // Constructor from character substring.
@@ -88,7 +88,7 @@ inline string operator+(char a, const string & b) {
   size_t len = strlen(b.c_str())+2;
   s.p->s = new char[len];
   s.p->s[0] = a; 
-  strncpy(s.p->s+1, b.c_str(),len-1);
+  memcpy(s.p->s+1, b.c_str(),len-1);
   return s;
 }
 
@@ -97,8 +97,8 @@ inline string operator+(const char * a, const string & b) {
   int lenb = strlen(b.c_str());
   string s; 
   s.p->s = new char[lena+lenb+1];
-  strncpy(s.p->s, a, lena+1); 
-  strncpy(s.p->s+lena, b.c_str(), lenb+1);
+  memcpy(s.p->s, a, lena+1); 
+  memcpy(s.p->s+lena, b.c_str(), lenb+1);
   return s;
 }
 
@@ -114,8 +114,8 @@ inline string operator+(const string & a, const string & b) {
   int lena = strlen(a.c_str());
   int lenb = strlen(b.c_str());
   string s; s.p->s = new char[lena+lenb+1];
-  strncpy(s.p->s, a.c_str(), lena+1);
-  strncpy(s.p->s+lena, b.c_str(), lenb+1);
+  memcpy(s.p->s, a.c_str(), lena+1);
+  memcpy(s.p->s+lena, b.c_str(), lenb+1);
   return s;
 }
   
