@@ -54,8 +54,9 @@ void DigiSubdetectorSequence::initialize()   {
   m_parallelVid.clear();
   m_parallelDet.clear();
   if ( m_detector.isValid() && m_sensDet.isValid() )   {
-    m_idDesc       = m_sensDet.readout().idSpec();
-    m_segmentation = m_sensDet.readout().segmentation();
+    Readout readout = m_sensDet.readout();
+    m_idDesc       = readout.idSpec();
+    m_segmentation = readout.segmentation();
     PlacedVolume  plc = m_detector.placement();
     const VolIDs& ids = plc.volIDs();
     VolumeID      vid = m_idDesc.encode(ids);
