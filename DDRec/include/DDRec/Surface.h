@@ -188,8 +188,7 @@ namespace dd4hep {
     
       virtual ~VolSurface(){
         if( _surf ) {
-          -- _surf->_refCount ;
-          if(  _surf->_refCount == 0 ) delete _surf ;
+          if(  --_surf->_refCount == 0 ) delete _surf ;
         }
       } 
       ///default c'tor
@@ -523,7 +522,7 @@ namespace dd4hep {
       /** Standard c'tor initializes the surface from the parameters of the VolSurface and the 
        *  transform (placement) of the corresponding volume, if found in DetElement 
        */
-      Surface( DetElement det, VolSurface volSurf ) ;      
+      Surface( DetElement det, const VolSurface& volSurf ) ;      
     
       /// The id of this surface - corresponds to DetElement id.
       virtual long64 id() const ;
