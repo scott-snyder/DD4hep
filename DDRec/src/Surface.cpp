@@ -730,8 +730,9 @@ namespace dd4hep {
       } 
 
       //=========== compute and cache world transform for surface ==========
-      
-      const TGeoHMatrix& wm = _det.nominal().worldTransformation() ;
+
+      Alignment nominal = _det.nominal();
+      const TGeoHMatrix& wm = nominal.worldTransformation() ;
       
 #if 0 // debug
       wm.Print() ;
