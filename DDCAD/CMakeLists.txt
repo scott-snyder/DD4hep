@@ -19,6 +19,10 @@ endif()
 find_package(assimp QUIET)
 if(TARGET assimp::assimp)
     MESSAGE(STATUS "+++> Use existing assimp implementation")    
+    get_property( ASSIMP_IMPORTED_LOCATION TARGET assimp::assimp PROPERTY IMPORTED_LOCATION_RELEASE )
+    set_target_properties( assimp::assimp PROPERTIES
+      IMPORTED_LOCATION_RELWITHDEBINFO  ${ASSIMP_IMPORTED_LOCATION} )
+      
 elseif(DD4HEP_LOAD_ASSIMP)
     MESSAGE(STATUS "+++> Download and build assimp from gitub")    
     #
