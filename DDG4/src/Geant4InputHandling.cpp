@@ -380,7 +380,8 @@ getRelevant(set<int>& visited,
     int first_daughter = *(dau.begin());
     Geant4ParticleHandle dp = pm[first_daughter];
     double en = p.energy();
-    double me = en > std::numeric_limits<double>::epsilon() ? p->mass / en : 0.0;
+    double ma = p->mass < 1e-2 ? 0 : p->mass;
+    double me = en > std::numeric_limits<double>::epsilon() ? ma / en : 0.0;
     //  fix by S.Morozov for real != 0
     double proper_time = fabs(dp->time-p->time) * me;
     double proper_time_Precision = pow(10.,-DBL_DIG)*me*fmax(fabs(p->time),fabs(dp->time));
