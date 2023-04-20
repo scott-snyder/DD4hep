@@ -1,0 +1,6 @@
+Bottom: b1766cdae8abf3550b6d7052b9770d336ef9b7ce
+Top:    b1766cdae8abf3550b6d7052b9770d336ef9b7ce
+Author: Andre Sailer <andre.philippe.sailer@cern.ch>
+Date:   2023-03-30 11:37:34 +0200
+
+HepMC3: use all vertex information to create primary vertices, including time

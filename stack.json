@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "886ae1c49da996d4d51ebbc3109ca80681e817aa",
-  "head": "dece23720a228c2cec55c5e0462f62273e97e032",
+  "prev": "cfed3aeb58561c76bb666a62c6c8f7e0da8d2c36",
+  "head": "313dc237b8a95fa37d2b215e5ff70b5fc3a4dfe4",
   "applied": [
     "assimp-cmake",
     "warn",
-    "metaArg"
+    "metaArg",
+    "hepmc3-use-all-vertex"
   ],
   "unapplied": [
     "zeroTime"
@@ -20,6 +21,9 @@
     },
     "metaArg": {
       "oid": "dece23720a228c2cec55c5e0462f62273e97e032"
+    },
+    "hepmc3-use-all-vertex": {
+      "oid": "313dc237b8a95fa37d2b215e5ff70b5fc3a4dfe4"
     },
     "zeroTime": {
       "oid": "54b314a241bdd97e48b176b6ee8412b2d1ed424b"
