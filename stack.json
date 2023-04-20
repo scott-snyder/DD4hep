@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "c619084e7f639be0c68b69b670079db154445f49",
-  "head": "85f056cd73e6fc2552ad34ed71b170e3a6b98b46",
+  "prev": "886ae1c49da996d4d51ebbc3109ca80681e817aa",
+  "head": "dece23720a228c2cec55c5e0462f62273e97e032",
   "applied": [
     "assimp-cmake",
     "warn",
@@ -19,7 +19,7 @@
       "oid": "04c92a051fb6a04e441113dfde63aced2393a543"
     },
     "metaArg": {
-      "oid": "85f056cd73e6fc2552ad34ed71b170e3a6b98b46"
+      "oid": "dece23720a228c2cec55c5e0462f62273e97e032"
     },
     "zeroTime": {
       "oid": "54b314a241bdd97e48b176b6ee8412b2d1ed424b"

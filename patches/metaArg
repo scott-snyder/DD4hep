@@ -3,4 +3,45 @@ Top:    b1766cdae8abf3550b6d7052b9770d336ef9b7ce
 Author: scott snyder <snyder@bnl.gov>
 Date:   2023-03-28 19:38:13 -0400
 
-Fix meta args
+Fig setting of run/event number offsets from the ddsim command line.
+
+The ddsim --meta.runNumberOffset command-line argument doesn't work
+correctly (and similarly for event number).
+
+On a machine running
+
+```
+LSB Version:    :core-4.1-amd64:core-4.1-ia32:core-4.1-noarch
+Distributor ID: Scientific
+Description:    Scientific Linux release 7.3 (Nitrogen)
+Release:        7.3
+Codename:       Nitrogen
+```
+
+I do
+
+```
+. /cvmfs/sw.hsf.org/key4hep/setup.sh
+```
+
+The then command
+
+```
+ddsim  --compactFile $LCGEO/FCCee/compact/FCCee_o1_v05/FCCee_o1_v05.xml -G -N10 --outputFile out.edm4hep.root --meta.runNumberOffset 735001  2>&1|tee log
+```
+
+eventually crashes with the error
+
+```
+Geant4UI         INFO  +++ EventAction> Install Geant4 control directory:/ddg4/EventAction/
+Traceback (most recent call last):
+  File "/cvmfs/sw.hsf.org/spackages7/dd4hep/1.23/x86_64-centos7-gcc11.2.0-opt/q4qtg/bin/ddsim", line 25, in <module>
+    RUNNER.run()
+  File "/cvmfs/sw.hsf.org/spackages7/dd4hep/1.23/x86_64-centos7-gcc11.2.0-opt/q4qtg/lib/python3.10/site-packages/DDSim/DD4hepSimulation.py", line 368, in run
+    e4Out.RunNumberOffset = self.meta.runNumberOffset if self.meta.runNumberOffset > 0 else 0
+TypeError: '>' not supported between instances of 'str' and 'int'
+ *** Break *** segmentation violation
+```
+
+The arguments are never converted from strings to integers.
+The change here fixes this.
