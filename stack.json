@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "8ea706980291da99e87c7a2fc7128e49435284aa",
-  "head": "1e0708f645d2eeb2553027e7ce440b15987a1ff9",
+  "prev": "17d30bed5ef91517fecd1624a211eeb2485c21d4",
+  "head": "d12cc236f79678c46d1778c05fd67816fb72e923",
   "applied": [
     "metaArg",
     "warn",
-    "assimp-cmake"
+    "assimp-cmake",
+    "geant4inputhandling-protect"
   ],
   "unapplied": [
     "zeroTime"
@@ -20,6 +21,9 @@
     },
     "assimp-cmake": {
       "oid": "1e0708f645d2eeb2553027e7ce440b15987a1ff9"
+    },
+    "geant4inputhandling-protect": {
+      "oid": "d12cc236f79678c46d1778c05fd67816fb72e923"
     },
     "zeroTime": {
       "oid": "fdc9b409881a689eb564cc9b2de859b3176bcc05"
