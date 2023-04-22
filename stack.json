@@ -1,9 +1,15 @@
 {
   "version": 5,
-  "prev": null,
-  "head": "f6f3f7fc59fcec334aff7ee215c23287c11c54db",
-  "applied": [],
+  "prev": "2d1deddf32ff0a61e7763bd9a4aa17001f0e7282",
+  "head": "b5ec6a7e805582ecf510facd45c9b089dc6eafec",
+  "applied": [
+    "assimp-cmake"
+  ],
   "unapplied": [],
   "hidden": [],
-  "patches": {}
+  "patches": {
+    "assimp-cmake": {
+      "oid": "b5ec6a7e805582ecf510facd45c9b089dc6eafec"
+    }
+  }
 }
