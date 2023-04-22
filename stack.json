@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "164bdaaec8d62a09cf7f8dc4ec2bdc5f79ac5861",
-  "head": "e8384d9e08c57bd5f493378a7b06b6b4d59d8704",
+  "prev": "8a0580d1da5f1779cdebd108ca2f333d44f8fb9d",
+  "head": "77db695cdddfed76329bf03cf0ef545d6602706a",
   "applied": [
     "assimp-cmake",
-    "warn",
-    "refresh-temp"
+    "warn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -14,10 +13,7 @@
       "oid": "b5ec6a7e805582ecf510facd45c9b089dc6eafec"
     },
     "warn": {
-      "oid": "667123b6a1dc2d244ac3b249f85070bf3c87e259"
-    },
-    "refresh-temp": {
-      "oid": "e8384d9e08c57bd5f493378a7b06b6b4d59d8704"
+      "oid": "77db695cdddfed76329bf03cf0ef545d6602706a"
     }
   }
 }
