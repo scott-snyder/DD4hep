@@ -137,11 +137,30 @@ DDPython::AllowThreads::~AllowThreads()  {
 }
 
 /// Standard constructor, initializes variables
-DDPython::DDPython() : context(0)  {
+DDPython::DDPython(int argc, char** argv) : context(0)  {
   ++_refCount;
   bool inited = ::Py_IsInitialized();
   if ( !inited ) {
+#if PY_VERSION_HEX < 0x030b0000
     ::Py_Initialize();
+    if (argc) {
+      setArgs(argc, argv);
+    }
+#else
+    // PySys_SetArgv is deprecated as of 3.11.
+    ::PyConfig pyconfig;
+    ::PyConfig_InitPythonConfig(&pyconfig);
+    if (argc) {
+      ::PyConfig_SetBytesArgv(&pyconfig, argc, argv);
+    }
+    ::PyStatus status = ::Py_InitializeFromConfig(&pyconfig);
+    if (::PyStatus_Exception(status)) {
+      ::PyErr_Print();
+      ::PyErr_Clear();
+      dd4hep::printout(WARNING,"DDPython","Caught exception in python initialization. Try to continue like this!");
+    }
+    PyConfig_Clear(&pyconfig);
+#endif
 #if PY_MAJOR_VERSION <=2 || (PY_MAJOR_VERSION == 3 && PY_MINOR_VERSION < 7)
     ::PyEval_InitThreads();
 #endif
@@ -190,9 +209,9 @@ DDPython::~DDPython()   {
 } 
 
 
-DDPython DDPython::instance()   {
-  if ( 0 == _instance ) _instance = new DDPython();
-  return DDPython();
+DDPython DDPython::instance(int argc, char** argv)   {
+  if ( 0 == _instance ) _instance = new DDPython(argc, argv);
+  return DDPython(argc, argv);
 }
 
 /// Save thread state
@@ -209,6 +228,7 @@ void DDPython::restoreThread()   {
   }
 }
 
+#if PY_VERSION_HEX < 0x030b0000
 int DDPython::setArgs(int argc, char** argv)  const   {
   // Need to protect against API change from Python 2 to Python 3
 #if PY_VERSION_HEX < 0x03000000
@@ -233,6 +253,7 @@ int DDPython::setArgs(int argc, char** argv)  const   {
 #endif
   return 1;
 }
+#endif // PY_VERSION_HEX < 0x030b0000
 
 void DDPython::shutdown()   {
   if ( 0 != _instance )  {
