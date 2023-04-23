@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "1f7ea87d80decb649bed6b5de1819d3ee3a507a9",
-  "head": "484b6a2271446596eaa6cd3da6f14b15bc67bc4c",
+  "prev": "fc53ba806d2a82544415f18410bacba9fe2b59ff",
+  "head": "95e12383e3cec9e6683394dc2cf39914856c5a56",
   "applied": [
     "assimp-cmake",
     "warn",
@@ -14,10 +14,10 @@
       "oid": "b5ec6a7e805582ecf510facd45c9b089dc6eafec"
     },
     "warn": {
-      "oid": "20737d1f29bcf58cb7600f00f87677da60f2796f"
+      "oid": "4c79c7598a1975b57a6e89cca73dd691e6176d52"
     },
     "pydepr": {
-      "oid": "484b6a2271446596eaa6cd3da6f14b15bc67bc4c"
+      "oid": "95e12383e3cec9e6683394dc2cf39914856c5a56"
     }
   }
 }

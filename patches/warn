@@ -3,4 +3,10 @@ Top:    fdd90619735a311322b4a43ec4703cb5b0ac9403
 Author: scott snyder <sss@karma>
 Date:   2023-01-11 16:08:36 -0500
 
-Fix warnings.
+Fix warnings seen with gcc12/gcc13:
+
+ - Fix apparent typo in Limit::toString().
+ - Don't use std::move on a value being returned.
+ - Avoid possible uses of dangling references.
+ - Avoid using identifiers such as _C, which are reserved
+   to the implementation.
