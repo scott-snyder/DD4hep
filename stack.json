@@ -1,10 +1,11 @@
 {
   "version": 5,
-  "prev": "f6b254a6ab90e1f1c312a322b7dc8a00ca70de7c",
-  "head": "7d891fb2c9f9b85699144b7526b9bb637e116024",
+  "prev": "7a1b8edc26420ee6b510d717c05a86c83b3c43b7",
+  "head": "69197aadaebd63d1d0770bd63f1b50e834e3e731",
   "applied": [
     "assimp-cmake",
-    "warn"
+    "warn",
+    "pydepr"
   ],
   "unapplied": [],
   "hidden": [],
@@ -14,6 +15,9 @@
     },
     "warn": {
       "oid": "7d891fb2c9f9b85699144b7526b9bb637e116024"
+    },
+    "pydepr": {
+      "oid": "69197aadaebd63d1d0770bd63f1b50e834e3e731"
     }
   }
 }
