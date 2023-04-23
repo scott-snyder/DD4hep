@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <sstream>
-#include <cstring>
 #include <stdlib.h>
 
 namespace dd4hep{
@@ -72,19 +71,12 @@ namespace dd4hep{
     }
 
 
-    bool isEqual (const char* v1, const char* v2)
-    {
-      return strcmp (v1, v2) == 0;
-    }
-    template <class V1, class V2 >
-    bool isEqual (const V1& v1, const V2& v2)
-    {
-      return (v1 == v2);
-    }
+    /** Operator for calling a test - test is passed if v1 == v2
+     */
     template <class V1, class V2 >
     void operator()(const V1& v1, const V2& v2, const std::string& name ) {
     
-      if ( ! isEqual(v1, v2)  ) {
+      if ( ! (v1 == v2)  ) {
       
         std::stringstream sstr ;
         sstr << "  " << name<< " : [" << v1 << "] != [" << v2 <<"]" ;

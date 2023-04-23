@@ -602,7 +602,7 @@ namespace dd4hep {
 
     //======================================================================================================================
 
-    Surface::Surface( DetElement det, const VolSurface& volSurf ) : _det( det) , _volSurf( volSurf ), 
+    Surface::Surface( DetElement det, VolSurface volSurf ) : _det( det) , _volSurf( volSurf ), 
                                                              _wtM() , _id( 0) , _type( _volSurf.type() )  {
 
       initialize() ;

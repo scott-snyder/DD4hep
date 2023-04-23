@@ -405,8 +405,7 @@ namespace dd4hep {
       ///dumpStep
       void dumpStep(const Geant4StepHandler& h, const G4Step* s)  {
         std::stringstream str;
-        G4String sdName = h.sdName( s->GetPreStepPoint() );
-        str << " ----- step in detector " << sdName
+        str << " ----- step in detector " << h.sdName( s->GetPreStepPoint() )
             << " prePos  " << h.prePos()
             << " postPos " << h.postPos()
             << " preStatus  " << h.preStepStatus()
