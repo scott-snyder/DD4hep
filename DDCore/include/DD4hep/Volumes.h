@@ -139,7 +139,7 @@ namespace dd4hep {
       /// Number of entries for the parameterisation in dimension 2
       unsigned long refCount { 0 };
       /// Reference to the placements of this volume
-      std::vector<PlacedVolume> placements {  };
+      std::vector<PlacedVolume> placements;
       /// Bitfield from sensitive detector to encode the volume ID on the fly
       const detail::BitFieldElement* field { nullptr };
 
