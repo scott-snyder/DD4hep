@@ -1,6 +1,0 @@
-Bottom: 967472de94803dfeb8f442240e3b3511e1836f06
-Top:    967472de94803dfeb8f442240e3b3511e1836f06
-Author: scott snyder <sss@karma>
-Date:   2023-06-06 17:44:32 -0400
-
-Fix compilation with gcc13.
