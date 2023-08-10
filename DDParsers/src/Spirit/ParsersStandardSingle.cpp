@@ -8,6 +8,11 @@
 // For the list of contributors see $DD4hepINSTALL/doc/CREDITS.
 //
 //==========================================================================
+#if __GNUC__ >= 13
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+#endif
+
 #include "Parsers/spirit/ParsersFactory.h"
 
 PARSERS_DEF_FOR_SINGLE(bool)
