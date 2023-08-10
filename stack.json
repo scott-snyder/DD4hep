@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "prev": "1740216c6a7d738e169d7a190de6f494911ba506",
-  "head": "0db261971f4e6853eaaab14a0697528f5e2cc6b0",
-  "applied": [
+  "prev": "4742b7567225af9accdebadcf562f7f4108cb393",
+  "head": "f6f3f7fc59fcec334aff7ee215c23287c11c54db",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "warn",
     "pydepr",
     "depr",
     "gcc13"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
