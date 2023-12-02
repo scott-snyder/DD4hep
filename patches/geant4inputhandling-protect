@@ -1,6 +1,0 @@
-Bottom: 77a6e00a21a763abb1b3059c47793448c4c1bcf4
-Top:    77a6e00a21a763abb1b3059c47793448c4c1bcf4
-Author: Andre Sailer <andre.philippe.sailer@cern.ch>
-Date:   2023-04-21 18:28:36 +0200
-
-Geant4InputHandling: protect propertime against negative masses

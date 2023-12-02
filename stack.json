@@ -1,27 +1,19 @@
 {
   "version": 5,
-  "prev": "4a30f2489ee79fe83d00160b44b72b92dbc1a955",
-  "head": "2063e27e13f36dcb1e3b93f5fbd9babba8e9c24d",
+  "prev": "fb519ecb7352dbe2ebc86c412a01083185ef44ef",
+  "head": "cc848601ed7e224ceb69fe0daaab8df9289ab8d8",
   "applied": [
-    "metaArg",
     "warn",
-    "assimp-cmake",
-    "geant4inputhandling-protect"
+    "assimp-cmake"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
-    "metaArg": {
-      "oid": "f7bc66e7246a59a34a8d3e419a6d2090f62dbcda"
-    },
     "warn": {
-      "oid": "f1094dfe12b3406f2e815c79eaffaf82392ea11d"
+      "oid": "75fc0abab21ecaa8d36d0374129de469414c734d"
     },
     "assimp-cmake": {
-      "oid": "d7553f6cc04d0602eaa0bfd9de4ac0192e9e05f4"
-    },
-    "geant4inputhandling-protect": {
-      "oid": "2063e27e13f36dcb1e3b93f5fbd9babba8e9c24d"
+      "oid": "cc848601ed7e224ceb69fe0daaab8df9289ab8d8"
     }
   }
 }
