@@ -1,0 +1,6 @@
+Bottom: d558888e13fb22100912ce09167c39a7606e4605
+Top:    d558888e13fb22100912ce09167c39a7606e4605
+Author: scott snyder <sss@karma>
+Date:   2023-12-01 20:29:06 -0500
+
+Workaround gcc false positive.
