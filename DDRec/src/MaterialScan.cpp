@@ -18,6 +18,10 @@
 //
 //==========================================================================
 // Framework include files
+#if __GNUC__ >= 14
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wdangling-reference"
+#endif
 #include <DDRec/MaterialScan.h>
 #include <DD4hep/DD4hepUnits.h>
 #include <DD4hep/Detector.h>
