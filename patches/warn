@@ -10,3 +10,4 @@ Fix warnings seen with gcc12/gcc13:
  - Avoid possible uses of dangling references.
  - Avoid using identifiers such as _C, which are reserved
    to the implementation.
+ - Unused function argument.

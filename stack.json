@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "8ede8199c05e24122de3f98ea99dc118bca488c2",
-  "head": "9c6b51f9ba57233db0ee7a2f1158e48d5beb4341",
+  "prev": "c217dc00710c98d4e72fd21af47807726f3bea6d",
+  "head": "d27d335aa282111198c1f84f89a849a7c7fc1828",
   "applied": [
     "assimp-cmake",
     "warn",
@@ -16,16 +16,16 @@
       "oid": "5efb468e92d20d774158a47cf11338b33aece62b"
     },
     "warn": {
-      "oid": "f7437c1c8e582f36001cae9d64ceb4d988d0cdf0"
+      "oid": "b3353c36c05afc8d20b5674351d05fd1e93d8fef"
     },
     "pydepr": {
-      "oid": "7e74780ba5830e5eedf7f9c60a34e2f0bd1f0bcc"
+      "oid": "ceb7d3da2fbe1c1afd7e87d4b9f0e16574e5f0cd"
     },
     "depr": {
-      "oid": "6c8e6ceed133bb96033ccf765277e88277f62b6e"
+      "oid": "1b8cfacc16b674282818720f4d0009d315c325dd"
     },
     "gcc13warn": {
-      "oid": "9c6b51f9ba57233db0ee7a2f1158e48d5beb4341"
+      "oid": "d27d335aa282111198c1f84f89a849a7c7fc1828"
     }
   }
 }
