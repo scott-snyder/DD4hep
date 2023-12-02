@@ -1,6 +1,0 @@
-Bottom: 39cbeed84afc27247f96412ef2d8d6893b60554d
-Top:    ede891f79c7659bda9b5024dfbdf334aea897473
-Author: scott snyder <snyder@bnl.gov>
-Date:   2023-03-31 10:11:05 -0400
-
-Fix zerotime test for neutrinos with smeared primary vertex.
