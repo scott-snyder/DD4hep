@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "8d6633a5a1ea100dbad20e87e62c10399fa7d191",
-  "head": "1b29817415886c1c8daaf73b7fca2d424dd0c3c2",
+  "prev": "e837aa817d9a118a3dbcb85de80a03fd3c1e9e38",
+  "head": "f319fb459f55bb9f5fd8f807f998a4c98f4a1b3e",
   "applied": [
     "assimp-cmake",
     "warn",
@@ -9,8 +9,7 @@
     "depr",
     "gcc13warn",
     "gccbug-new6",
-    "doc",
-    "refresh-temp"
+    "doc"
   ],
   "unapplied": [],
   "hidden": [],
@@ -34,10 +33,7 @@
       "oid": "3bfea103173243f806925544cf93777f4876891a"
     },
     "doc": {
-      "oid": "eeeecf3ccffd3dbdffc6d1d45a68904f4e3b057d"
-    },
-    "refresh-temp": {
-      "oid": "1b29817415886c1c8daaf73b7fca2d424dd0c3c2"
+      "oid": "f319fb459f55bb9f5fd8f807f998a4c98f4a1b3e"
     }
   }
 }
