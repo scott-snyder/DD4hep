@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "e837aa817d9a118a3dbcb85de80a03fd3c1e9e38",
-  "head": "f319fb459f55bb9f5fd8f807f998a4c98f4a1b3e",
+  "prev": "1a1f3c84904f2544223e310144e548f956ed8183",
+  "head": "55cd0937817199e9054a46d65f2c6362bb5f3ea9",
   "applied": [
     "assimp-cmake",
     "warn",
@@ -9,7 +9,8 @@
     "depr",
     "gcc13warn",
     "gccbug-new6",
-    "doc"
+    "doc",
+    "comment"
   ],
   "unapplied": [],
   "hidden": [],
@@ -34,6 +35,9 @@
     },
     "doc": {
       "oid": "f319fb459f55bb9f5fd8f807f998a4c98f4a1b3e"
+    },
+    "comment": {
+      "oid": "55cd0937817199e9054a46d65f2c6362bb5f3ea9"
     }
   }
 }
