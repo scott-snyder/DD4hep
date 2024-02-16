@@ -1,0 +1,6 @@
+Bottom: 7e63a254afbec509d9c1199708d6e14419c42fe8
+Top:    7e63a254afbec509d9c1199708d6e14419c42fe8
+Author: scott snyder <sss@karma>
+Date:   2024-02-15 23:13:11 -0500
+
+Fix latex package order issue.

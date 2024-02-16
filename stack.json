@@ -1,14 +1,15 @@
 {
   "version": 5,
-  "prev": "a43f1eea64f2fa68da786a3ca6283a9d293c68bd",
-  "head": "3bfea103173243f806925544cf93777f4876891a",
+  "prev": "8239a665dfa289a7cd43b6d9bee50c7fd36d4988",
+  "head": "eeeecf3ccffd3dbdffc6d1d45a68904f4e3b057d",
   "applied": [
     "assimp-cmake",
     "warn",
     "pydepr",
     "depr",
     "gcc13warn",
-    "gccbug-new6"
+    "gccbug-new6",
+    "doc"
   ],
   "unapplied": [],
   "hidden": [],
@@ -30,6 +31,9 @@
     },
     "gccbug-new6": {
       "oid": "3bfea103173243f806925544cf93777f4876891a"
+    },
+    "doc": {
+      "oid": "eeeecf3ccffd3dbdffc6d1d45a68904f4e3b057d"
     }
   }
 }
