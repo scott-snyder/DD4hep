@@ -55,7 +55,7 @@ int main(int argc, char** argv)   {
   if ( !have_prompt && args.size()>0 )  {
     libs.push_back((char*)"libDDG4Python");
     if ( 0 == (ret=load_libs(libs)) )   {
-      dd4hep::DDPython::instance().setArgs(args.size(), &args[0]);
+      dd4hep::DDPython::instance(args.size(), &args[0]);
       dd4hep::DDPython::instance().setMainThread();
       dd4hep::DDPython::instance().runFile(args[0]);
       if ( do_execute )
