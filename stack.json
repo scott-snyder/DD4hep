@@ -1,10 +1,9 @@
 {
   "version": 5,
-  "prev": "fad319aa752da132615f55243f4615aefa161349",
-  "head": "8bfeecd93a4db0ba0fa75bf322b6bc700082e8e4",
+  "prev": "d7f6d17adea217b253beec5a4d0694035a65c194",
+  "head": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5",
   "applied": [
     "assimp-cmake",
-    "warn",
     "depr",
     "gcc13warn",
     "gccbug-new6",
@@ -12,32 +11,34 @@
     "comment",
     "pyvers"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "warn"
+  ],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
       "oid": "7a0bf4144ddf0731f4212836075ba466471d1ad4"
     },
-    "warn": {
-      "oid": "8e03d99f7a586ec031b0e9012f79a7a4f6318d2c"
-    },
     "depr": {
-      "oid": "bd06614050ba9048030c015c5c4ed4daebe98f69"
+      "oid": "918969ed8d242e02ce67df8952e3b2db355138f0"
     },
     "gcc13warn": {
-      "oid": "bb090c32b123f9ae725ce645ab80e5ae5ccfa700"
+      "oid": "00e5d28fa547120cf40778175d8e5057a669c6e7"
     },
     "gccbug-new6": {
-      "oid": "67b1eab3ab70cc9c3cd4f2ac874e5e72e7823070"
+      "oid": "f80898e715d455d36b2c4163f480abb109db314b"
     },
     "doc": {
-      "oid": "c30a6ad97007e843b9391df88d520b491b86acd9"
+      "oid": "6e55d5be9efe43f8281eff9455f52a9e98927149"
     },
     "comment": {
-      "oid": "3f7a571604b70fdfef27e14d7c8a4b3886025e39"
+      "oid": "cd01a3715427fe1b8dff033510e17ffd101edc78"
     },
     "pyvers": {
-      "oid": "8bfeecd93a4db0ba0fa75bf322b6bc700082e8e4"
+      "oid": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5"
+    },
+    "warn": {
+      "oid": "8e03d99f7a586ec031b0e9012f79a7a4f6318d2c"
     }
   }
 }
