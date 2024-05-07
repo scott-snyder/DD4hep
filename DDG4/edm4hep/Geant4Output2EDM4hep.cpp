@@ -359,8 +359,12 @@ void Geant4Output2EDM4hep::saveParticles(Geant4ParticleMap* particles)    {
       mcp.setMomentum( {float(p->psx/CLHEP::GeV),float(p->psy/CLHEP::GeV),float(p->psz/CLHEP::GeV)} );
       mcp.setMomentumAtEndpoint( {float(p->pex/CLHEP::GeV),float(p->pey/CLHEP::GeV),float(p->pez/CLHEP::GeV)} );
 #else
-      mcp.setMomentum( {p->psx/CLHEP::GeV, p->psy/CLHEP::GeV, p->psz/CLHEP::GeV} );
-      mcp.setMomentumAtEndpoint( {p->pex/CLHEP::GeV, p->pey/CLHEP::GeV, p->pez/CLHEP::GeV} );
+      mcp.setMomentum( {static_cast<float>(p->psx/CLHEP::GeV),
+                        static_cast<float>(p->psy/CLHEP::GeV),
+                        static_cast<float>(p->psz/CLHEP::GeV)} );
+      mcp.setMomentumAtEndpoint( {static_cast<float>(p->pex/CLHEP::GeV),
+                                  static_cast<float>(p->pey/CLHEP::GeV),
+                                  static_cast<float>(p->pez/CLHEP::GeV)} );
 #endif
       double vs_fa[3] = { p->vsx/CLHEP::mm, p->vsy/CLHEP::mm, p->vsz/CLHEP::mm } ;
       mcp.setVertex( vs_fa );
