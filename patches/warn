@@ -1,0 +1,6 @@
+Bottom: ed2b8f0e65fd94de010219329236f5598c653fc2
+Top:    ed2b8f0e65fd94de010219329236f5598c653fc2
+Author: scott snyder <sss@karma>
+Date:   2024-05-07 17:15:00 -0400
+
+Fix narrowing conversion warnings.

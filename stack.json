@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "e28c2dff3f934cf42ba19582ddcf55ff06cb6352",
-  "head": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5",
+  "prev": "7f63510e7022e4469d258070cafcf165907cdc0f",
+  "head": "7d18c05c4878f5cb7d211681b08e155f54ab7ccf",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -9,7 +9,8 @@
     "gccbug-new6",
     "doc",
     "comment",
-    "pyvers"
+    "pyvers",
+    "warn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -34,6 +35,9 @@
     },
     "pyvers": {
       "oid": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5"
+    },
+    "warn": {
+      "oid": "7d18c05c4878f5cb7d211681b08e155f54ab7ccf"
     }
   }
 }
