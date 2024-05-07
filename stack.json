@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "204df9f3a5a09254a5f6f7e824b3dca07adfd5c3",
-  "head": "64a9cc0699143db720aa27401c176f154af6630a",
+  "prev": "fad319aa752da132615f55243f4615aefa161349",
+  "head": "8bfeecd93a4db0ba0fa75bf322b6bc700082e8e4",
   "applied": [
     "assimp-cmake",
     "warn",
-    "pydepr",
     "depr",
     "gcc13warn",
     "gccbug-new6",
@@ -22,26 +21,23 @@
     "warn": {
       "oid": "8e03d99f7a586ec031b0e9012f79a7a4f6318d2c"
     },
-    "pydepr": {
-      "oid": "bea0c9e14013242ddd819314dded9034b2ca7098"
-    },
     "depr": {
-      "oid": "e4a1815d7b6c42182e89de701751d57ae961d51b"
+      "oid": "bd06614050ba9048030c015c5c4ed4daebe98f69"
     },
     "gcc13warn": {
-      "oid": "89973472249b07fa8cb4cba578f9758d3d54ac4a"
+      "oid": "bb090c32b123f9ae725ce645ab80e5ae5ccfa700"
     },
     "gccbug-new6": {
-      "oid": "5878d25d6d59a456d160d47b7e8adf6fac624892"
+      "oid": "67b1eab3ab70cc9c3cd4f2ac874e5e72e7823070"
     },
     "doc": {
-      "oid": "bdead9a2464f92bfce1b7709a7cc26a1b061ef48"
+      "oid": "c30a6ad97007e843b9391df88d520b491b86acd9"
     },
     "comment": {
-      "oid": "9e1f31a7f5f17292d001466f7dc7720857c7a91e"
+      "oid": "3f7a571604b70fdfef27e14d7c8a4b3886025e39"
     },
     "pyvers": {
-      "oid": "64a9cc0699143db720aa27401c176f154af6630a"
+      "oid": "8bfeecd93a4db0ba0fa75bf322b6bc700082e8e4"
     }
   }
 }

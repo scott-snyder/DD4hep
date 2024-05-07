@@ -1,6 +1,0 @@
-Bottom: e557fec93c63a988cf498026cc4c3e482598445d
-Top:    e557fec93c63a988cf498026cc4c3e482598445d
-Author: scott snyder <sss@karma>
-Date:   2023-04-23 11:57:49 -0400
-
-PySys_SetArgv is deprecated.
