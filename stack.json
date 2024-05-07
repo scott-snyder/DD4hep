@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "7d49e52e203eeae6c9f23d510f38f858940379e2",
-  "head": "abab2099dcf55540eb52e47a5956aeb96313fdff",
-  "applied": [],
-  "unapplied": [
+  "prev": "d3b049170b0fc015ac82d340faea61ecb9e49cf5",
+  "head": "e25b47fc3ed3383296d628d7d5b64067c5546afb",
+  "applied": [
     "assimp-cmake",
-    "warn",
+    "warn"
+  ],
+  "unapplied": [
     "pydepr",
     "depr",
     "gcc13warn",
@@ -17,10 +18,10 @@
   "hidden": [],
   "patches": {
     "assimp-cmake": {
-      "oid": "ad79bbd412a3f66c8e4c9964b5f9546150d9a24e"
+      "oid": "7a0bf4144ddf0731f4212836075ba466471d1ad4"
     },
     "warn": {
-      "oid": "76caa2bb4615a5baee362c70b9b89c1c84266a85"
+      "oid": "e25b47fc3ed3383296d628d7d5b64067c5546afb"
     },
     "pydepr": {
       "oid": "80f58dccc1513efdd129b250be64e2cccbffbe7e"
