@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "d7f6d17adea217b253beec5a4d0694035a65c194",
+  "prev": "e28c2dff3f934cf42ba19582ddcf55ff06cb6352",
   "head": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5",
   "applied": [
     "assimp-cmake",
@@ -11,9 +11,7 @@
     "comment",
     "pyvers"
   ],
-  "unapplied": [
-    "warn"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -36,9 +34,6 @@
     },
     "pyvers": {
       "oid": "6f4c28e72ea1d0f26097135722cfb0b0a4daeae5"
-    },
-    "warn": {
-      "oid": "8e03d99f7a586ec031b0e9012f79a7a4f6318d2c"
     }
   }
 }
