@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "e8cdc9d8d77378bfc4ba001a36609acd3bb8ab90",
-  "head": "c466c57036758b665c127b360323ff13ebf9f36e",
+  "prev": "c0fdd5dd399e78364243fbc2e826ed728be0a0e0",
+  "head": "a47e687b51dce8b8079e7795e865bb1fd2b1e77a",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -10,7 +10,8 @@
     "doc",
     "comment",
     "pyvers",
-    "warn"
+    "warn",
+    "pydepr"
   ],
   "unapplied": [],
   "hidden": [],
@@ -38,6 +39,9 @@
     },
     "warn": {
       "oid": "c466c57036758b665c127b360323ff13ebf9f36e"
+    },
+    "pydepr": {
+      "oid": "a47e687b51dce8b8079e7795e865bb1fd2b1e77a"
     }
   }
 }
