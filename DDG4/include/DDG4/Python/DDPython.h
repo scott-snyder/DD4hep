@@ -35,7 +35,7 @@ namespace dd4hep  {
   protected:
     void* context;
     /// Standard constructor
-    DDPython( ); 
+    DDPython(int argc = 0, char** argv = nullptr);
   protected:
     static bool isMainThread();
   public:
@@ -58,7 +58,7 @@ namespace dd4hep  {
     static void restoreThread();
 
     /// Object instantiator
-    static DDPython instance();
+    static DDPython instance(int argc=0, char** argv=nullptr);
     static void shutdown();
     static void setMainThread();
 
@@ -77,7 +77,6 @@ namespace dd4hep  {
     /// Destructor
     ~DDPython( );
 
-    int  setArgs(int argc, char** argv)  const;
     int  runFile(const std::string& fname)  const;
     int  execute(const std::string& cmd)  const;
     int  evaluate(const std::string& cmd)  const;
@@ -110,6 +109,9 @@ namespace dd4hep  {
     void afterFork()  const;
 
   private:
+#if PY_VERSION_HEX < 0x030b0000
+    int  setArgs(int argc, char** argv)  const;
+#endif
 
   };
 }
