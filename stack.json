@@ -1,20 +1,19 @@
 {
   "version": 5,
-  "prev": "273bca33265dc8919d7bafc96d5ff66603437beb",
-  "head": "5878d25d6d59a456d160d47b7e8adf6fac624892",
+  "prev": "204df9f3a5a09254a5f6f7e824b3dca07adfd5c3",
+  "head": "64a9cc0699143db720aa27401c176f154af6630a",
   "applied": [
     "assimp-cmake",
     "warn",
     "pydepr",
     "depr",
     "gcc13warn",
-    "gccbug-new6"
-  ],
-  "unapplied": [
+    "gccbug-new6",
     "doc",
     "comment",
     "pyvers"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -36,13 +35,13 @@
       "oid": "5878d25d6d59a456d160d47b7e8adf6fac624892"
     },
     "doc": {
-      "oid": "0f9f5e9106fa414bb3e53f39633a363dc5ed945e"
+      "oid": "bdead9a2464f92bfce1b7709a7cc26a1b061ef48"
     },
     "comment": {
-      "oid": "d64e9cb07541f79cf659fb18e95dd4d63a8c7a21"
+      "oid": "9e1f31a7f5f17292d001466f7dc7720857c7a91e"
     },
     "pyvers": {
-      "oid": "b571a03c1c7735f67d37260527b1dce551ec7704"
+      "oid": "64a9cc0699143db720aa27401c176f154af6630a"
     }
   }
 }
