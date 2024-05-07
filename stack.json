@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "fba9e43bd0ad1e3ae07eff28a1dfcc7984df24f5",
-  "head": "b571a03c1c7735f67d37260527b1dce551ec7704",
-  "applied": [
+  "prev": "d4bd0dd39bab45947c65808c7999f3448a65cb24",
+  "head": "0e8124a7faa95e734290fa8fc01548e4b2a4ef26",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "warn",
     "pydepr",
@@ -13,7 +14,6 @@
     "comment",
     "pyvers"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
