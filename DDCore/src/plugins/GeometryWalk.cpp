@@ -61,7 +61,7 @@ namespace  {
   };
 }
 
-typedef DetElement::Children _C;
+using Children = DetElement::Children;
 
 /// Initializing constructor
 GeometryWalk::GeometryWalk(Detector& description, DetElement sdet) : m_det(sdet) {
@@ -100,12 +100,12 @@ void GeometryWalk::print(DetElement e, PlacedVolume pv, const PlacedVolume::VolI
 
 /// Walk through tree of volume placements
 void GeometryWalk::walk(DetElement e, PlacedVolume::VolIDs ids)  const   {
-  const _C& children = e.children();
+  const Children& children = e.children();
   PlacedVolume pv = e.placement();
   PlacedVolume::VolIDs child_ids(ids);
   print(e,pv,ids);
   child_ids.insert(child_ids.end(),pv.volIDs().begin(),pv.volIDs().end());
-  for (_C::const_iterator i=children.begin(); i!=children.end(); ++i)  {
+  for (Children::const_iterator i=children.begin(); i!=children.end(); ++i)  {
     walk((*i).second,child_ids);
   }
 }
