@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "b27540bb779f648a04cb4e08ede2de04c785d3f6",
-  "head": "a516ab9c37575905c3f483147a7510966149f58d",
-  "applied": [],
-  "unapplied": [
+  "prev": "71f5cd95f55cdea0919b68c52d7cc93d89dc2d96",
+  "head": "d788f814da97d2d6e9423bc332319fce41aa07f4",
+  "applied": [
     "assimp-cmake",
     "depr",
     "gcc13warn",
@@ -11,37 +10,39 @@
     "doc",
     "comment",
     "pyvers",
-    "warn",
+    "warn"
+  ],
+  "unapplied": [
     "pydepr"
   ],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
-      "oid": "7a0bf4144ddf0731f4212836075ba466471d1ad4"
+      "oid": "456bcfeb935c73d281c3de3ad7dcd6913848f550"
     },
     "comment": {
-      "oid": "cd01a3715427fe1b8dff033510e17ffd101edc78"
+      "oid": "e9dbd82089d85dfcb1454387ea48706908c13ba2"
     },
     "depr": {
-      "oid": "918969ed8d242e02ce67df8952e3b2db355138f0"
+      "oid": "f72b48b7bc61a30d3ac2d6062968a1006b3da187"
     },
     "doc": {
-      "oid": "6e55d5be9efe43f8281eff9455f52a9e98927149"
+      "oid": "594bc8ed3cd28e7380160b018673c84be9c26538"
     },
     "gcc13warn": {
-      "oid": "00e5d28fa547120cf40778175d8e5057a669c6e7"
+      "oid": "b7781d14d39662705a47d9e43713e5843847db1b"
     },
     "gccbug-new6": {
-      "oid": "f80898e715d455d36b2c4163f480abb109db314b"
+      "oid": "927bc252e8110f277532ece8875a444a3e10d037"
     },
     "pydepr": {
       "oid": "c4836a9ceabb46bd93d1cd202cdb12e80539dc20"
     },
     "pyvers": {
-      "oid": "0be48cf14294ae0a6d8a133c23893059f7fe5182"
+      "oid": "a3d3fdaaa5e4135bdfe566132c7b539fcf7bffae"
     },
     "warn": {
-      "oid": "a29bb63ee612831e865db4cb90dae5f9616b453f"
+      "oid": "d788f814da97d2d6e9423bc332319fce41aa07f4"
     }
   }
 }
