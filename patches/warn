@@ -1,6 +1,0 @@
-Bottom: a28d99caf8ad05a8df58462866fad3f9e91235a9
-Top:    a28d99caf8ad05a8df58462866fad3f9e91235a9
-Author: scott snyder <sss@karma>
-Date:   2024-11-10 22:47:04 -0500
-
-Fix narrowing conversion warnings.
