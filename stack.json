@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "db490e1cf32ffc1e6ff3aed6bbe2dfc323e3a0c6",
-  "head": "0c3c7de75605c595b5d2755c404b29574f51cd9b",
+  "prev": "762621f32b2c81daf496ae1f57a90dd9974eb57a",
+  "head": "9a50aa7b4ee91ee0673ddc42631aadc93fa1276c",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -11,7 +11,8 @@
     "comment",
     "pyvers",
     "pydepr",
-    "nullPlacement"
+    "nullPlacement",
+    "ganged"
   ],
   "unapplied": [],
   "hidden": [],
@@ -27,6 +28,9 @@
     },
     "doc": {
       "oid": "594bc8ed3cd28e7380160b018673c84be9c26538"
+    },
+    "ganged": {
+      "oid": "9a50aa7b4ee91ee0673ddc42631aadc93fa1276c"
     },
     "gcc13warn": {
       "oid": "b7781d14d39662705a47d9e43713e5843847db1b"

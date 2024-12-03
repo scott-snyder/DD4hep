@@ -1,0 +1,20 @@
+Bottom: 7e3e8bd954e329849b7b3e96f4e6d7db682f6628
+Top:    7e3e8bd954e329849b7b3e96f4e6d7db682f6628
+Author: sss <sss@karma>
+Date:   2024-12-03 11:29:47 -0500
+
+Handle ganged segmentations.
+
+Some segmentations can gang together regions from multiple volumes (such
+as the Allegro ECal).  In the calorimeter implementations
+of Geant4SensitiveAction, we were finding the hit position by first
+getting the local position from the segmentation, then converting
+to a global position using the transform obtained from the step.
+But if multiple volumes are ganged, this may not be correct:
+the volume which actually contains the hit may not be the same one
+which the segmentation used for its local coordinate system.
+In this case, we need to instead find the volID to use from
+the segmentation and get the transformation by looking it up
+in the volume manager.
+
+Also factor out some duplicated code among the calorimeter implementations.
