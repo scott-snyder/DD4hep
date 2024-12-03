@@ -138,10 +138,12 @@ namespace  {
       }
       /// Needed to compute the cellID of parameterized volumes
       for( const auto& pv : m_geo.g4Placements )  {
-        if( pv.second->IsParameterised() )
-          m_geo.g4Parameterised[pv.second] = pv.first;
-        if( pv.second->IsReplicated() )
-          m_geo.g4Replicated[pv.second] = pv.first;
+        if ( pv.second ) {
+          if( pv.second->IsParameterised() )
+            m_geo.g4Parameterised[pv.second] = pv.first;
+          if( pv.second->IsReplicated() )
+            m_geo.g4Replicated[pv.second] = pv.first;
+        }
       }
       m_entries.clear();
     }
@@ -214,17 +216,20 @@ namespace  {
           auto g4pit = m_geo.g4Placements.find(node);
           if( g4pit != m_geo.g4Placements.end() )  {
             G4VPhysicalVolume* phys = g4pit->second;
-            if( phys->IsParameterised() )  {
-              PlacedVolume pv(n);
-              PlacedVolumeExtension* ext = pv.data();
-              if( nullptr == ext->params->field )  {
-                ext->params->field = iddesc.field(ext->volIDs.at(0).first);
+            if( phys != nullptr ) {
+              if( phys->IsParameterised() )  {
+                PlacedVolume pv(n);
+                PlacedVolumeExtension* ext = pv.data();
+                if( nullptr == ext->params->field )  {
+                  ext->params->field = iddesc.field(ext->volIDs.at(0).first);
+                }
               }
+              path.emplace_back(phys);
+              printout(print_chain, "Geant4VolumeManager",
+                       "+++     Chain: Node OK: %s [%s]",
+                       node->GetName(), phys->GetName().c_str());
+              continue;
             }
-            path.emplace_back(phys);
-            printout(print_chain, "Geant4VolumeManager",
-                     "+++     Chain: Node OK: %s [%s]", node->GetName(), phys->GetName().c_str());
-            continue;
           }
           control.insert(control.begin(),node);
           vol = Volume(node->GetVolume());
