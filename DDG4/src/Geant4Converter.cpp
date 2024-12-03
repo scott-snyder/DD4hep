@@ -1632,6 +1632,9 @@ std::string printSolid(G4VSolid* sol) {
 void* Geant4Converter::printPlacement(const std::string& name, const TGeoNode* node) const {
   Geant4GeometryInfo& info = data();
   G4VPhysicalVolume*  g4   = info.g4Placements[node];
+  if ( !g4 ) {
+    return nullptr;
+  }
   G4LogicalVolume*    vol  = info.g4Volumes[node->GetVolume()];
   G4LogicalVolume*    mot  = info.g4Volumes[node->GetMotherVolume()];
   G4VSolid*           sol  = vol->GetSolid();
