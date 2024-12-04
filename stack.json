@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "72b4523232e74eaa388474426accf47de47f0877",
-  "head": "2831e3641607110f7b2426e967e416c558b5a31e",
+  "prev": "cf7a1c96bf0537622227a4cb65db8bfae3b14dcb",
+  "head": "0f1944e8d4391af1885f98099867115619b51189",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -12,8 +12,7 @@
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "ganged",
-    "refresh-temp"
+    "ganged"
   ],
   "unapplied": [],
   "hidden": [],
@@ -31,7 +30,7 @@
       "oid": "594bc8ed3cd28e7380160b018673c84be9c26538"
     },
     "ganged": {
-      "oid": "b948fa117faefe99fca9c41bebb74c5e39ad1e83"
+      "oid": "0f1944e8d4391af1885f98099867115619b51189"
     },
     "gcc13warn": {
       "oid": "b7781d14d39662705a47d9e43713e5843847db1b"
@@ -47,9 +46,6 @@
     },
     "pyvers": {
       "oid": "a3d3fdaaa5e4135bdfe566132c7b539fcf7bffae"
-    },
-    "refresh-temp": {
-      "oid": "2831e3641607110f7b2426e967e416c558b5a31e"
     }
   }
 }
