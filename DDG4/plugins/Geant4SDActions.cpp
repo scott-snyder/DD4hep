@@ -59,7 +59,7 @@ namespace dd4hep {
             VolumeID volID = segmentation.volumeID(cell);
             VolumeManager vman = VolumeManager::getVolumeManager(sd.detectorDescription());
             VolumeManagerContext* vc = vman.lookupContext(volID);
-            global = vc->localToWorld({pos.X,pos.Y,pos.Z}) / dd4hep::mm;
+            global = vc->localToWorld(Position(pos)) / dd4hep::mm;
           }
           hit = new Hit(global);
           hit->cellID = cell;
