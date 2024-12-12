@@ -1,0 +1,7 @@
+Bottom: cd6574b3e75c09818c48a2601fc50a041c8f11a0
+Top:    cd6574b3e75c09818c48a2601fc50a041c8f11a0
+Author: sss <sss@karma>
+Date:   2024-12-11 22:47:23 -0500
+
+Need to explicitly require ROOTEve; otherwise we get failed dependencies
+on nlohman_json.

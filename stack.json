@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "cf7a1c96bf0537622227a4cb65db8bfae3b14dcb",
-  "head": "0f1944e8d4391af1885f98099867115619b51189",
+  "prev": "d37d8fae647835fbe7afa3958d90e1087f5b25d1",
+  "head": "8680815fd8d1f770451b1da08be75d8f59df14ab",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -12,7 +12,8 @@
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "ganged"
+    "ganged",
+    "root-cmake"
   ],
   "unapplied": [],
   "hidden": [],
@@ -46,6 +47,9 @@
     },
     "pyvers": {
       "oid": "a3d3fdaaa5e4135bdfe566132c7b539fcf7bffae"
+    },
+    "root-cmake": {
+      "oid": "8680815fd8d1f770451b1da08be75d8f59df14ab"
     }
   }
 }
