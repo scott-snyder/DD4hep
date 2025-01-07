@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "45d739c78f15f9b2f92bc905f46d45f01023508e",
+  "prev": "3723e69dd24f0dbf36a524b1a48f27b627148b2b",
   "head": "3614c1901b29f7be2fe09063cd6ee8bde724e957",
   "applied": [
     "assimp-cmake",
@@ -14,9 +14,7 @@
     "root-cmake",
     "depr2"
   ],
-  "unapplied": [
-    "gccbug-new6"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -36,9 +34,6 @@
     },
     "ganged": {
       "oid": "bf1df9847df7eca1994608b6d8587ddec7f7ef49"
-    },
-    "gccbug-new6": {
-      "oid": "8f19bcf9324dcfa51255319ee7b9af547ab4cbff"
     },
     "nullPlacement": {
       "oid": "1db32ce69a77f701502774749a047b1a0e74b6ac"

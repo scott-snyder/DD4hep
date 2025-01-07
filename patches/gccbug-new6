@@ -1,6 +1,0 @@
-Bottom: 37c79efd8b32ec666c64348d76a3674bed65bee5
-Top:    c28abff1915ef9b49da16772841acefc780c436c
-Author: scott snyder <sss@karma>
-Date:   2025-01-07 14:13:01 -0500
-
-Workaround gcc false positive.
