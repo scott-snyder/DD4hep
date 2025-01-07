@@ -1,6 +1,6 @@
-Bottom: c28abff1915ef9b49da16772841acefc780c436c
-Top:    000fd9bad2e2de99708cecb91d1231b0ca274ef2
+Bottom: 435b26f0b1be1493c3d9a3cae1a58e2fcf38b01a
+Top:    c5b87a539a99f9da29d1e747e03c76e806381e31
 Author: scott snyder <sss@karma>
-Date:   2025-01-07 14:09:45 -0500
+Date:   2025-01-07 14:11:58 -0500
 
 Fix latex package order issue.
