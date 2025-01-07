@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "20d4255ea6ec1c22fcaef21e51d933d769ed4656",
-  "head": "de19eddda15ae4ccde075066e397af3015e5fdc4",
+  "prev": "628b9a713b30d36d1e30fa241ce4172880519d4b",
+  "head": "7531cb4e979f1f76bd8e919b3d310a866c39ebc9",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -11,10 +11,11 @@
     "pydepr",
     "nullPlacement",
     "ganged",
-    "root-cmake",
+    "root-cmake"
+  ],
+  "unapplied": [
     "depr2"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
