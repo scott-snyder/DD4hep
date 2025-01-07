@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "17ec3400ed1891d3ca9801ff8ff08e9111da6c1c",
-  "head": "773589e59f2e4bc4cd69eb32b86c68ecb8d49601",
+  "prev": "5e841618f50013118e303e544c7173287d3b41da",
+  "head": "6e00bb303dffe7d97b93bd51b8b21345525a7c37",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -11,11 +11,10 @@
     "nullPlacement",
     "ganged",
     "root-cmake",
-    "depr2"
-  ],
-  "unapplied": [
+    "depr2",
     "pydepr"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -40,7 +39,7 @@
       "oid": "5abca3dce88c3aaf0d4a3fbcbd73da519a66d610"
     },
     "pydepr": {
-      "oid": "653d2c5d8f659fc1741f5bf741714fed394ce985"
+      "oid": "6e00bb303dffe7d97b93bd51b8b21345525a7c37"
     },
     "pyvers": {
       "oid": "8fa6085a8467ff310e47418d3bb8345d44ebd6ce"
