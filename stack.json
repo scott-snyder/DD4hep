@@ -1,20 +1,21 @@
 {
   "version": 5,
-  "prev": "3723e69dd24f0dbf36a524b1a48f27b627148b2b",
-  "head": "3614c1901b29f7be2fe09063cd6ee8bde724e957",
+  "prev": "17ec3400ed1891d3ca9801ff8ff08e9111da6c1c",
+  "head": "773589e59f2e4bc4cd69eb32b86c68ecb8d49601",
   "applied": [
     "assimp-cmake",
     "depr",
     "doc",
     "comment",
     "pyvers",
-    "pydepr",
     "nullPlacement",
     "ganged",
     "root-cmake",
     "depr2"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "pydepr"
+  ],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -27,16 +28,16 @@
       "oid": "4abce81d8352db9f0dbbefc80ca02effa80b824e"
     },
     "depr2": {
-      "oid": "3614c1901b29f7be2fe09063cd6ee8bde724e957"
+      "oid": "773589e59f2e4bc4cd69eb32b86c68ecb8d49601"
     },
     "doc": {
       "oid": "e3a3279982a80d6306a54a825d9cc2a7d1690ce2"
     },
     "ganged": {
-      "oid": "bf1df9847df7eca1994608b6d8587ddec7f7ef49"
+      "oid": "f6cbea5a559b64797d0ae36945e0fb3641ebe7a7"
     },
     "nullPlacement": {
-      "oid": "1db32ce69a77f701502774749a047b1a0e74b6ac"
+      "oid": "5abca3dce88c3aaf0d4a3fbcbd73da519a66d610"
     },
     "pydepr": {
       "oid": "653d2c5d8f659fc1741f5bf741714fed394ce985"
@@ -45,7 +46,7 @@
       "oid": "8fa6085a8467ff310e47418d3bb8345d44ebd6ce"
     },
     "root-cmake": {
-      "oid": "5262f9a85976f8554d9c1077686b4aa387acd4c5"
+      "oid": "509eae88d8fb8f8ed907c7f62eedcb5e1dfd60fd"
     }
   }
 }
