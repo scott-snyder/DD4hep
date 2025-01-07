@@ -1,10 +1,11 @@
 {
   "version": 5,
-  "prev": "6a1f9840201ddbb58b8e75656a6adab321f4770d",
-  "head": "2d89d17a919f2cc2f179c3f487e1b9357f64e8a4",
+  "prev": "447c2bf2772cbaa640e6c52a14847525338ef8f6",
+  "head": "2e176db947435ee8b86bf029a82e1340927e2165",
   "applied": [
     "assimp-cmake",
     "gccbug-new6",
+    "depr",
     "doc",
     "comment",
     "pyvers",
@@ -12,8 +13,7 @@
     "nullPlacement",
     "ganged",
     "root-cmake",
-    "depr2",
-    "depr"
+    "depr2"
   ],
   "unapplied": [],
   "hidden": [],
@@ -22,34 +22,34 @@
       "oid": "456bcfeb935c73d281c3de3ad7dcd6913848f550"
     },
     "comment": {
-      "oid": "e0509ac567200ee56c5a894df5ccb30ceb25079b"
+      "oid": "fb91d9db3a5a17e814341d1b97fa5d012469f56e"
     },
     "depr": {
-      "oid": "2d89d17a919f2cc2f179c3f487e1b9357f64e8a4"
+      "oid": "7b42024f5a1127c4ccbd0cd7b8fe9f049c2d7233"
     },
     "depr2": {
-      "oid": "7ff2e155fdfb4a1a63df2cd4b8534b7a1ede105d"
+      "oid": "2e176db947435ee8b86bf029a82e1340927e2165"
     },
     "doc": {
-      "oid": "a877aac4b2119d44f22e2a92cf9f81d68873681c"
+      "oid": "0d2e7762ce3023d91b767a9da7d882f4890f765e"
     },
     "ganged": {
-      "oid": "249e20901df954cf287c7e0387ac5f551719f63e"
+      "oid": "be25ba500ed60023a5e9bb7a2c536a6fc6c89024"
     },
     "gccbug-new6": {
       "oid": "3a58da4ae043e470104181554a998a491b37f2db"
     },
     "nullPlacement": {
-      "oid": "64b55dbcdd5356dde6cb8f8a1c01d6d10b0f1943"
+      "oid": "45f2b5d12712b6e7ee7f897b70cbb8feba17bae7"
     },
     "pydepr": {
-      "oid": "283655d9a3b5e0f50ed7fec8f2c863dcbef3c628"
+      "oid": "eeae70a97eb0a7e556c1f3db1cba5c85c5137031"
     },
     "pyvers": {
-      "oid": "587983ac3c17aaafa8e23d4c9fb815d781395bb8"
+      "oid": "029dc2358bc0dba45311f3cc80aeaf19adbc5ab3"
     },
     "root-cmake": {
-      "oid": "b10ad00b417632c8a6099aa173c5009ec4bc1cae"
+      "oid": "1385abdc572808c04d37789185816ffb8169e749"
     }
   }
 }
