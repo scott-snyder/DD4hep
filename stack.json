@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "5626dd89c8b42c35c5feb52a5f3616cf8443606f",
-  "head": "de19eddda15ae4ccde075066e397af3015e5fdc4",
+  "prev": "e32cc0aafc1b20ca5e5f061558264b2416e7db2c",
+  "head": "65b6a5a0726c7deb738df4f8d81fa34b3da564dd",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -12,7 +12,8 @@
     "nullPlacement",
     "ganged",
     "root-cmake",
-    "depr2"
+    "depr2",
+    "gaudiPytest"
   ],
   "unapplied": [],
   "hidden": [],
@@ -34,6 +35,9 @@
     },
     "ganged": {
       "oid": "f8ab1de58a5e3cd4a511138d56090c0edf9a49ba"
+    },
+    "gaudiPytest": {
+      "oid": "65b6a5a0726c7deb738df4f8d81fa34b3da564dd"
     },
     "nullPlacement": {
       "oid": "a549484abfdd9d770b76fdc949de5d77a519d610"
