@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "041df1f825cd160b83607a9faff5f95f1ca14b4a",
-  "head": "f1a42bf04e6030a94b52f0c06e6060cb736bbaa9",
-  "applied": [
+  "prev": "de508f87c33148d16867c5855369b8de15eb1999",
+  "head": "a516ab9c37575905c3f483147a7510966149f58d",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -15,7 +16,6 @@
     "depr2",
     "gaudiPytest"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
