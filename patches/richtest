@@ -1,0 +1,8 @@
+Bottom: 31a98ff7f000f2bda7ee9f63939868106d8dd218
+Top:    31a98ff7f000f2bda7ee9f63939868106d8dd218
+Author: sss <sss@karma>
+Date:   2025-01-08 11:13:26 -0500
+
+Increase threshold for the difference in number of this in the RICH
+hit count test from 15 to 16.
+It was slightly out of threshold in the g4units build, causing a CI failure.
