@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "621aa11bb98fef73e6203fbdb7ad8449419e1005",
-  "head": "34a3c51e359a53b020c5d812a90f31833573397e",
+  "prev": "945dc48683169a5ae8a7fa52a5eaaa538e889ca6",
+  "head": "ff25d680d69bb8bd039f40771ba3616d564ab7cb",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -15,13 +15,17 @@
     "depr2",
     "gaudiPytest",
     "richtest",
-    "libdir"
+    "libdir",
+    "assimp-vers"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
       "oid": "456bcfeb935c73d281c3de3ad7dcd6913848f550"
+    },
+    "assimp-vers": {
+      "oid": "ff25d680d69bb8bd039f40771ba3616d564ab7cb"
     },
     "comment": {
       "oid": "ee4cc452285c0db77430c5fee826b7e7abe33918"

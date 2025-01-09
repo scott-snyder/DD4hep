@@ -1,0 +1,12 @@
+Bottom: 5c4f935b56ddb88bab82fcb6b86d5c9a7bd0adc4
+Top:    5c4f935b56ddb88bab82fcb6b86d5c9a7bd0adc4
+Author: sss <sss@karma>
+Date:   2025-01-09 15:39:04 -0500
+
+Update for change in assimp.
+
+assimp 5.2.0 included a change (ad766cb) that altered the output for the
+duck test, so logic was added to switch to a new reference file version
+for newer versions of assump.  However, as of assump 5.4.3, that change
+has been reverted (47ef796O).  Update the logic to go back to the original
+reference for assimp versions newer than 5.4.3.
