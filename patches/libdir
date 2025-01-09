@@ -1,0 +1,18 @@
+Bottom: 4b2f0f9294b55d06f4ae0fb4ee5c19b0d863e580
+Top:    4b2f0f9294b55d06f4ae0fb4ee5c19b0d863e580
+Author: sss <sss@karma>
+Date:   2025-01-09 09:31:16 -0500
+
+Fix libdir settings.
+
+In some configurations, including the Geant4 configuration can (via an
+indirectly-include Qt6 configuration) set CMAKE_INSTALL_LIBDIR to lib64.
+This results in some libraries being installed in lib and some in lib64.
+Setup scripts such as thisdd4hep.sh, on the other hand, expect libraries
+to be only in lib.  This can then result in test failures due to failures
+to find plugins.
+
+Work around by Explicitly seting CMAKE_INSTALL_LIBDIR to lib
+(if it hasn't already been set).
+
+Fixes CI failure in key4hep job.
