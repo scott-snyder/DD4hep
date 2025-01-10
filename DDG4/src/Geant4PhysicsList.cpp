@@ -369,7 +369,7 @@ G4VUserPhysicsList* Geant4PhysicsListActionSequence::extensionList()    {
   //Setting verbosity for pieces of the physics
   physics->SetVerboseLevel(m_verbosity);
   G4EmParameters::Instance()->SetVerbose(m_verbosity);
-  G4HadronicParameters::Instance()->SetVerboseLevel(m_verbosity);
+  //G4HadronicParameters::Instance()->SetVerboseLevel(m_verbosity);
 
   return physics;
 }
