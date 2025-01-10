@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "cf318b7605583b47ccb29adc6fd2e6ab0d5977a5",
-  "head": "c532581bc637fcedb32e1ecb71b6390328772f3b",
-  "applied": [],
-  "unapplied": [
+  "prev": "8807e058a74b8e24b5d6ff2883481f62557c8d23",
+  "head": "723e4b15694f4e7cb3666a9eaafdd12cd6562c2b",
+  "applied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -13,7 +12,9 @@
     "nullPlacement",
     "ganged",
     "root-cmake",
-    "depr2",
+    "depr2"
+  ],
+  "unapplied": [
     "gaudiPytest",
     "richtest",
     "libdir",
@@ -22,25 +23,25 @@
   "hidden": [],
   "patches": {
     "assimp-cmake": {
-      "oid": "456bcfeb935c73d281c3de3ad7dcd6913848f550"
+      "oid": "6bbfd8b3b84f355c830b215697ecd520a24b4d21"
     },
     "assimp-vers": {
       "oid": "a3fa50117409cb7bb1ab973856e9de28281ac518"
     },
     "comment": {
-      "oid": "ee4cc452285c0db77430c5fee826b7e7abe33918"
+      "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
     },
     "depr": {
-      "oid": "4abce81d8352db9f0dbbefc80ca02effa80b824e"
+      "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"
     },
     "depr2": {
-      "oid": "de19eddda15ae4ccde075066e397af3015e5fdc4"
+      "oid": "723e4b15694f4e7cb3666a9eaafdd12cd6562c2b"
     },
     "doc": {
-      "oid": "e3a3279982a80d6306a54a825d9cc2a7d1690ce2"
+      "oid": "56ac5f8c875282c0199ca1596a32d6a0f2935538"
     },
     "ganged": {
-      "oid": "f8ab1de58a5e3cd4a511138d56090c0edf9a49ba"
+      "oid": "3702928346b04d3066827e369eecb2dcf8518f30"
     },
     "gaudiPytest": {
       "oid": "f1a42bf04e6030a94b52f0c06e6060cb736bbaa9"
@@ -49,19 +50,19 @@
       "oid": "34a3c51e359a53b020c5d812a90f31833573397e"
     },
     "nullPlacement": {
-      "oid": "a549484abfdd9d770b76fdc949de5d77a519d610"
+      "oid": "626c71b614b6383c2a432489976cb02deda6b87a"
     },
     "pydepr": {
-      "oid": "2aca8f0259a130361d79a2bf471017d165393e1e"
+      "oid": "42e57650b4f24ee91a4b9e72add9fdb896a2838b"
     },
     "pyvers": {
-      "oid": "8fa6085a8467ff310e47418d3bb8345d44ebd6ce"
+      "oid": "c5beb424ed3197fc6f3410f83f0b317cf2776756"
     },
     "richtest": {
       "oid": "090c71dde9dc328ec87a3db3185ff5587436d0c7"
     },
     "root-cmake": {
-      "oid": "7531cb4e979f1f76bd8e919b3d310a866c39ebc9"
+      "oid": "0c9445a67dd2d1290ee7a276169b97d06a1471a6"
     }
   }
 }
