@@ -1,0 +1,6 @@
+Bottom: fc1090fa3a0196882922704f336356c67ba45f17
+Top:    fc1090fa3a0196882922704f336356c67ba45f17
+Author: sss <sss@karma>
+Date:   2025-01-10 13:30:41 -0500
+
+Workaround for compiling with geant4 v10.

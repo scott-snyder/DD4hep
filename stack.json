@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "a32b6e2f3c082d3dbf5c47ea5d3037340c66170c",
-  "head": "66fd8471fcaa2747e0e3a89d57c5560162430603",
+  "prev": "54d60fd0efe4fc458c28ec858a06b308f7eda335",
+  "head": "1c8c30bf04a03a10501d169df201e6d8c216019f",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -14,7 +14,8 @@
     "root-cmake",
     "gaudiPytest",
     "richtest",
-    "libdir"
+    "libdir",
+    "geant10"
   ],
   "unapplied": [],
   "hidden": [],
@@ -36,6 +37,9 @@
     },
     "gaudiPytest": {
       "oid": "66183a61edfef706b55cd4ec4cc0a594b79d92e2"
+    },
+    "geant10": {
+      "oid": "1c8c30bf04a03a10501d169df201e6d8c216019f"
     },
     "libdir": {
       "oid": "66fd8471fcaa2747e0e3a89d57c5560162430603"
