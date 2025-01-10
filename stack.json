@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "fb0394d6715febb6c2b94a0fc6ebc1dfd07ea43c",
-  "head": "a3fa50117409cb7bb1ab973856e9de28281ac518",
-  "applied": [
+  "prev": "a2539d2b7d40de17e0bb8b774aec134b3eef3761",
+  "head": "a516ab9c37575905c3f483147a7510966149f58d",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -18,7 +19,6 @@
     "libdir",
     "assimp-vers"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
