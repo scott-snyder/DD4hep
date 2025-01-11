@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "db5921cb654974f650576045937bfecb4b13d16e",
-  "head": "7589370b6d1df255bcb62c68a016c44dfcf08414",
+  "prev": "8cf3e91d65996438feb792bd127b68dfdbdf551b",
+  "head": "105143c6a00d2e7795687802a0e4d61f51e623da",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -17,8 +17,7 @@
     "libdir",
     "geant10",
     "duckvers",
-    "dangle",
-    "refresh-temp"
+    "dangle"
   ],
   "unapplied": [],
   "hidden": [],
@@ -30,7 +29,7 @@
       "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
     },
     "dangle": {
-      "oid": "df0290f806d444ba6ee604d83a47d6ce93acd9c6"
+      "oid": "105143c6a00d2e7795687802a0e4d61f51e623da"
     },
     "depr": {
       "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"
@@ -61,9 +60,6 @@
     },
     "pyvers": {
       "oid": "c5beb424ed3197fc6f3410f83f0b317cf2776756"
-    },
-    "refresh-temp": {
-      "oid": "7589370b6d1df255bcb62c68a016c44dfcf08414"
     },
     "richtest": {
       "oid": "8c1a496a439ca342e86393514cb151a10204e97f"
