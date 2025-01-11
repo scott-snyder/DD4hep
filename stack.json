@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "a3122e215562d63e0c4a61007785dd6adf909dcd",
-  "head": "4e90a7c746e4be3f64808f59205d76da3cdb995a",
+  "prev": "4c383012768f0c378aaebd0065aa7f3217d69980",
+  "head": "3387573d426f704f58d22840f40d06a757919935",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -17,8 +17,7 @@
     "libdir",
     "geant10",
     "duckvers",
-    "dangle",
-    "refresh-temp"
+    "dangle"
   ],
   "unapplied": [],
   "hidden": [],
@@ -30,7 +29,7 @@
       "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
     },
     "dangle": {
-      "oid": "105143c6a00d2e7795687802a0e4d61f51e623da"
+      "oid": "3387573d426f704f58d22840f40d06a757919935"
     },
     "depr": {
       "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"
@@ -39,7 +38,7 @@
       "oid": "56ac5f8c875282c0199ca1596a32d6a0f2935538"
     },
     "duckvers": {
-      "oid": "35de5916240b8e7e43573da377ae06f59ccf6443"
+      "oid": "dfe379f55c7937cef74b8ed80ed0c0e03f19e7e1"
     },
     "ganged": {
       "oid": "9dd960ee25a0aa13f61a4ca114a41207eee1c8e3"
@@ -61,9 +60,6 @@
     },
     "pyvers": {
       "oid": "c5beb424ed3197fc6f3410f83f0b317cf2776756"
-    },
-    "refresh-temp": {
-      "oid": "4e90a7c746e4be3f64808f59205d76da3cdb995a"
     },
     "richtest": {
       "oid": "8c1a496a439ca342e86393514cb151a10204e97f"
