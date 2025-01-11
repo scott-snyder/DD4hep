@@ -95,6 +95,7 @@ namespace dd4hep {
     std::vector<double> cellDimensions(const CellID& cellID) const;
     /// Return true if this segmentation can gang together regions
     /// from multiple volumes.
+    /// In that case, a working volumeID() implementation is required.
     bool isGanged() const;
       
     /// Access to the base DDSegmentation object. WARNING: Deprecated call!
