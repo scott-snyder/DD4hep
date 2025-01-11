@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "4c383012768f0c378aaebd0065aa7f3217d69980",
-  "head": "3387573d426f704f58d22840f40d06a757919935",
+  "prev": "9fa78fefa5a508657d035f055ac55663bd7e68c0",
+  "head": "7eea603f81e67a1fcbfd4285251e8a6eac86aa9f",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -29,7 +29,7 @@
       "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
     },
     "dangle": {
-      "oid": "3387573d426f704f58d22840f40d06a757919935"
+      "oid": "7eea603f81e67a1fcbfd4285251e8a6eac86aa9f"
     },
     "depr": {
       "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"

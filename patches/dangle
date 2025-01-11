@@ -1,6 +1,15 @@
 Bottom: 0bf783d0ce809ca4d189ed1c88f42c403997ffaa
 Top:    31944aaa19c280f652b787aee907c318da921e31
 Author: sss <sss@karma>
-Date:   2025-01-10 22:03:37 -0500
+Date:   2025-01-11 17:36:58 -0500
 
 Fix potential use of dangling temporary.
+
+In
+
+```
+  const TGeoHMatrix& m = par.nominal().worldTransformation();
+```
+nominal() returns a temporary Alignment object by value, and
+worldTransformation() returns a reference within that Alignment object.
+So we shoud make a copy.
