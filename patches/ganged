@@ -1,7 +1,7 @@
 Bottom: c22ec069ed401ce1fac13bca980f36835521382a
 Top:    2580f5b60b3c51e7a6e73773c7b39cc23235ad28
 Author: sss <sss@karma>
-Date:   2025-01-09 21:33:46 -0500
+Date:   2025-01-10 21:51:22 -0500
 
 Handle ganged segmentations.
 
@@ -16,5 +16,11 @@ which the segmentation used for its local coordinate system.
 In this case, we need to instead find the volID to use from
 the segmentation and get the transformation by looking it up
 in the volume manager.
+
+However, not all segmentations properly implement the volumeID method
+needed for this, so this has to be opt-in.  We add an isGanged()
+method to the Segmentation interface.  If this is overridden with
+a method that returns true, then we proceed as described above.
+Otherwise, we preserve the present behavior.
 
 Also factor out some duplicated code among the calorimeter implementations.
