@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "dfdfddf5664271be5a6d6d5db1e1eeab8ab9f8fd",
-  "head": "1d9dff4daf35d1e654aaf9ff0d348ad2d7d5e5de",
+  "prev": "a856b45a88d4150503ff3350f3aa3da93edea42a",
+  "head": "f18552e1c32dcfb9f211c6e32be33a43d9b2516d",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -17,8 +17,7 @@
     "libdir",
     "geant10",
     "duckvers",
-    "dangle",
-    "refresh-temp"
+    "dangle"
   ],
   "unapplied": [],
   "hidden": [],
@@ -30,7 +29,7 @@
       "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
     },
     "dangle": {
-      "oid": "7eea603f81e67a1fcbfd4285251e8a6eac86aa9f"
+      "oid": "f18552e1c32dcfb9f211c6e32be33a43d9b2516d"
     },
     "depr": {
       "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"
@@ -39,19 +38,19 @@
       "oid": "56ac5f8c875282c0199ca1596a32d6a0f2935538"
     },
     "duckvers": {
-      "oid": "dfe379f55c7937cef74b8ed80ed0c0e03f19e7e1"
+      "oid": "ca6142ab17f54690898e698c16c83407e2bd43ac"
     },
     "ganged": {
-      "oid": "9dd960ee25a0aa13f61a4ca114a41207eee1c8e3"
+      "oid": "7dec3453d075d12fa4f5439ce5645c1ca5b7b71b"
     },
     "gaudiPytest": {
-      "oid": "58ac08722206546a4b6768b27f829236e7226c11"
+      "oid": "483b9208b179edd131b92d1b47e9f36db670b382"
     },
     "geant10": {
-      "oid": "f779f6db218ef0713e6ec3e560b94e3f62c0b54e"
+      "oid": "9710d694c5e42301720e90498bef854ff2e6e6ca"
     },
     "libdir": {
-      "oid": "38e52efab701702251fd52fb514efaa8fdc87d62"
+      "oid": "5f0fd60a420350264cb28be70b5eabca8e59c3ca"
     },
     "nullPlacement": {
       "oid": "626c71b614b6383c2a432489976cb02deda6b87a"
@@ -62,14 +61,11 @@
     "pyvers": {
       "oid": "c5beb424ed3197fc6f3410f83f0b317cf2776756"
     },
-    "refresh-temp": {
-      "oid": "1d9dff4daf35d1e654aaf9ff0d348ad2d7d5e5de"
-    },
     "richtest": {
-      "oid": "8c1a496a439ca342e86393514cb151a10204e97f"
+      "oid": "ac8920eac020e725b3a79f2fcd59677174e9ce1b"
     },
     "root-cmake": {
-      "oid": "3d0136d1ee2d25771f846d71789d21ef2d346e09"
+      "oid": "cb6a24dcb6b2f155c041457b7b2f419bcb271bbb"
     }
   }
 }
