@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "7d6776b74b48c014efb1eed10086f1e7f239b5da",
-  "head": "467b011c24c275637b1cf0e75f4db1a64e04b51a",
-  "applied": [],
-  "unapplied": [
+  "prev": "3603aea48ee58759df0023d89d640342395c7458",
+  "head": "6398f86be963885e29f9e1d0caa790e5be46d4e8",
+  "applied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -11,7 +10,9 @@
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "ganged",
+    "ganged"
+  ],
+  "unapplied": [
     "root-cmake",
     "gaudiPytest",
     "richtest",
@@ -23,25 +24,25 @@
   "hidden": [],
   "patches": {
     "assimp-cmake": {
-      "oid": "6bbfd8b3b84f355c830b215697ecd520a24b4d21"
+      "oid": "a70de6c612696c62f4e4affef525a8aab0e51194"
     },
     "comment": {
-      "oid": "6b2cb14af6e27e4672e485cd5bfa6f50c74ae894"
+      "oid": "dcc33a422a60db5743111c91fc1e2f4cd031ef7f"
     },
     "dangle": {
       "oid": "f18552e1c32dcfb9f211c6e32be33a43d9b2516d"
     },
     "depr": {
-      "oid": "27f2ff6fe76eec4e10bf93e5f82df93e9b9e6f06"
+      "oid": "3e872352d460fe86b4dd8647dd70e06d50b39620"
     },
     "doc": {
-      "oid": "56ac5f8c875282c0199ca1596a32d6a0f2935538"
+      "oid": "51f8a88c17dc1ea29cc5cd85ebc2822cd7594470"
     },
     "duckvers": {
       "oid": "ca6142ab17f54690898e698c16c83407e2bd43ac"
     },
     "ganged": {
-      "oid": "7dec3453d075d12fa4f5439ce5645c1ca5b7b71b"
+      "oid": "6398f86be963885e29f9e1d0caa790e5be46d4e8"
     },
     "gaudiPytest": {
       "oid": "483b9208b179edd131b92d1b47e9f36db670b382"
@@ -53,13 +54,13 @@
       "oid": "5f0fd60a420350264cb28be70b5eabca8e59c3ca"
     },
     "nullPlacement": {
-      "oid": "626c71b614b6383c2a432489976cb02deda6b87a"
+      "oid": "b8e26e921f9cf9e47bf456ebceb6a713cc6f5f22"
     },
     "pydepr": {
-      "oid": "42e57650b4f24ee91a4b9e72add9fdb896a2838b"
+      "oid": "9438b7c195913da5ea38f46b5d5b4019da441e6e"
     },
     "pyvers": {
-      "oid": "c5beb424ed3197fc6f3410f83f0b317cf2776756"
+      "oid": "eed901dbfface9be327c76424dcb668ad3077904"
     },
     "richtest": {
       "oid": "ac8920eac020e725b3a79f2fcd59677174e9ce1b"
