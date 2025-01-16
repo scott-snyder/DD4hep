@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "3603aea48ee58759df0023d89d640342395c7458",
-  "head": "6398f86be963885e29f9e1d0caa790e5be46d4e8",
+  "prev": "f088e3b504883790a625031042d66f0f2e7f5333",
+  "head": "be125a9298f0cc4388d07e864441be07fd891b00",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -10,9 +10,7 @@
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "ganged"
-  ],
-  "unapplied": [
+    "ganged",
     "root-cmake",
     "gaudiPytest",
     "richtest",
@@ -21,6 +19,7 @@
     "duckvers",
     "dangle"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -30,7 +29,7 @@
       "oid": "dcc33a422a60db5743111c91fc1e2f4cd031ef7f"
     },
     "dangle": {
-      "oid": "f18552e1c32dcfb9f211c6e32be33a43d9b2516d"
+      "oid": "be125a9298f0cc4388d07e864441be07fd891b00"
     },
     "depr": {
       "oid": "3e872352d460fe86b4dd8647dd70e06d50b39620"
@@ -39,19 +38,19 @@
       "oid": "51f8a88c17dc1ea29cc5cd85ebc2822cd7594470"
     },
     "duckvers": {
-      "oid": "ca6142ab17f54690898e698c16c83407e2bd43ac"
+      "oid": "4548317ebeca684f65e020c5b7273a1d61a0b556"
     },
     "ganged": {
       "oid": "6398f86be963885e29f9e1d0caa790e5be46d4e8"
     },
     "gaudiPytest": {
-      "oid": "483b9208b179edd131b92d1b47e9f36db670b382"
+      "oid": "c841f6519b95a1f5da7ee1921168169f6f10ba82"
     },
     "geant10": {
-      "oid": "9710d694c5e42301720e90498bef854ff2e6e6ca"
+      "oid": "4137368818f36a8b778cc4d975f663f6f8206b5a"
     },
     "libdir": {
-      "oid": "5f0fd60a420350264cb28be70b5eabca8e59c3ca"
+      "oid": "8cf767251326c02d0b6522735c680908e857554c"
     },
     "nullPlacement": {
       "oid": "b8e26e921f9cf9e47bf456ebceb6a713cc6f5f22"
@@ -63,10 +62,10 @@
       "oid": "eed901dbfface9be327c76424dcb668ad3077904"
     },
     "richtest": {
-      "oid": "ac8920eac020e725b3a79f2fcd59677174e9ce1b"
+      "oid": "5560cbd6342b1c0edd6b7db4a79a45c10254fd85"
     },
     "root-cmake": {
-      "oid": "cb6a24dcb6b2f155c041457b7b2f419bcb271bbb"
+      "oid": "1f73bc806b43f2d7ff17506ffe9f05bc180fd197"
     }
   }
 }
