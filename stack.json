@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "7e41d1185ef792e0e81108a96152c9c5024a264f",
-  "head": "b0a84f100101f896f1e9e0a1b6851621433a583d",
+  "prev": "d6b51b1c6bb515b8dc681a70a80c3ed7634a08ba",
+  "head": "3a10d3a113773be3cb740bb168453284c86a3630",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -11,11 +11,12 @@
     "nullPlacement",
     "gaudiPytest",
     "richtest",
-    "libdir",
     "geant10",
     "duckvers"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "libdir"
+  ],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -28,13 +29,13 @@
       "oid": "51f8a88c17dc1ea29cc5cd85ebc2822cd7594470"
     },
     "duckvers": {
-      "oid": "b0a84f100101f896f1e9e0a1b6851621433a583d"
+      "oid": "3a10d3a113773be3cb740bb168453284c86a3630"
     },
     "gaudiPytest": {
       "oid": "87aa784b10b594eb39a0c6282fdf23917a6ef744"
     },
     "geant10": {
-      "oid": "3490044be40aab0c83d4a2a68ed1736a537452d1"
+      "oid": "f5ab22cf43a703a4f52354284c5e49fba6546674"
     },
     "libdir": {
       "oid": "afeb0d83662fb7a33c2a813a467a01116fd8d9eb"
