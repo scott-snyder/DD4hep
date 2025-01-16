@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "bde96e92a9f0d6dfc6292263516689535da54e82",
+  "prev": "7e41d1185ef792e0e81108a96152c9c5024a264f",
   "head": "b0a84f100101f896f1e9e0a1b6851621433a583d",
   "applied": [
     "assimp-cmake",
@@ -15,9 +15,7 @@
     "geant10",
     "duckvers"
   ],
-  "unapplied": [
-    "root-cmake"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -52,9 +50,6 @@
     },
     "richtest": {
       "oid": "52763dd60c770f3e2aedce9f01907cf207041525"
-    },
-    "root-cmake": {
-      "oid": "eeee7cf6d7682a081a644941b2f4351de8412416"
     }
   }
 }

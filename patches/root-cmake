@@ -1,7 +1,0 @@
-Bottom: 6b60e359f7ddd69ad3a085d03a8865f17d33f259
-Top:    437a1b6e1c2db203d74456766aa8a5dc6e19a382
-Author: sss <sss@karma>
-Date:   2025-01-16 16:14:31 -0500
-
-Need to explicitly require ROOTEve; otherwise we get failed dependencies
-on nlohman_json.
