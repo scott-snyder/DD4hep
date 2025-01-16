@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d4b3364e4ec9d330f8eb96a1eb44689dd6d99de6",
-  "head": "89775ff396e91c4319bb24090e963945b345df2d",
+  "prev": "8f6d94d97125ebbe742638c5e1ca4e22eb0a6d75",
+  "head": "bc4f64946021abcc742608330c81b205f86d8068",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -11,11 +11,10 @@
     "nullPlacement",
     "gaudiPytest",
     "geant10",
-    "duckvers"
-  ],
-  "unapplied": [
+    "duckvers",
     "richtest"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -46,7 +45,7 @@
       "oid": "6df26adfa8f2fb14c5529783b475d3de54ef5aab"
     },
     "richtest": {
-      "oid": "52763dd60c770f3e2aedce9f01907cf207041525"
+      "oid": "bc4f64946021abcc742608330c81b205f86d8068"
     }
   }
 }
