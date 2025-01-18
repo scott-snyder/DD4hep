@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "f602b030d1fa311666256d1382d6299557fbeb64",
+  "prev": "3d0620e3777715958501a79e260bb18a315d16fb",
   "head": "1a85b506f14d484eed5f91ccd6473fc7ca084513",
   "applied": [
     "assimp-cmake",
@@ -13,9 +13,7 @@
     "richtest",
     "duckvers"
   ],
-  "unapplied": [
-    "geant10"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -32,9 +30,6 @@
     },
     "gaudiPytest": {
       "oid": "87aa784b10b594eb39a0c6282fdf23917a6ef744"
-    },
-    "geant10": {
-      "oid": "c6ab85f0bbfa5b40ba0cf817165a4ddc108658db"
     },
     "nullPlacement": {
       "oid": "7c7c7eb9001f3d5ba274bf1c4c4c6c892b85784f"
