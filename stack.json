@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d05afc116c350f0c9ab0444d7835008635dd5857",
-  "head": "467b011c24c275637b1cf0e75f4db1a64e04b51a",
+  "prev": "ac691ee017900193492c7cf9b256b169c9afca43",
+  "head": "0aafe1c25ab1c834482f109f08a91441510af66a",
   "applied": [],
   "unapplied": [
     "assimp-cmake",
