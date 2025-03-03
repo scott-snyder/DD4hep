@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "1cff168ba91d86507f38b18ded8efc72f7f0dd97",
-  "head": "b7a9422f6c44145ba9909987aecd34a24827dcf5",
-  "applied": [
+  "prev": "d05afc116c350f0c9ab0444d7835008635dd5857",
+  "head": "467b011c24c275637b1cf0e75f4db1a64e04b51a",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -14,7 +15,6 @@
     "duckvers",
     "instdel"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
