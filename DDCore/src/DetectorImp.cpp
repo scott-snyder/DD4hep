@@ -78,6 +78,7 @@ namespace {
     std::map<std::string, Detector*> detectors;
     Instances() = default;
     ~Instances()  {
+      std::cout << "deleting Instances " << this << "\n";
     }
     Detector* get(const std::string& name)   {
       auto i = detectors.find(name);
@@ -131,8 +132,8 @@ namespace {
   };
   
   Instances& detector_instances()    {
-    static Instances s_inst;
-    return s_inst;
+    static Instances* s_inst = new Instances;
+    return *s_inst;
   }
 }
 
