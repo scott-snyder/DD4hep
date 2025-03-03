@@ -66,6 +66,12 @@ namespace {
   struct Instances  {
     std::recursive_mutex  lock;
     std::map<std::string, Detector*> detectors;
+
+    Instances() = default;
+    ~Instances()  {
+      std::cout << "deleting Instances " << this << "\n";
+    }
+
     Detector* get(const std::string& name)   {
       const auto i = detectors.find(name);
       return i == detectors.end() ? nullptr : (*i).second;
@@ -114,8 +120,8 @@ namespace {
   };
   
   Instances& detector_instances()    {
-    static Instances s_inst;
-    return s_inst;
+    static Instances* s_inst = new Instances;
+    return *s_inst;
   }
 }
 
