@@ -1,21 +1,20 @@
 {
   "version": 5,
-  "prev": "809b102c606594eeb0e385c7606770b081e6e92d",
-  "head": "86a1cd6a4ac147ad72add902c57864f30a762dae",
+  "prev": "21cb0ddd57a5d579fa3a6fb7f58a947d1ec688ca",
+  "head": "6ce0f5b12f061c9366f35e03c595625bf1a26474",
   "applied": [
     "assimp-cmake",
     "depr",
     "doc",
     "pyvers",
     "pydepr",
-    "nullPlacement"
-  ],
-  "unapplied": [
+    "nullPlacement",
     "gaudiPytest",
     "richtest",
     "duckvers",
     "instdel"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "assimp-cmake": {
@@ -28,13 +27,13 @@
       "oid": "e3a59016950783cdd664091ffb5e1068f4cf7680"
     },
     "duckvers": {
-      "oid": "1a85b506f14d484eed5f91ccd6473fc7ca084513"
+      "oid": "7a72b256d367e0ffd66f41042e22d2496a4eafb6"
     },
     "gaudiPytest": {
-      "oid": "87aa784b10b594eb39a0c6282fdf23917a6ef744"
+      "oid": "899f28af309f44bc4db55f196f8e0cbc99b566d6"
     },
     "instdel": {
-      "oid": "b7a9422f6c44145ba9909987aecd34a24827dcf5"
+      "oid": "6ce0f5b12f061c9366f35e03c595625bf1a26474"
     },
     "nullPlacement": {
       "oid": "86a1cd6a4ac147ad72add902c57864f30a762dae"
@@ -46,7 +45,7 @@
       "oid": "08c6d7eca3cb0099c4e6498d802bcd78240aa9ce"
     },
     "richtest": {
-      "oid": "1f1602115f18c65090f034cb1f6a8ba743c0f6ac"
+      "oid": "dec922846a06c779acb2910c0f4a822e6a350e35"
     }
   }
 }
