@@ -1,0 +1,9 @@
+Bottom: 346302481736b6b82fc3e879b6fef4ce432835a5
+Top:    346302481736b6b82fc3e879b6fef4ce432835a5
+Author: sss <sss@karma>
+Date:   2025-05-06 15:47:02 -0400
+
+Exceptions should be exceptional.
+
+Don't rely on exceptions for control flow for cases which are not
+actually errors.
