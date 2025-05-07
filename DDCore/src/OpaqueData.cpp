@@ -19,6 +19,7 @@
 
 // C/C++ header files
 #include <cstring>
+#include <utility>
 
 using namespace dd4hep;
 
@@ -73,6 +74,12 @@ OpaqueDataBlock::OpaqueDataBlock(const OpaqueDataBlock& c)
            this->grammar->type_name().c_str());
   }
   InstanceCount::increment(this);
+}
+
+/// Non-const copy constructor
+OpaqueDataBlock::OpaqueDataBlock(OpaqueDataBlock& c)
+  : OpaqueDataBlock (std::as_const(c))
+{
 }
 
 /// Standard Destructor

@@ -124,6 +124,9 @@ namespace dd4hep {
     template <typename OBJECT> OpaqueDataBlock(OBJECT&& data);
     /// Copy constructor (Required by ROOT dictionaries)
     OpaqueDataBlock(const OpaqueDataBlock& copy);
+    /// Non-const copy constructor (required in C++23 due to the non-const
+    /// std::pair copy constructor added in P2321R2).
+    OpaqueDataBlock(OpaqueDataBlock& copy);
     /// Standard Destructor
     ~OpaqueDataBlock();
     /// Assignment operator (Required by ROOT dictionaries)
