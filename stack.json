@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "8ff8cb58aee131b2c66e718cf16460ed430ce7a9",
-  "head": "e0b1913c4b9a6e9f00adb50a4621b4c671cfbda9",
+  "prev": "02d59d45c9f676eea6625cd38bfe42c4c8a3098d",
+  "head": "5ef69eefd5e28294743a3f091ac8f1ab2ac9c447",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -16,8 +16,7 @@
     "except",
     "clang",
     "root636",
-    "cxx23",
-    "refresh-temp"
+    "cxx23"
   ],
   "unapplied": [],
   "hidden": [],
@@ -62,10 +61,7 @@
       "oid": "d7773502d2cdea06064cd6f8bf4c0783a587d27f"
     },
     "cxx23": {
-      "oid": "824014be558597550a2cf8b90e0c0b9dd8e10b4d"
-    },
-    "refresh-temp": {
-      "oid": "e0b1913c4b9a6e9f00adb50a4621b4c671cfbda9"
+      "oid": "5ef69eefd5e28294743a3f091ac8f1ab2ac9c447"
     }
   }
 }
