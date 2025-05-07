@@ -338,8 +338,8 @@ template <> void Converter<Plugin>::operator()(xml_h e) const {
       arguments.emplace_back(val);
     }
     for(std::vector<std::string>::iterator i=arguments.begin(); i!=arguments.end(); ++i)
-      argv.emplace_back(&((*i)[0]));
-    description.apply(name.c_str(),int(argv.size()), &argv[0]);
+      argv.emplace_back(i->data());
+    description.apply(name.c_str(),int(argv.size()), argv.data());
     return;
   }
   // Call a custom plugin taking the xml element as an argument
