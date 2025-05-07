@@ -155,7 +155,7 @@ DetElementCreator::~DetElementCreator() noexcept(false)  {
   printout(INFO,pref,"DetElementCreator: ++ Summary:     %-24s %7d DetElements %7d sensitives out of %7d volumes",
            "Grand Total:",total.elements,total.sensitives,total.volumes);
   printout(INFO,pref,"DetElementCreator: +++++++++++++++ Summary of geometry depth analysis  ++++++++++++++++++");
-  int total_cnt = 0, total_depth = 0;
+  int total_cnt = 0;
   map<DetElement, vector<pair<int,int> > > fields;
   for ( const auto& l : leafCount )  {
     DetElement de = l.first.first;
@@ -163,7 +163,6 @@ DetElementCreator::~DetElementCreator() noexcept(false)  {
              (de.name()+string(":")).c_str(), de.id(),
              l.first.second, l.second.second, l.second.first);
     fields[de].emplace_back(l.first.second,l.second.first);
-    total_depth += l.second.second;
     ++total_cnt;
   }
   printout(INFO,pref,"DetElementCreator: ++ Summary:     %-24s  %d.","Total DetElements:",total_cnt);
