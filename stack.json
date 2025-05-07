@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "77b2f726b645d8fead91f7d9f9d834475cf4e133",
-  "head": "7ea6dd84215e5b9ab3789cf088038447578ed967",
+  "prev": "013592bca2cf55d1ca47ad3df6b3a4d829dd9337",
+  "head": "30898342f03af346b394271dbd14aa79e7ed8cbd",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -18,8 +18,7 @@
     "root636",
     "cxx23",
     "argpassing",
-    "ub",
-    "refresh-temp"
+    "ub"
   ],
   "unapplied": [],
   "hidden": [],
@@ -61,19 +60,16 @@
       "oid": "d1592cd5721925b12952d150f703cca8dcbb0053"
     },
     "root636": {
-      "oid": "10e4f843a63d40a415a5e9038dee8297f557dfd9"
+      "oid": "1ba23d8e02780179ab93d9575f03efb7cb0ac2f8"
     },
     "cxx23": {
-      "oid": "1831f2c7b47fe6c53f8f301ff22c2c9b107f73df"
+      "oid": "33fcee449a332c7438a17d09489e1d6738eb11be"
     },
     "argpassing": {
-      "oid": "40ce2ce002d2f5a4cad5a719e12e3a011f59301d"
+      "oid": "4ee1df5111146527af6513152c8907da24c6c6d4"
     },
     "ub": {
-      "oid": "ad682d4a7f2b8485997ec0919c5b53a4d6608c17"
-    },
-    "refresh-temp": {
-      "oid": "7ea6dd84215e5b9ab3789cf088038447578ed967"
+      "oid": "30898342f03af346b394271dbd14aa79e7ed8cbd"
     }
   }
 }
