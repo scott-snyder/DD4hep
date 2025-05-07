@@ -1,0 +1,9 @@
+Bottom: b9072250c7b0b1bb4685870c91196b3e8d825dca
+Top:    b9072250c7b0b1bb4685870c91196b3e8d825dca
+Author: sss <sss@karma>
+Date:   2025-05-07 18:23:48 -0400
+
+Don't pass an object instance through a variable-length arg list.
+
+Missing c_str() call.
+Fixes a warning seen with clang20.
