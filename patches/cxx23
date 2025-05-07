@@ -1,0 +1,13 @@
+Bottom: 9e062c152de779a5016686e8dae81f0e6092b039
+Top:    9e062c152de779a5016686e8dae81f0e6092b039
+Author: sss <sss@karma>
+Date:   2025-05-07 18:22:41 -0400
+
+Fix compilation with C++23.
+
+P2321R2 adds a pair<> constructor taking a non-const reference.
+In that case, when we contruct a pair involving OpaqueDataBlock
+from a non-const pair, then the move constructor can be called
+instead of the copy constructor, with OBJECT=OpaqueDataBlock&.
+Since that's a reference type, the new expression then won't compile.
+Fix by adding an OpaqueDataBlock ctor taking a non-const reference.
