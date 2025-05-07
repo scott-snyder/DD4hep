@@ -6,3 +6,4 @@ Date:   2025-05-07 18:19:52 -0400
 Update for root 6.36.
 
 ROOTHistDraw library is gone.
+The RDirectory class is gone.
