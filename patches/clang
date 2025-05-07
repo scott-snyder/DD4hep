@@ -1,0 +1,8 @@
+Bottom: 273bcc1a4a0814b2c6a3af34cf1d5e45a45d4fd5
+Top:    273bcc1a4a0814b2c6a3af34cf1d5e45a45d4fd5
+Author: sss <sss@karma>
+Date:   2025-05-07 18:19:03 -0400
+
+Fix clang warnings.
+
+Missing std:: qualifier on std::move.

@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "6d1344993032b06c3d61e751e719581f17a7af54",
-  "head": "257e005847e0724e9d72021ef6ee6209af6e484d",
+  "prev": "6f0c6bb0fc1b386d027e2c7c48126d728623dbd8",
+  "head": "5868ddb6ff8d063f3d666e66c4172ccca516483c",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -13,7 +13,8 @@
     "richtest",
     "duckvers",
     "instdel",
-    "except"
+    "except",
+    "clang"
   ],
   "unapplied": [],
   "hidden": [],
@@ -27,29 +28,32 @@
     "doc": {
       "oid": "e3a59016950783cdd664091ffb5e1068f4cf7680"
     },
-    "duckvers": {
-      "oid": "7a72b256d367e0ffd66f41042e22d2496a4eafb6"
-    },
-    "except": {
-      "oid": "257e005847e0724e9d72021ef6ee6209af6e484d"
-    },
-    "gaudiPytest": {
-      "oid": "899f28af309f44bc4db55f196f8e0cbc99b566d6"
-    },
-    "instdel": {
-      "oid": "6ce0f5b12f061c9366f35e03c595625bf1a26474"
-    },
-    "nullPlacement": {
-      "oid": "86a1cd6a4ac147ad72add902c57864f30a762dae"
+    "pyvers": {
+      "oid": "08c6d7eca3cb0099c4e6498d802bcd78240aa9ce"
     },
     "pydepr": {
       "oid": "c7e8b4671c8974f37158285dc4c4c9168fc5b6d8"
     },
-    "pyvers": {
-      "oid": "08c6d7eca3cb0099c4e6498d802bcd78240aa9ce"
+    "nullPlacement": {
+      "oid": "86a1cd6a4ac147ad72add902c57864f30a762dae"
+    },
+    "gaudiPytest": {
+      "oid": "899f28af309f44bc4db55f196f8e0cbc99b566d6"
     },
     "richtest": {
       "oid": "dec922846a06c779acb2910c0f4a822e6a350e35"
+    },
+    "duckvers": {
+      "oid": "7a72b256d367e0ffd66f41042e22d2496a4eafb6"
+    },
+    "instdel": {
+      "oid": "6ce0f5b12f061c9366f35e03c595625bf1a26474"
+    },
+    "except": {
+      "oid": "257e005847e0724e9d72021ef6ee6209af6e484d"
+    },
+    "clang": {
+      "oid": "5868ddb6ff8d063f3d666e66c4172ccca516483c"
     }
   }
 }
