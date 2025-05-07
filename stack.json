@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "f93f730a152ab648d437f0b0ccd7c69cc631a03a",
-  "head": "587e8b13d27628120c482c128724311679b9907f",
+  "prev": "fb95fc6b84246e136741cac1e55f0c3730b6fbfb",
+  "head": "86fade21459e773ecb0ee8ee430354b0512b6cbe",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -14,7 +14,8 @@
     "duckvers",
     "instdel",
     "except",
-    "clang"
+    "clang",
+    "root636"
   ],
   "unapplied": [],
   "hidden": [],
@@ -54,6 +55,9 @@
     },
     "clang": {
       "oid": "587e8b13d27628120c482c128724311679b9907f"
+    },
+    "root636": {
+      "oid": "86fade21459e773ecb0ee8ee430354b0512b6cbe"
     }
   }
 }
