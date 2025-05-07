@@ -297,7 +297,7 @@ void  dd4hep::xml::setDetectorTypeFlag( dd4hep::xml::Handle_t e, dd4hep::DetElem
              det_name.c_str() );
     printout(DEBUG, "Utilities",
              "+++ Element [%s] has no child of type 'type_flags'",
-             x_det.tag());
+             x_det.tag().c_str());
   }
 }
 
