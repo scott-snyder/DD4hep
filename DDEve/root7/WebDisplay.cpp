@@ -16,7 +16,6 @@
 #include <DD4hep/DetectorTools.h>
 
 // ROOT includes
-#include "ROOT/RDirectory.hxx"
 #if ROOT_VERSION_CODE >= ROOT_VERSION(6,27,00)
 #include "ROOT/RGeomViewer.hxx"
 #  if ROOT_VERSION_CODE >= ROOT_VERSION(6,29,00)
@@ -85,13 +84,12 @@ static long webdisplay(Detector& description, int argc, char** argv) {
   }
 
   if (vol) {
-    auto viewer = std::make_shared<GEOM_VIEWER>(&mgr);
+    static std::shared_ptr<GEOM_VIEWER> viewer;
+    viewer = std::make_shared<GEOM_VIEWER>(&mgr);
     viewer->SelectVolume(vol->GetName());
     viewer->SetLimits();
     viewer->SetDrawOptions(opt);
     viewer->Show();
-    // add to global heap to avoid immediate destroy of RGeomViewer
-    ROOT::Experimental::RDirectory::Heap().Add( "geom_viewer", viewer );
     return 1;
   }
   return 0;
