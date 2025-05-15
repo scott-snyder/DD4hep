@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "013592bca2cf55d1ca47ad3df6b3a4d829dd9337",
-  "head": "30898342f03af346b394271dbd14aa79e7ed8cbd",
+  "prev": "6a6e722ea6e69e598330e332bc2593ec5341957d",
+  "head": "e7996866b807564c9e0a460c81f1bae7dcd3c385",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -23,8 +23,17 @@
   "unapplied": [],
   "hidden": [],
   "patches": {
+    "argpassing": {
+      "oid": "2b5c92e53224e5dd99bc8c47f11aaeb09ffd9c8b"
+    },
     "assimp-cmake": {
       "oid": "65b438c9bd49d1096b0afac8821a58239d2cd419"
+    },
+    "clang": {
+      "oid": "6c32881312377415ae43d45957e8c9c24bda242c"
+    },
+    "cxx23": {
+      "oid": "b050e25adb0b7d6c6056ed2c49667f58a7c13703"
     },
     "depr": {
       "oid": "9b29e398781c8c02cc51b3704495c1d18b7906e6"
@@ -32,44 +41,35 @@
     "doc": {
       "oid": "e3a59016950783cdd664091ffb5e1068f4cf7680"
     },
-    "pyvers": {
-      "oid": "08c6d7eca3cb0099c4e6498d802bcd78240aa9ce"
+    "duckvers": {
+      "oid": "7a72b256d367e0ffd66f41042e22d2496a4eafb6"
     },
-    "pydepr": {
-      "oid": "c7e8b4671c8974f37158285dc4c4c9168fc5b6d8"
-    },
-    "nullPlacement": {
-      "oid": "86a1cd6a4ac147ad72add902c57864f30a762dae"
+    "except": {
+      "oid": "6500c851e7da6cccbc070b6a94b9bc47095510b9"
     },
     "gaudiPytest": {
       "oid": "899f28af309f44bc4db55f196f8e0cbc99b566d6"
     },
-    "richtest": {
-      "oid": "dec922846a06c779acb2910c0f4a822e6a350e35"
-    },
-    "duckvers": {
-      "oid": "7a72b256d367e0ffd66f41042e22d2496a4eafb6"
-    },
     "instdel": {
       "oid": "6ce0f5b12f061c9366f35e03c595625bf1a26474"
     },
-    "except": {
-      "oid": "257e005847e0724e9d72021ef6ee6209af6e484d"
+    "nullPlacement": {
+      "oid": "86a1cd6a4ac147ad72add902c57864f30a762dae"
     },
-    "clang": {
-      "oid": "d1592cd5721925b12952d150f703cca8dcbb0053"
+    "pydepr": {
+      "oid": "c7e8b4671c8974f37158285dc4c4c9168fc5b6d8"
+    },
+    "pyvers": {
+      "oid": "08c6d7eca3cb0099c4e6498d802bcd78240aa9ce"
+    },
+    "richtest": {
+      "oid": "dec922846a06c779acb2910c0f4a822e6a350e35"
     },
     "root636": {
-      "oid": "1ba23d8e02780179ab93d9575f03efb7cb0ac2f8"
-    },
-    "cxx23": {
-      "oid": "33fcee449a332c7438a17d09489e1d6738eb11be"
-    },
-    "argpassing": {
-      "oid": "4ee1df5111146527af6513152c8907da24c6c6d4"
+      "oid": "5743ab2617ba42b08dca5a6bb150c8979a05b093"
     },
     "ub": {
-      "oid": "30898342f03af346b394271dbd14aa79e7ed8cbd"
+      "oid": "e7996866b807564c9e0a460c81f1bae7dcd3c385"
     }
   }
 }
