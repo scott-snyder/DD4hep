@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "1baf342f8e46e28627490146e64a0529f31678e1",
-  "head": "7887536fc3db93006f709aeb0953dab693834e3d",
+  "prev": "89ad6f3f4dc499544953f43f426ea2ff5ddb14aa",
+  "head": "067cbc1ae2ddb5b8e3953ad06466a8f86c43c916",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -18,8 +18,7 @@
     "root636",
     "cxx23",
     "argpassing",
-    "ub",
-    "refresh-temp"
+    "ub"
   ],
   "unapplied": [],
   "hidden": [],
@@ -63,9 +62,6 @@
     "pyvers": {
       "oid": "37f79034af71830d2db5480f10412965d35402e0"
     },
-    "refresh-temp": {
-      "oid": "7887536fc3db93006f709aeb0953dab693834e3d"
-    },
     "richtest": {
       "oid": "12f38147839323c5f1801261f6ed6a5e941e22cd"
     },
@@ -73,7 +69,7 @@
       "oid": "90433e7fdc4e47d5ef8732d63ff6177c8f6013e5"
     },
     "ub": {
-      "oid": "daea7c0cb9f2f9ec9b007d995ff6049cd1947c80"
+      "oid": "067cbc1ae2ddb5b8e3953ad06466a8f86c43c916"
     }
   }
 }
