@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d2fa4e47b78c721d36d0178c7a992fba2c2cfa5a",
-  "head": "11bea1a4d2283d89b5398569d18877b8d017b9ae",
+  "prev": "907b7f4c949cf812a187f9c96a2288d794c9b5eb",
+  "head": "c63a73bf9cf3512454348782c76a02afac018255",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -18,23 +18,22 @@
     "root636",
     "cxx23",
     "argpassing",
-    "ub",
-    "refresh-temp"
+    "ub"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
     "argpassing": {
-      "oid": "3f30a396b4537c29af20fdef8de2db51934caef6"
+      "oid": "15660c6ae6267218f5c159149e957af458ffafe8"
     },
     "assimp-cmake": {
       "oid": "9ae288e0812c5bf8fd55c39f799011bb82c7ecb5"
     },
     "clang": {
-      "oid": "0732f4eb7b23be88e926682ab0cbafcbd25863b6"
+      "oid": "35a87b4a3f393ed6a02973cb65d7e689dd263906"
     },
     "cxx23": {
-      "oid": "d8aa4460415ccaadcd2ff3dc990c539f8b6fc4d4"
+      "oid": "af32e9e94ee70ca1810d14ddf9f5609b08973bad"
     },
     "depr": {
       "oid": "71a9cd89b646d54be645d10b19092e5c894ebc63"
@@ -63,17 +62,14 @@
     "pyvers": {
       "oid": "37f79034af71830d2db5480f10412965d35402e0"
     },
-    "refresh-temp": {
-      "oid": "11bea1a4d2283d89b5398569d18877b8d017b9ae"
-    },
     "richtest": {
       "oid": "12f38147839323c5f1801261f6ed6a5e941e22cd"
     },
     "root636": {
-      "oid": "19668d04c2ab0fff9b1ee3eb271df79a81ce442c"
+      "oid": "8a978322f66393aeaf32583db535adfc5269cd07"
     },
     "ub": {
-      "oid": "399eb8bc23265bc103ceac38ef86db5fd591d674"
+      "oid": "c63a73bf9cf3512454348782c76a02afac018255"
     }
   }
 }
