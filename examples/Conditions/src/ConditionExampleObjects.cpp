@@ -350,7 +350,7 @@ int ConditionsDataAccess::accessConditions(DetElement de, const std::vector<Cond
   ConditionKey key_derived3    (de,"derived_data/derived_3");
   ConditionKey key_derived4    (de,"derived_data/derived_4");
   ConditionKey key_derived5    (de,"derived_data/derived_5");
-  int result = 0, count = 0;
+  int result [[maybe_unused]] = 0, count = 0;
 
   // Let's go for the deltas....
   for( auto cond : conditions )  {
