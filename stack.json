@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "907b7f4c949cf812a187f9c96a2288d794c9b5eb",
-  "head": "c63a73bf9cf3512454348782c76a02afac018255",
+  "prev": "5780d7b33893fff2e866e80b70a24fe8d32a6bf9",
+  "head": "a88bf35e8eb5bc91b36338fe52fd9060e3d7e47c",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -15,7 +15,6 @@
     "instdel",
     "except",
     "clang",
-    "root636",
     "cxx23",
     "argpassing",
     "ub"
@@ -24,7 +23,7 @@
   "hidden": [],
   "patches": {
     "argpassing": {
-      "oid": "15660c6ae6267218f5c159149e957af458ffafe8"
+      "oid": "ba28b29e6519d12c2cf1317c8cb1145e16f7f5db"
     },
     "assimp-cmake": {
       "oid": "9ae288e0812c5bf8fd55c39f799011bb82c7ecb5"
@@ -33,7 +32,7 @@
       "oid": "35a87b4a3f393ed6a02973cb65d7e689dd263906"
     },
     "cxx23": {
-      "oid": "af32e9e94ee70ca1810d14ddf9f5609b08973bad"
+      "oid": "e485dfb82283a427bfea8e6f15d394cbcda91e60"
     },
     "depr": {
       "oid": "71a9cd89b646d54be645d10b19092e5c894ebc63"
@@ -65,11 +64,8 @@
     "richtest": {
       "oid": "12f38147839323c5f1801261f6ed6a5e941e22cd"
     },
-    "root636": {
-      "oid": "8a978322f66393aeaf32583db535adfc5269cd07"
-    },
     "ub": {
-      "oid": "c63a73bf9cf3512454348782c76a02afac018255"
+      "oid": "a88bf35e8eb5bc91b36338fe52fd9060e3d7e47c"
     }
   }
 }

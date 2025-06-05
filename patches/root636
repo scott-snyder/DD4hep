@@ -1,9 +1,0 @@
-Bottom: 5124487baa142aac97980c22bd57ed86dd187441
-Top:    5124487baa142aac97980c22bd57ed86dd187441
-Author: sss <sss@karma>
-Date:   2025-06-05 15:43:54 -0400
-
-Update for root 6.36.
-
-ROOTHistDraw library is gone.
-The RDirectory class is gone.
