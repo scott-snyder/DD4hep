@@ -165,7 +165,6 @@ DetElementCreator::~DetElementCreator() noexcept(false)  {
     fields[de].emplace_back(l.first.second,l.second.first);
     ++total_cnt;
   }
-  if ( 0 == total_depth )  { }
   printout(INFO, pref, "DetElementCreator: ++ Summary:     %-24s  %d.","Total DetElements:", total_cnt);
   printout(INFO, pref, "DetElementCreator: +++++++++++++++ Readout structure generation  ++++++++++++++++++++++++");
   str << endl;
