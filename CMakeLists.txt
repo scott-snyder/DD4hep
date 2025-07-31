@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 PROJECT( DD4hep LANGUAGES NONE)
 SET_PROPERTY(DIRECTORY . PROPERTY PACKAGE_NAME DD4hep)
 
+cmake_policy(SET CMP0144 NEW)
+cmake_policy(SET CMP0167 NEW)
+cmake_policy(SET CMP0177 NEW)
+
 #################
 # Setup version #
 #################
