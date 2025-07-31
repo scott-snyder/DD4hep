@@ -1,0 +1,6 @@
+Bottom: 508fc2d913841fbb68278961d3b46e93faedba8d
+Top:    508fc2d913841fbb68278961d3b46e93faedba8d
+Author: sss <sss@karma>
+Date:   2025-07-31 10:53:18 -0400
+
+Suppress cmake developer warnings.

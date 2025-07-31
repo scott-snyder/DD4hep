@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "5780d7b33893fff2e866e80b70a24fe8d32a6bf9",
-  "head": "a88bf35e8eb5bc91b36338fe52fd9060e3d7e47c",
+  "prev": "6ef2ee478160cf8ff365a8fef0b5f1cc7b8c6330",
+  "head": "f8cc2af56b6769f9b43a8844a333111f9d2d0ef2",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -17,7 +17,8 @@
     "clang",
     "cxx23",
     "argpassing",
-    "ub"
+    "ub",
+    "cmakewarn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -30,6 +31,9 @@
     },
     "clang": {
       "oid": "35a87b4a3f393ed6a02973cb65d7e689dd263906"
+    },
+    "cmakewarn": {
+      "oid": "f8cc2af56b6769f9b43a8844a333111f9d2d0ef2"
     },
     "cxx23": {
       "oid": "e485dfb82283a427bfea8e6f15d394cbcda91e60"
