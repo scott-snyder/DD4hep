@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "e4bd6d85370bdc64281c461749d955630fda35c8",
-  "head": "7acdc72e1b38bd7a9ffb2530ed468921802712b4",
+  "prev": "40d7f090293504b2e9d5d2516c93ee3c2f243312",
+  "head": "d9d6e3e97291ef1977d5397a621ff7f37739a87a",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -19,7 +19,8 @@
     "argpassing",
     "ub",
     "cmakewarn",
-    "typo"
+    "typo",
+    "deprarrow"
   ],
   "unapplied": [],
   "hidden": [],
@@ -41,6 +42,9 @@
     },
     "depr": {
       "oid": "71a9cd89b646d54be645d10b19092e5c894ebc63"
+    },
+    "deprarrow": {
+      "oid": "d9d6e3e97291ef1977d5397a621ff7f37739a87a"
     },
     "doc": {
       "oid": "1fbb5039626e252d7c2185352aeee28c1612cd1a"
