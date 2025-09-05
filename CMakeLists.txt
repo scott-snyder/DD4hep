@@ -346,3 +346,9 @@ INSTALL(EXPORT DD4hep
   FILE ${CMAKE_PROJECT_NAME}Config-targets.cmake
   DESTINATION cmake
   )
+
+foreach( libname ${DD4HEP_BUILD_PACKAGES} DDParsers DDCore DDEve_Interface )
+  if( NOT ${libname} MATCHES "UtilityApps|DDEve" )
+    set_target_properties( ${libname} PROPERTIES EXPORT_NO_SYSTEM ON )
+  endif()
+endforeach()
