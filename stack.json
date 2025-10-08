@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "17fd343ebec18965d673887db1522ad4b2b46b56",
-  "head": "c6ba05e1702b9d231bf89346f0bb6df329b37987",
+  "prev": "413dc1b14269b6eaa31d6f4bcdc26d59e1a6648a",
+  "head": "7a73958b60dac4af9f0b41c93b8ecd4b66528871",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -14,9 +14,7 @@
     "duckvers",
     "instdel",
     "except",
-    "clang"
-  ],
-  "unapplied": [
+    "clang",
     "cxx23",
     "argpassing",
     "ub",
@@ -25,10 +23,11 @@
     "deprarrow",
     "nosystem"
   ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "argpassing": {
-      "oid": "ba28b29e6519d12c2cf1317c8cb1145e16f7f5db"
+      "oid": "9c146ad44e665f472c7eee18dc84ace4e6bcb897"
     },
     "assimp-cmake": {
       "oid": "bed8046abba869cb370b2ae1656b51b02fd0aff5"
@@ -37,16 +36,16 @@
       "oid": "c6ba05e1702b9d231bf89346f0bb6df329b37987"
     },
     "cmakewarn": {
-      "oid": "fdf1f36860ec488c8437f15686202e9926a7adf8"
+      "oid": "3ea121a4daaddd12e86921913bd33aaa55950143"
     },
     "cxx23": {
-      "oid": "e485dfb82283a427bfea8e6f15d394cbcda91e60"
+      "oid": "ca746d1cc81daa61a421783e6e26091d9ebf3b4c"
     },
     "depr": {
       "oid": "f5407d830f1d2d13d0900c2054e29ae02d938218"
     },
     "deprarrow": {
-      "oid": "98c03ba151e481703e02596a9e4d15d6ecf6cd04"
+      "oid": "c9aa93bad1286fd0955361bf54e9e036cf7a7021"
     },
     "doc": {
       "oid": "610d45bf66e9d72279a797e96720a1bf1efd918c"
@@ -64,7 +63,7 @@
       "oid": "ed4e5d9a18244f99d764385b0fb6c101ce10677f"
     },
     "nosystem": {
-      "oid": "5a0b7965412306ac8e7ef9210b7df33595c240c0"
+      "oid": "7a73958b60dac4af9f0b41c93b8ecd4b66528871"
     },
     "nullPlacement": {
       "oid": "8baabd21c1f7d424fac20a54acd80fa584a77a25"
@@ -79,10 +78,10 @@
       "oid": "7ac11962903aa8ce52437267996c0f5b9358d8d1"
     },
     "typo": {
-      "oid": "7acdc72e1b38bd7a9ffb2530ed468921802712b4"
+      "oid": "d9be3bf53a1b9a3e2f97426484deb250be9befbd"
     },
     "ub": {
-      "oid": "a88bf35e8eb5bc91b36338fe52fd9060e3d7e47c"
+      "oid": "da88f7c96d9c09d4f0f2d4bf9c1c801420f0d3a3"
     }
   }
 }
