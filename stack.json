@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "4ccbb38de3dc39bfc1706eac8e6558b84077f436",
-  "head": "7ac11962903aa8ce52437267996c0f5b9358d8d1",
+  "prev": "4be989b448373e1c8dbea8d0e9ce316cd08f3f05",
+  "head": "e992310aab92c7082b20f002c85114a442137bc1",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -10,11 +10,11 @@
     "pydepr",
     "nullPlacement",
     "gaudiPytest",
-    "richtest"
+    "richtest",
+    "duckvers",
+    "instdel"
   ],
   "unapplied": [
-    "duckvers",
-    "instdel",
     "except",
     "clang",
     "cxx23",
@@ -52,7 +52,7 @@
       "oid": "610d45bf66e9d72279a797e96720a1bf1efd918c"
     },
     "duckvers": {
-      "oid": "5c234a26e34678c177155508b249a74df04e8e7d"
+      "oid": "3024341bea326df0bd90cd132a74455c53d67e74"
     },
     "except": {
       "oid": "efa27c21fd7d7a09a2b9b001ed14d4aa7c41760a"
@@ -61,7 +61,7 @@
       "oid": "37c189bb9cb423f45d2d5c5f574111a668710d1d"
     },
     "instdel": {
-      "oid": "5be7358a5b85e5638559e8222dece735e88472bb"
+      "oid": "e992310aab92c7082b20f002c85114a442137bc1"
     },
     "nosystem": {
       "oid": "5a0b7965412306ac8e7ef9210b7df33595c240c0"
