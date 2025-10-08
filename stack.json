@@ -1,16 +1,17 @@
 {
   "version": 5,
-  "prev": "c3ff138e1d39032968e39c755d400db1e96549b0",
-  "head": "2901126cac244afcc37f49a9f7551f5585056c55",
-  "applied": [],
-  "unapplied": [
+  "prev": "b34556ad98818b471a35252407aa25dc0436d208",
+  "head": "bd6e070f94916c4d3850074516031b23e578d86c",
+  "applied": [
     "assimp-cmake",
     "depr",
     "doc",
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "gaudiPytest",
+    "gaudiPytest"
+  ],
+  "unapplied": [
     "richtest",
     "duckvers",
     "instdel",
@@ -30,7 +31,7 @@
       "oid": "ba28b29e6519d12c2cf1317c8cb1145e16f7f5db"
     },
     "assimp-cmake": {
-      "oid": "9ae288e0812c5bf8fd55c39f799011bb82c7ecb5"
+      "oid": "bed8046abba869cb370b2ae1656b51b02fd0aff5"
     },
     "clang": {
       "oid": "35a87b4a3f393ed6a02973cb65d7e689dd263906"
@@ -42,13 +43,13 @@
       "oid": "e485dfb82283a427bfea8e6f15d394cbcda91e60"
     },
     "depr": {
-      "oid": "71a9cd89b646d54be645d10b19092e5c894ebc63"
+      "oid": "f5407d830f1d2d13d0900c2054e29ae02d938218"
     },
     "deprarrow": {
       "oid": "98c03ba151e481703e02596a9e4d15d6ecf6cd04"
     },
     "doc": {
-      "oid": "1fbb5039626e252d7c2185352aeee28c1612cd1a"
+      "oid": "610d45bf66e9d72279a797e96720a1bf1efd918c"
     },
     "duckvers": {
       "oid": "5c234a26e34678c177155508b249a74df04e8e7d"
@@ -57,7 +58,7 @@
       "oid": "efa27c21fd7d7a09a2b9b001ed14d4aa7c41760a"
     },
     "gaudiPytest": {
-      "oid": "054f1bde519d142c4c8aa4006d6923f8e0690ee3"
+      "oid": "bd6e070f94916c4d3850074516031b23e578d86c"
     },
     "instdel": {
       "oid": "5be7358a5b85e5638559e8222dece735e88472bb"
@@ -66,13 +67,13 @@
       "oid": "5a0b7965412306ac8e7ef9210b7df33595c240c0"
     },
     "nullPlacement": {
-      "oid": "cf26c910e17bf59d5a7f15f39e482308ed4024a7"
+      "oid": "8baabd21c1f7d424fac20a54acd80fa584a77a25"
     },
     "pydepr": {
-      "oid": "a88828e277b93f33af882a985d1fd75578f053b7"
+      "oid": "da24b833ab6a80bf9ab7dc0be63d81aefad5dd03"
     },
     "pyvers": {
-      "oid": "37f79034af71830d2db5480f10412965d35402e0"
+      "oid": "ef2c2720a8bd1acc71afb9d9e7c45e1564e7aaef"
     },
     "richtest": {
       "oid": "12f38147839323c5f1801261f6ed6a5e941e22cd"
