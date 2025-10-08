@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "5d2e47408a3e520ae04ecfec6b11326aeeed51cc",
-  "head": "1ec50bd73175bb55a3c54afa303503cee3df1d1b",
+  "prev": "66fe46d9c3b98621689fcc566401319404658bfc",
+  "head": "37c189bb9cb423f45d2d5c5f574111a668710d1d",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -9,8 +9,7 @@
     "pyvers",
     "pydepr",
     "nullPlacement",
-    "gaudiPytest",
-    "refresh-temp"
+    "gaudiPytest"
   ],
   "unapplied": [
     "richtest",
@@ -59,7 +58,7 @@
       "oid": "efa27c21fd7d7a09a2b9b001ed14d4aa7c41760a"
     },
     "gaudiPytest": {
-      "oid": "3a69ef7ef5457b65f26d814170f15664b0fa4237"
+      "oid": "37c189bb9cb423f45d2d5c5f574111a668710d1d"
     },
     "instdel": {
       "oid": "5be7358a5b85e5638559e8222dece735e88472bb"
@@ -75,9 +74,6 @@
     },
     "pyvers": {
       "oid": "ef2c2720a8bd1acc71afb9d9e7c45e1564e7aaef"
-    },
-    "refresh-temp": {
-      "oid": "1ec50bd73175bb55a3c54afa303503cee3df1d1b"
     },
     "richtest": {
       "oid": "12f38147839323c5f1801261f6ed6a5e941e22cd"
