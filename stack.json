@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "75baa06e3de3841467d370ffdc3c3607b719280e",
-  "head": "ba95e7d980bc0e334eae862bf1678358d4cba9c7",
+  "prev": "17fd343ebec18965d673887db1522ad4b2b46b56",
+  "head": "c6ba05e1702b9d231bf89346f0bb6df329b37987",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -14,8 +14,7 @@
     "duckvers",
     "instdel",
     "except",
-    "clang",
-    "refresh-temp"
+    "clang"
   ],
   "unapplied": [
     "cxx23",
@@ -35,7 +34,7 @@
       "oid": "bed8046abba869cb370b2ae1656b51b02fd0aff5"
     },
     "clang": {
-      "oid": "9114a663f9927b86182675de306b15d6dafe1e5d"
+      "oid": "c6ba05e1702b9d231bf89346f0bb6df329b37987"
     },
     "cmakewarn": {
       "oid": "fdf1f36860ec488c8437f15686202e9926a7adf8"
@@ -75,9 +74,6 @@
     },
     "pyvers": {
       "oid": "ef2c2720a8bd1acc71afb9d9e7c45e1564e7aaef"
-    },
-    "refresh-temp": {
-      "oid": "ba95e7d980bc0e334eae862bf1678358d4cba9c7"
     },
     "richtest": {
       "oid": "7ac11962903aa8ce52437267996c0f5b9358d8d1"
