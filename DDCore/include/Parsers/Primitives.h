@@ -120,7 +120,7 @@ namespace dd4hep {
     /// 32 bit hash function
     inline unsigned int hash32(const void* key, std::size_t len) {
       unsigned int hash = 0;
-      const unsigned char* k = (const unsigned char*)key;
+      const unsigned char* k = reinterpret_cast<const unsigned char*>(key);
       for (; --len; k++) {
         hash += *k;
         hash += (hash << 10);
@@ -274,7 +274,7 @@ namespace dd4hep {
       /// Auto conversion to string using the default format
       static std::string toString(T value);
       /// Get typed null pointer (for template selctions)
-      static const value_t* null_pointer() { return (value_t*)0;          }
+      static const value_t* null_pointer() { return nullptr;          }
     };
 
     /// Safe cast mechanism using pre-linked conversions.
@@ -318,7 +318,7 @@ namespace dd4hep {
 
     /// Helper to copy objects.
     template <typename T> inline void copyObject(void* target,const void* source)  {
-      const T* src = (const T*)source;
+      const T* src = reinterpret_cast<const T*>(source);
       ::new(target) T(*src);
     }
     /// Helper to copy objects.
@@ -771,7 +771,7 @@ namespace dd4hep {
     virtual ~ComponentCast() = default;
     /// Function template to create destructor
     template <typename TYPE> static void _destroy(void* arg)  {
-      TYPE* ptr = (TYPE*)arg;
+      TYPE* ptr = reinterpret_cast<TYPE*>(arg);
       if (ptr)    delete ptr;
     }
   public:
