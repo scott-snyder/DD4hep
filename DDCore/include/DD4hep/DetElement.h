@@ -148,13 +148,13 @@ namespace dd4hep {
 
     /// Extend the sensitive detector element with an arbitrary structure accessible by the type
     template <typename IFACE, typename CONCRETE> IFACE* addExtension(CONCRETE* c)  const {
-      return (IFACE*) this->addExtension(detail::typeHash64<IFACE>(),
-                                         new detail::DeleteExtension<IFACE,CONCRETE>(c));
+      return reinterpret_cast<IFACE*> (this->addExtension(detail::typeHash64<IFACE>(),
+                                                          new detail::DeleteExtension<IFACE,CONCRETE>(c)));
     }
 
     /// Access extension element by the type
     template <typename IFACE> IFACE* extension() const {
-      return (IFACE*) this->extension(detail::typeHash64<IFACE>());
+      return reinterpret_cast<IFACE*> (this->extension(detail::typeHash64<IFACE>()));
     }
   };
 
@@ -238,7 +238,7 @@ namespace dd4hep {
     template <typename Q, typename T> class DetElementExtension : public ExtensionEntry  {
     protected:
       T* ptr = 0;
-      mutable Q* iface = 0;  //!
+      mutable Q* iface = nullptr;  //!
     public:
       /// Inhibit default constructor
       DetElementExtension() = delete;
@@ -259,10 +259,10 @@ namespace dd4hep {
       { return iface ? iface : (iface=dynamic_cast<Q*>(ptr));                  }
       /// Copy/clone the object
       virtual void* copy(void* det)  const override
-      { return copy(DetElement((Object*)det));                                 }
+      { return copy(DetElement(reinterpret_cast<Object*>(det)));               }
       /// Copy/clone the object
       virtual ExtensionEntry* clone(void* det)  const  override
-      {  return new DetElementExtension<Q,T>((T*)this->copy(det));             }
+      {  return new DetElementExtension<Q,T>(reinterpret_cast<T*>(this->copy(det))); }
       /// Hash value
       virtual unsigned long long int hash64()  const override
       {  return detail::typeHash64<Q>();                                       }
@@ -356,15 +356,15 @@ namespace dd4hep {
     /// Extend the detector element with an arbitrary structure accessible by the type
     template <typename IFACE, typename CONCRETE> IFACE* addExtension(CONCRETE* c) const {
       CallbackSequence::checkTypes(typeid(IFACE), typeid(CONCRETE), dynamic_cast<IFACE*>(c));
-      return (IFACE*) this->addExtension(new DetElementExtension<IFACE,CONCRETE>(c));
+      return reinterpret_cast<IFACE*> (this->addExtension(new DetElementExtension<IFACE,CONCRETE>(c)));
     }
     /// Access extension element by the type
     template <typename IFACE> IFACE* extension() const {
-      return (IFACE*) this->extension(detail::typeHash64<IFACE>(),true);
+      return reinterpret_cast<IFACE*> (this->extension(detail::typeHash64<IFACE>(),true));
     }
     /// Access extension element by the type
     template <typename IFACE> IFACE* extension(bool alert) const {
-      return (IFACE*) this->extension(detail::typeHash64<IFACE>(),alert);
+      return reinterpret_cast<IFACE*> (this->extension(detail::typeHash64<IFACE>(),alert));
     }
     /// Extend the detector element with an arbitrary callback
     template <typename Q, typename T>
