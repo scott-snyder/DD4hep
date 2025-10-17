@@ -17,6 +17,28 @@
 #include <typeinfo>
 #include <vector>
 
+namespace {
+
+template <class T>
+struct conv
+{
+  static T c(const void* u) { return reinterpret_cast<T>(u); }
+};
+  
+template <class T>
+struct conv<T*>
+{
+  static T* c(const void* u) { return reinterpret_cast<T*>(const_cast<void*>(u)); }
+};
+  
+template <class T>
+struct conv<T&>
+{
+  static T& c(const void* u) { return *reinterpret_cast<T*>(const_cast<void*>(u)); }
+};
+  
+}
+
 /// Namespace for the AIDA detector description toolkit
 namespace dd4hep {
 
@@ -170,7 +192,7 @@ namespace dd4hep {
       typedef R (T::*pfunc_t)(A);
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))((A) u[0]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))(conv<A>::c (u[0])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -180,7 +202,7 @@ namespace dd4hep {
       typedef R (T::*pfunc_t)(A) const;
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))((A) u[0]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))(conv<A>::c (u[0])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -190,7 +212,7 @@ namespace dd4hep {
       typedef void (T::*pfunc_t)(const A);
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))((A) u[0]);
+          (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))(conv<A>::c (u[0]));
           return 1;
         }
       };
@@ -201,7 +223,7 @@ namespace dd4hep {
       typedef void (T::*pfunc_t)(const A) const;
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))((A) u[0]);
+          (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))(conv<A>::c (u[0]));
           return 1;
         }
       };
@@ -216,7 +238,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -227,7 +249,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -238,7 +260,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1]);
+          (cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1]));
           return 1;
         }
       };
@@ -250,7 +272,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1]);
+          (cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1]));
           return 1;
         }
       };
@@ -265,7 +287,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1], (A2) u[2]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1]), conv<A2>::c (u[2])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -276,7 +298,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          return (ulong) (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1], (A2) u[2]);
+          return static_cast<ulong> ((cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1]), conv<A2>::c (u[2])));
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -287,7 +309,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1], (A2) u[2]);
+          (cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c(u[1]), conv<A2>::c (u[2]));
           return 1;
         }
       };
@@ -299,7 +321,7 @@ namespace dd4hep {
       typedef Wrapper<pfunc_t> _W;
       struct _Wrapper : public _W {
         static ulong call(void* o, const void* f, const void* u[]) {
-          (cast<T>(o)->*(typename _W::Functor(f).pmf))((A0) u[0], (A1) u[1], (A2) u[2]);
+          (cast<T>(o)->*(typename _W::Functor(f).pmf))(conv<A0>::c (u[0]), conv<A1>::c (u[1]), conv<A2>::c (u[2]));
           return 1;
         }
       };
