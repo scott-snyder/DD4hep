@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "2d361e9b502b99cc444b28cbf7ebd151634b1d2f",
-  "head": "33f524b9b232d1683c34f2644e1b86cb8ee7eece",
+  "prev": "1d09e233873b8e2f2c1aecb31002559d099be6c7",
+  "head": "77de57a374818f515dcb98cba9fb5a48a910376e",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -20,13 +20,17 @@
     "cmakewarn",
     "typo",
     "nosystem",
-    "actswarn"
+    "actswarn",
+    "actswarn2"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
     "actswarn": {
       "oid": "33f524b9b232d1683c34f2644e1b86cb8ee7eece"
+    },
+    "actswarn2": {
+      "oid": "77de57a374818f515dcb98cba9fb5a48a910376e"
     },
     "argpassing": {
       "oid": "863f18a8242d979ea46b79d05479de106bdd7207"

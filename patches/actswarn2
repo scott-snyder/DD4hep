@@ -1,0 +1,10 @@
+Bottom: 476965bcd5cce0128cbd689fdef6c198caf005ef
+Top:    476965bcd5cce0128cbd689fdef6c198caf005ef
+Author: sss <sss@karma>
+Date:   2025-10-17 16:43:12 -0400
+
+Fix warnings seen when building acts.
+
+Acts by default enables -Wzero-as-null-pointer-constant and -Wold-style-cast.
+If it builds the DD4hep plugin, then we get a bunch of these warnings from
+the dd4hep headers.  Fix remaining warnings here.
