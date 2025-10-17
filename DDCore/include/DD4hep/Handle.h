@@ -100,7 +100,7 @@ namespace dd4hep {
     Handle(T* element) : m_element(element)   {            }
     /// Initializing constructor from unrelated pointer with type checking
     template <typename Q> Handle(Q* element)
-      : m_element(element ? detail::safe_cast<T>::cast(element) : 0)
+      : m_element(element ? detail::safe_cast<T>::cast(element) : nullptr)
     {             }
     /// Initializing constructor from unrelated handle with type checking
     template <typename Q> Handle(const Handle<Q>& element)
@@ -124,11 +124,11 @@ namespace dd4hep {
     }
     /// Check the validity of the object held by the handle
     bool isValid() const   {
-      return 0 != m_element;
+      return nullptr != m_element;
     }
     /// Check the validity of the object held by the handle
     bool operator!() const   {
-      return 0 == m_element;
+      return nullptr == m_element;
     }
     /// Release the object held by the handle
     Handle<T>& clear() {
@@ -153,15 +153,15 @@ namespace dd4hep {
     }
     /// Access to an unrelated object type
     template <typename Q> Q* _ptr() const {
-      return (Q*) m_element;
+      return static_cast<Q*> (m_element);
     }
     /// Access to an unrelated object type
     template <typename Q> Q* data() const {
-      return (Q*) m_element;
+      return static_cast<Q*> (m_element);
     }
     /// Access to an unrelated object type
     template <typename Q> Q& object() const {
-      return *(Q*) m_element;
+      return *static_cast<Q*> (m_element);
     }
     /// Checked object access. Throws invalid handle runtime exception if invalid handle.
     /** Very compact way to check the validity of a handle with exception thrown.  
@@ -260,7 +260,7 @@ namespace dd4hep {
   std::string _ptrToString(const void* p, const char* fmt = "%p");
   /// Format any pointer (64 bits) to string  \ingroup DD4HEP_XML
   template <typename T> std::string _toString(const T* p, const char* fmt = "%p")
-  {      return _ptrToString((void*)p, fmt);       }
+  {      return _ptrToString(p, fmt);       }
 
   /// Generic type conversion from string to primitive value  \ingroup DD4HEP_CORE
   template <typename T> T _toType(const std::string& value);

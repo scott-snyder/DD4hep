@@ -45,7 +45,7 @@ namespace dd4hep {
       /// Default comment string
       static std::string defaultComment();
       // Create new XML document by parsing empty xml buffer
-      Document create(const char* tag, const char* comment = 0) const;
+      Document create(const char* tag, const char* comment = nullptr) const;
       // Create new XML document by parsing empty xml buffer
       Document create(const std::string& tag, const std::string& comment) const;
       /// Load XML file and parse it.
