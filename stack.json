@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "3b8c5b58482389d11735e8a49181027c4453f18c",
-  "head": "53e09937545dffc491a1e68ba862712a2ade43c7",
+  "prev": "ff1b2a4efeddba4a2b24c4808eca678b506f9d95",
+  "head": "f56cfce33bb7d42c38753e658fa341977a21a0c8",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -19,11 +19,15 @@
     "ub",
     "cmakewarn",
     "typo",
-    "nosystem"
+    "nosystem",
+    "actswarn"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
+    "actswarn": {
+      "oid": "f56cfce33bb7d42c38753e658fa341977a21a0c8"
+    },
     "argpassing": {
       "oid": "863f18a8242d979ea46b79d05479de106bdd7207"
     },
