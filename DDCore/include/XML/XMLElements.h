@@ -126,7 +126,7 @@ namespace dd4hep {
     std::string _ptrToString(const void* p, const char* fmt = "%p");
     /// Format void pointer (64 bits) to string with arbitrary format  \ingroup DD4HEP_XML
     template <typename T> std::string _toString(const T* p, const char* fmt = "%p")
-    {      return _ptrToString((void*)p,fmt);       }
+    {      return _ptrToString(p,fmt);       }
 
     /// Helper function to populate the evaluator dictionary  \ingroup DD4HEP_XML
     void _toDictionary(const XmlChar* name, const XmlChar* value);
@@ -386,7 +386,7 @@ namespace dd4hep {
       mutable Elt_t m_node;
 
       /// Initializing constructor
-      Handle_t(Elt_t e = 0)
+      Handle_t(Elt_t e = nullptr)
         : m_node(e) {
       }
       /// Direct access to the XmlElement using the operator->
@@ -519,7 +519,7 @@ namespace dd4hep {
       /// Access the element's parent element
       Handle_t parent() const;
       /// Checksum (sub-)tree of a xml document/tree. Default will pick up the adler32 checksum.
-      unsigned int checksum(unsigned int param, unsigned int (fcn)(unsigned int param, const XmlChar*, size_t)=0) const;
+      unsigned int checksum(unsigned int param, unsigned int (fcn)(unsigned int param, const XmlChar*, size_t)=nullptr) const;
     };
 
 #define INLINE inline
@@ -700,7 +700,7 @@ namespace dd4hep {
       DOC m_doc;
 
       /// Default Constructor
-      Document() : m_doc(0) {}
+      Document() : m_doc(nullptr) {}
       /// Initializing Constructor
       Document(DOC d) : m_doc(d) {}
       /// Copy constructor
@@ -785,11 +785,11 @@ namespace dd4hep {
 
       /// operator bool: check handle validity
       operator bool() const {
-        return 0 != m_element.ptr();
+        return nullptr != m_element.ptr();
       }
       /// operator NOT: check handle validity
       bool operator!() const {
-        return 0 == m_element.ptr();
+        return nullptr == m_element.ptr();
       }
       /// Assignment operator
       Element& operator=(const Element& c)  {

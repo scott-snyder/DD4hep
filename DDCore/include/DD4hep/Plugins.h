@@ -39,16 +39,16 @@ namespace dd4hep {
   struct PluginFactoryBase  {
     typedef std::string   str_t;
 
-    template <typename T> static T* ptr(const T* _p)     { return (T*)_p;  }
-    template <typename T> static T& ref(const T* _p)     { return *(T*)_p; }
+    template <typename T> static T* ptr(const T* _p)     { return const_cast<T*>(_p);  }
+    template <typename T> static T& ref(const T* _p)     { return *const_cast<T*>(_p); }
     template <typename T> static T  val(const T* _p)     { return T(*_p);  }
-    template <typename T> static T value(const void* _p) { return (T)_p;   }
-    static const char*  value(const void* _p) { return (const char*)(_p);  }
+    template <typename T> static T value(const void* _p) { return static_cast<T>(_p);   }
+    static const char*  value(const void* _p) { return reinterpret_cast<const char*>(_p);  }
   };
-  template <> inline int PluginFactoryBase::value<int>(const void* _p) { return *(int*)(_p); }
-  template <> inline long PluginFactoryBase::value<long>(const void* _p) { return *(long*)(_p); }
-  template <> inline std::string PluginFactoryBase::value<std::string>(const void* _p) { return *(std::string*)(_p); }
-  template <> inline const std::string& PluginFactoryBase::value<const std::string&>(const void* _p) { return *(std::string*)(_p); }
+  template <> inline int PluginFactoryBase::value<int>(const void* _p) { return *reinterpret_cast<const int*>(_p); }
+  template <> inline long PluginFactoryBase::value<long>(const void* _p) { return *reinterpret_cast<const long*>(_p); }
+  template <> inline std::string PluginFactoryBase::value<std::string>(const void* _p) { return *reinterpret_cast<const std::string*>(_p); }
+  template <> inline const std::string& PluginFactoryBase::value<const std::string&>(const void* _p) { return *reinterpret_cast<const std::string*>(_p); }
 
   /// Helper to debug plugin manager calls
   /**

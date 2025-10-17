@@ -56,7 +56,7 @@ namespace dd4hep {
     struct Dimension: public Element {
       /// Default constructor
       Dimension()
-        : Element(Handle_t(0)) {
+        : Element(Handle_t(nullptr)) {
       }
       /// Constructor from Handle_t
       Dimension(Handle_t e)
