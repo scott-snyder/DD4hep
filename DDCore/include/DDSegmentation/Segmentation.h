@@ -172,7 +172,7 @@ namespace dd4hep {
       /// The indices used for the encoding
       std::map<std::string, StringParameter> _indexIdentifiers;   //! No ROOT persistency
       /// The cell ID encoder and decoder
-      const BitFieldCoder* _decoder = 0;
+      const BitFieldCoder* _decoder = nullptr;
       /// Keeps track of the decoder ownership
       bool _ownsDecoder = false;
     private:

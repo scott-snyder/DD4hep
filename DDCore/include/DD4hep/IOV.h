@@ -76,7 +76,7 @@ namespace dd4hep {
     static constexpr Key_value_type MAX_KEY = std::numeric_limits<Key_value_type>::max();
 
     /// Reference to IOV type
-    const IOVType* iovType = 0;
+    const IOVType* iovType = nullptr;
     /// IOV key (if second==first, discrete, otherwise range)
     Key            keyData{MIN_KEY,MIN_KEY};
     /// Optional user data

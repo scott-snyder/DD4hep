@@ -88,7 +88,7 @@ namespace dd4hep {
       /// Assignment operator
       SimpleExtension& operator=(const SimpleExtension& copy) = default;
       /// Virtual object copy operator
-      virtual void* copy(void*) const override { invalidCall("copy"); return 0;   }
+      virtual void* copy(void*) const override { invalidCall("copy"); return nullptr;   }
       /// Virtual object destructor. Function may still be called without side-effects.
       virtual void  destruct()  const override {                                  }
       /// Virtual object accessor
@@ -96,7 +96,7 @@ namespace dd4hep {
       { return iface ? iface : (iface=dynamic_cast<Q*>(ptr));                     }
       /// Virtual entry clone function
       virtual ExtensionEntry* clone(void*)  const  override
-      { invalidCall("clone"); return 0;                                           }
+      { invalidCall("clone"); return nullptr;                                           }
       /// Hash value
       virtual unsigned long long int hash64()  const override
       {  return detail::typeHash64<Q>();                                       }
@@ -133,7 +133,7 @@ namespace dd4hep {
       /// Assignment operator
       DeleteExtension& operator=(const DeleteExtension& copy) = default;
       /// Virtual object copy operator
-      virtual void* copy(void*)  const override  { invalidCall("copy"); return 0; }
+      virtual void* copy(void*)  const override  { invalidCall("copy"); return nullptr; }
       /// Virtual object destructor
       virtual void  destruct()   const override  { delete ptr;                    }
       /// Virtual object accessor
@@ -141,7 +141,7 @@ namespace dd4hep {
       { return iface ? iface : (iface=dynamic_cast<Q*>(ptr));                     }
       /// Virtual entry clone function
       virtual ExtensionEntry* clone(void* arg)  const  override
-      {  return new DeleteExtension((T*)this->copy(arg));                         }
+      {  return new DeleteExtension(reinterpret_cast<T*>(this->copy(arg)));                         }
       /// Hash value
       virtual unsigned long long int hash64()  const override
       {  return detail::typeHash64<Q>();                                       }
@@ -186,7 +186,7 @@ namespace dd4hep {
       { return iface ? iface : (iface=dynamic_cast<Q*>(ptr));                     }
       /// Virtual entry clone function
       virtual ExtensionEntry* clone(void* arg)  const  override
-      {  return new CopyDeleteExtension((T*)this->copy(arg));                     }
+      {  return new CopyDeleteExtension(reinterpret_cast<T*>(this->copy(arg)));                     }
       /// Hash value
       virtual unsigned long long int hash64()  const override
       {  return detail::typeHash64<Q>();                                       }

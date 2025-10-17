@@ -49,23 +49,23 @@ namespace dd4hep {
 
     /// Default constructor
     Callback()
-      : par(0), call(0) {
-      func.first = func.second = 0;
+      : par(nullptr), call(nullptr) {
+      func.first = func.second = nullptr;
     }
     /// Constructor with object initialization
     Callback(void* p)
-      : par(p), call(0) {
-      func.first = func.second = 0;
+      : par(p), call(nullptr) {
+      func.first = func.second = nullptr;
     }
     /// Constructor with object initialization
     Callback(const void* p)
-      : par((void*)p), call(0) {
-      func.first = func.second = 0;
+      : par(const_cast<void*>(p)), call(nullptr) {
+      func.first = func.second = nullptr;
     }
     /// Initializing constructor
     Callback(void* p, void* mf, func_t c)
       : par(p), call(c) {
-      func = *(mfunc_t*) mf;
+      func = *reinterpret_cast<mfunc_t*>(mf);
     }
     /// Check validity of the callback object
     operator bool() const {
@@ -77,11 +77,11 @@ namespace dd4hep {
     }
     /// Template cast function used internally by the wrapper for type conversion to the object's type
     template <typename T> static T* cast(void* p) {
-      return (T*) p;
+      return reinterpret_cast<T*>(p);
     }
     /// Template const cast function used internally by the wrapper for type conversion to the object's type
     template <typename T> static const T* c_cast(const void* p) {
-      return (const T*) p;
+      return reinterpret_cast<const T*>(p);
     }
 
     /// Wrapper around a C++ member function pointer
@@ -101,7 +101,7 @@ namespace dd4hep {
         mfunc_t ptr;
         pmf_t pmf;
         Functor(const void* f) {
-          ptr = *(mfunc_t*) f;
+          ptr = *reinterpret_cast<mfunc_t*>(const_cast<void*>(f));
         }
         Functor(pmf_t f) {
           pmf = f;
@@ -126,7 +126,7 @@ namespace dd4hep {
       typedef R (T::*pfunc_t)();
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void*[]) {
-          return (ulong) (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))();
+          return static_cast<ulong> ((cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))());
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -136,7 +136,7 @@ namespace dd4hep {
       typedef R (T::*pfunc_t)() const;
       struct _Wrapper : public Wrapper<pfunc_t> {
         static ulong call(void* o, const void* f, const void*[]) {
-          return (ulong) (cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))();
+          return static_cast<ulong> ((cast<T>(o)->*(typename Wrapper<pfunc_t>::Functor(f).pmf))());
         }
       };
       return _make(_Wrapper::call, pmf);
@@ -467,7 +467,7 @@ namespace dd4hep {
   /// Execution overload for callbacks with no arguments
   inline void CallbackSequence::operator()() const {
     if (!callbacks.empty()) {
-      const void* args[1] = { 0 };
+      const void* args[1] = { nullptr };
       for (Callbacks::const_iterator i = callbacks.begin(); i != callbacks.end(); ++i)
         (*i).execute(args);
     }

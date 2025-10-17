@@ -46,7 +46,7 @@ namespace dd4hep {
   class SegmentationObject {
   public:
     /// Standard constructor
-    SegmentationObject(DDSegmentation::Segmentation* seg = 0);
+    SegmentationObject(DDSegmentation::Segmentation* seg = nullptr);
     /// Default destructor
     virtual ~SegmentationObject();
     /// Access the encoding string
@@ -93,7 +93,7 @@ namespace dd4hep {
     /// Reference to hosting top level sensitve detector structure
     Handle<SensitiveDetectorObject> sensitive;
     /// Reference to base segmentation
-    DDSegmentation::Segmentation* segmentation = 0;
+    DDSegmentation::Segmentation* segmentation = nullptr;
   };
 
   /// Concrete wrapper class for segmentation implementation based on DDSegmentation objects

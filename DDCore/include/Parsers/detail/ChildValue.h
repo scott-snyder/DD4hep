@@ -67,7 +67,7 @@ namespace dd4hep {
     struct ChildValue: public Element {
       /// Default constructor
       ChildValue()
-        : Element(Handle_t(0)) {
+        : Element(Handle_t(nullptr)) {
       }
       /// Constructor from Handle_t
       ChildValue(Handle_t e)
