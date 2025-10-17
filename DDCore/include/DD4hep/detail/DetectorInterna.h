@@ -202,7 +202,7 @@ namespace dd4hep {
   };
 
   /// Default constructor
-  inline WorldObject::WorldObject() : DetElementObject(), description(0)      {
+  inline WorldObject::WorldObject() : DetElementObject(), description(nullptr)      {
   }
 
 }         /* End namespace dd4hep                   */
