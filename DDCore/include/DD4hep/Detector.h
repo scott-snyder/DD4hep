@@ -329,18 +329,18 @@ namespace dd4hep {
 
     /// Extend the sensitive detector element with an arbitrary structure accessible by the type
     template <typename IFACE, typename CONCRETE> IFACE* addExtension(CONCRETE* c)  {
-      return (IFACE*) addUserExtension(detail::typeHash64<IFACE>(),
-                                       new detail::DeleteExtension<IFACE,CONCRETE>(c));
+      return reinterpret_cast<IFACE*> (addUserExtension(detail::typeHash64<IFACE>(),
+                                                        new detail::DeleteExtension<IFACE,CONCRETE>(c)));
     }
 
     /// Remove an existing extension object from the Detector instance. If not destroyed, the instance is returned
     template <class IFACE> IFACE* removeExtension(bool destroy=true)  {
-      return (IFACE*) removeUserExtension(detail::typeHash64<IFACE>(),destroy);
+      return reinterpret_cast<IFACE*> (removeUserExtension(detail::typeHash64<IFACE>(),destroy));
     }
 
     /// Access extension element by the type
     template <class IFACE> IFACE* extension(bool alert=true) const {
-      return (IFACE*) userExtension(detail::typeHash64<IFACE>(),alert);
+      return reinterpret_cast<IFACE*> (userExtension(detail::typeHash64<IFACE>(),alert));
     }
 
     ///---Factory method-------
@@ -360,22 +360,22 @@ namespace dd4hep {
 #ifndef __CINT__
   /// Typed access to constants: short values
   template <> inline short Detector::constant<short>(const std::string& name) const {
-    return (short) constantAsLong(name);
+    return static_cast<short> (constantAsLong(name));
   }
 
   /// Typed access to constants: unsigned short values
   template <> inline unsigned short Detector::constant<unsigned short>(const std::string& name) const {
-    return (unsigned short) constantAsLong(name);
+    return static_cast<unsigned short> (constantAsLong(name));
   }
 
   /// Typed access to constants: integer values
   template <> inline int Detector::constant<int>(const std::string& name) const {
-    return (int) constantAsLong(name);
+    return static_cast<int> (constantAsLong(name));
   }
 
   /// Typed access to constants: unsigned integer values
   template <> inline unsigned int Detector::constant<unsigned int>(const std::string& name) const {
-    return (unsigned int) constantAsLong(name);
+    return static_cast<unsigned int> (constantAsLong(name));
   }
 
   /// Typed access to constants: long values
@@ -385,12 +385,12 @@ namespace dd4hep {
 
   /// Typed access to constants: unsigned long values
   template <> inline unsigned long Detector::constant<unsigned long>(const std::string& name) const {
-    return (unsigned long) constantAsLong(name);
+    return static_cast<unsigned long> (constantAsLong(name));
   }
 
   /// Typed access to constants: float values
   template <> inline float Detector::constant<float>(const std::string& name) const {
-    return (float) constantAsDouble(name);
+    return static_cast<float> (constantAsDouble(name));
   }
 
   /// Typed access to constants: double values
