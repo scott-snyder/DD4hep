@@ -61,7 +61,7 @@ namespace dd4hep {
     /// Instance hash code
     const key_type      hash_value     = 0;
     /// Cached TClass reference for speed improvements
-    mutable TClass*     root_class     = 0;
+    mutable TClass*     root_class     = nullptr;
     /// Cached TDataType information for fundamental types
     mutable int         root_data_type = -1;
     /// Initialization flag
@@ -70,17 +70,17 @@ namespace dd4hep {
     /// Structure to be filled if automatic object parsing from string is supposed to be supported
     struct specialization_t   {
       /// Ponter to ABI Cast structure
-      const Cast* cast = 0;
+      const Cast* cast = nullptr;
       /// Bind opaque address to object
-      void (*bind)(void* pointer) = 0;
+      void (*bind)(void* pointer) = nullptr;
       /// Opaque copy constructor
-      void (*copy)(void* to, const void* from) = 0;
+      void (*copy)(void* to, const void* from) = nullptr;
       /// PropertyGrammar overload: Serialize a property to a string
-      std::string (*str)(const BasicGrammar& gr, const void* ptr) = 0;
+      std::string (*str)(const BasicGrammar& gr, const void* ptr) = nullptr;
       /// PropertyGrammar overload: Retrieve value from string
-      bool (*fromString)(const BasicGrammar& gr, void* ptr, const std::string& value) = 0;
+      bool (*fromString)(const BasicGrammar& gr, void* ptr, const std::string& value) = nullptr;
       /// Evaluate string value if possible before calling boost::spirit
-      int  (*eval)(const BasicGrammar& gr, void* ptr, const std::string& val) = 0;
+      int  (*eval)(const BasicGrammar& gr, void* ptr, const std::string& val) = nullptr;
       /// Default constructor
       specialization_t() = default;
       /// Move constructor
@@ -215,7 +215,7 @@ namespace dd4hep {
 
   /// Opaque object destructor
   template <typename TYPE> void Grammar<TYPE>::destruct(void* pointer) const   {
-    TYPE* obj = (TYPE*)pointer;
+    TYPE* obj = reinterpret_cast<TYPE*>(pointer);
     obj->~TYPE();
   }
 

@@ -146,7 +146,7 @@ namespace dd4hep {
   protected:
     /// Additional data accessor
     Object& _data() const {
-      return *(Object*) ptr();
+      return *reinterpret_cast<Object*> (ptr());
     }
 
   public:

@@ -49,11 +49,11 @@ namespace dd4hep {
 
   public:
     /// Data type
-    const BasicGrammar* grammar = 0;  //! No ROOT persistency
+    const BasicGrammar* grammar = nullptr;  //! No ROOT persistency
 
   protected:
     /// Pointer to object data
-    void* pointer = 0;                //! No ROOT persistency
+    void* pointer = nullptr;                //! No ROOT persistency
 
   public:
     /// Create data block from string representation
@@ -67,7 +67,7 @@ namespace dd4hep {
     /// Access to the data buffer (read only!). Is only valid after call to bind<T>()
     const void* ptr()  const {  return pointer;      }
     /// Check if object is already bound....
-    bool is_bound()  const   {  return 0 != pointer; }
+    bool is_bound()  const   {  return nullptr != pointer; }
     /// Generic getter. Specify the exact type, not a polymorph type
     template <typename T> T& get();
     /// Generic getter (const version). Specify the exact type, not a polymorph type
@@ -158,19 +158,19 @@ namespace dd4hep {
   /// Generic getter. Specify the exact type, not a polymorph type
   template <typename T> inline T& OpaqueData::get() {
     if (!grammar || !grammar->equals(typeid(T))) { throw std::bad_cast(); }
-    return *(T*)pointer;
+    return *reinterpret_cast<T*>(pointer);
   }
 
   /// Generic getter (const version). Specify the exact type, not a polymorph type
   template <typename T> inline const T& OpaqueData::get() const {
     if (!grammar || !grammar->equals(typeid(T))) { throw std::bad_cast(); }
-    return *(T*)pointer;
+    return *reinterpret_cast<T*>(pointer);
   }
 
   /// Generic getter. Specify the exact type, not a polymorph type
   template <typename T> inline T& OpaqueData::as() {
     if ( grammar )   {
-      T* obj = (T*)(grammar->cast().apply_dynCast(Cast::instance<T>(), this->pointer));
+      T* obj = reinterpret_cast<T*>(grammar->cast().apply_dynCast(Cast::instance<T>(), this->pointer));
       if ( obj ) return *obj;
     }
     throw std::bad_cast();
@@ -179,7 +179,7 @@ namespace dd4hep {
   /// Generic getter (const version). Specify the exact type, not a polymorph type
   template <typename T> inline const T& OpaqueData::as() const {
     if ( grammar )   {
-      const T* obj = (const T*)(grammar->cast().apply_dynCast(Cast::instance<T>(), this->pointer));
+      const T* obj = reinterpret_cast<const T*>(grammar->cast().apply_dynCast(Cast::instance<T>(), this->pointer));
       if ( obj ) return *obj;
     }
     throw std::bad_cast();
