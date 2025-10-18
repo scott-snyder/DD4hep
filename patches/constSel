@@ -1,0 +1,6 @@
+Bottom: 72312e960257c28ea0f2af4514d7a916ae1cddb4
+Top:    72312e960257c28ea0f2af4514d7a916ae1cddb4
+Author: sss <sss@karma>
+Date:   2025-10-18 18:08:51 -0400
+
+Change DetectorSelector to take a const reference.

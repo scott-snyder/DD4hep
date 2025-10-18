@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "9ee8708dcf09f8d4db61c0d9787815240496d3d2",
-  "head": "62008c1961aacb32a45aa7b145cc0267cbf24d1d",
+  "prev": "98b9f03b818cf0dabb40b478fe3193a6fcf3c0bc",
+  "head": "6e938cf64f16d79c9182276616f50d1da46bb3ff",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -21,7 +21,8 @@
     "typo",
     "nosystem",
     "actswarn",
-    "actswarn2"
+    "actswarn2",
+    "constSel"
   ],
   "unapplied": [],
   "hidden": [],
@@ -43,6 +44,9 @@
     },
     "cmakewarn": {
       "oid": "a517a083c24ad8d95264e364e8a5bb4ebafe17d9"
+    },
+    "constSel": {
+      "oid": "6e938cf64f16d79c9182276616f50d1da46bb3ff"
     },
     "cxx23": {
       "oid": "383e6a614ee0a7b487d84dc9a0926dc5a7768f43"
