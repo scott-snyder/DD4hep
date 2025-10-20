@@ -1,6 +1,6 @@
-Bottom: 1b79babf725dda6dd3aef09aab055533a6a7a862
-Top:    534710d416613f08098ab2667bd44bb09a83fd3b
+Bottom: cf1b1e0e69827eb18ddb5f4ffa962611e0fd7b9b
+Top:    a8a876b2c4cc52db41f62ef3d1f636077b84b6a8
 Author: scott snyder <sss@karma>
-Date:   2025-10-07 22:27:18 -0400
+Date:   2025-10-20 15:25:07 -0400
 
 PySys_SetArgv is deprecated.

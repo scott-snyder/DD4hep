@@ -1,6 +1,6 @@
-Bottom: d65a944fbb20ea358eab8aae8548711a64e2d52c
-Top:    1b79babf725dda6dd3aef09aab055533a6a7a862
+Bottom: c6935357276d94ca05f96daa0b204183d4b9de3f
+Top:    cf1b1e0e69827eb18ddb5f4ffa962611e0fd7b9b
 Author: scott snyder <sss@karma>
-Date:   2025-10-07 22:27:18 -0400
+Date:   2025-10-20 15:25:07 -0400
 
 Find proper python version.
