@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "361e17ad501f289a6787bcf76c1a13bd385d8918",
-  "head": "c7163da4d3a202425016a1f1288a2b2d32d3b1c0",
+  "prev": "d75de217e6c5d416027e7ba01d72e862f5a9f0e0",
+  "head": "f614003481c912bcfb23b2e986ec7f66f961a56f",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -24,8 +24,7 @@
     "actswarn2",
     "constSel",
     "symlink",
-    "shapetest",
-    "refresh-temp"
+    "shapetest"
   ],
   "unapplied": [],
   "hidden": [],
@@ -84,11 +83,8 @@
     "pyvers": {
       "oid": "489e9ef26bd467a45eadf1a14a17d676be2bd038"
     },
-    "refresh-temp": {
-      "oid": "c7163da4d3a202425016a1f1288a2b2d32d3b1c0"
-    },
     "shapetest": {
-      "oid": "225997b3ee1f87e4ce6dedbb7b75b2a22c56eddc"
+      "oid": "f614003481c912bcfb23b2e986ec7f66f961a56f"
     },
     "symlink": {
       "oid": "aa2eef8af015a2041a73a53228267d6e67d7cdb5"
