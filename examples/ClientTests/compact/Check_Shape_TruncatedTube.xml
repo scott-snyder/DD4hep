@@ -52,7 +52,7 @@
 -->
 
       <ntest  type="DD4hep_Mesh_Verifier" ref="${DD4hepExamplesINSTALL}/examples/ClientTests/ref/Ref_TruncatedTube.txt" create="CheckShape_create"/>
-      <test type="DD4hep_Mesh_Verifier" ref="${DD4hepExamplesINSTALL}/examples/ClientTests/ref/Ref_TruncatedTube.txt" create="1"/>
+      <test type="DD4hep_Mesh_Verifier" ref="${DD4hepExamplesINSTALL}/examples/ClientTests/ref/Ref_TruncatedTube.txt" create="0"/>
     </detector>
   </detectors>
 </lccdd>
