@@ -1,6 +1,6 @@
-Bottom: 9a4f5b56a4f88929f7cb1a280a4a2c59c706677f
-Top:    e7f4ea665bbe95b074d87dacf7ebe28abd9bcf54
+Bottom: f85919fd7939863585649d6d359ac204cc48403d
+Top:    687d6cfc288641e5d2e66cf4ef88da22e118feca
 Author: sss <sss@karma>
-Date:   2025-10-20 15:25:07 -0400
+Date:   2025-10-29 14:56:27 -0400
 
 Change DetectorSelector to take a const reference.
