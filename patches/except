@@ -1,0 +1,9 @@
+Bottom: 04c853b2c1b4ab47d396b9a0e90831018eaa2d6b
+Top:    324ae89c342e0ae053d327a3a7a4ffbd84b9b25c
+Author: sss <sss@karma>
+Date:   2025-11-04 15:44:39 -0500
+
+Don't use exceptions to test for the presence of an attribute.
+
+Exceptions should be exceptional: don't rely on exceptions for control flow
+for cases which are not actually errors.

@@ -1,0 +1,9 @@
+Bottom: 324ae89c342e0ae053d327a3a7a4ffbd84b9b25c
+Top:    a498e8c9cb44946d3fa568ab4342791aa032d7a1
+Author: sss <sss@karma>
+Date:   2025-11-04 15:44:39 -0500
+
+Fix clang warnings.
+
+Missing std:: qualifier on std::move.
+Unused variable.
