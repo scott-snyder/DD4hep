@@ -1,0 +1,6 @@
+Bottom: c6e05125afa1c57d619f969d19d84c362572c214
+Top:    560be37201f3495ad2ae209b17ce41ade5685978
+Author: scott snyder <sss@karma>
+Date:   2025-11-04 15:44:08 -0500
+
+Suppress deprecation warnings from podio.

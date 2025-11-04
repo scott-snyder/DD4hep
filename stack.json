@@ -1,9 +1,27 @@
 {
   "version": 5,
-  "prev": null,
-  "head": "e369490a18a9857d5a61771f340c1791e8f9f7a3",
-  "applied": [],
+  "prev": "0524a5e44313cdac698bd31031fea0112955f1a3",
+  "head": "1609180be7d9c5649b1ecd0c7fab31e58983256f",
+  "applied": [
+    "assimp-cmake",
+    "depr",
+    "doc",
+    "pyvers"
+  ],
   "unapplied": [],
   "hidden": [],
-  "patches": {}
+  "patches": {
+    "assimp-cmake": {
+      "oid": "a83059cbde3cc55dd54dde93daeeb3fb9e968b5e"
+    },
+    "depr": {
+      "oid": "587e84adba21e580b42663c4a30a61b8c79e2241"
+    },
+    "doc": {
+      "oid": "0ab80233efb2a9a9464ad4f2a9f8d8d204480656"
+    },
+    "pyvers": {
+      "oid": "1609180be7d9c5649b1ecd0c7fab31e58983256f"
+    }
+  }
 }
