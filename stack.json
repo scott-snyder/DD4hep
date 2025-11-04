@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "258a2fa209907bba389de5d7a8ca5045e91032b7",
-  "head": "0865ac2994753db189188ea1205fff7e0d4a9534",
+  "prev": "5cd99a77576ed31ec82fe0670c99230a1801b11c",
+  "head": "ebdcfd41d1b7df0bccd0fe318487731925164a69",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -21,7 +21,10 @@
     "typo",
     "nosystem",
     "actswarn",
-    "actswarn2"
+    "actswarn2",
+    "constSel",
+    "symlink",
+    "shapetest"
   ],
   "unapplied": [],
   "hidden": [],
@@ -43,6 +46,9 @@
     },
     "cmakewarn": {
       "oid": "dce0345938d07515e83220c96bd18e9d6608e34d"
+    },
+    "constSel": {
+      "oid": "37311de6673b6da0c54486ad9d9de7c22bbaf0c8"
     },
     "cxx23": {
       "oid": "cdaa2defec60a1bca90ba852ab13b7991d5bf0f9"
@@ -76,6 +82,12 @@
     },
     "pyvers": {
       "oid": "1609180be7d9c5649b1ecd0c7fab31e58983256f"
+    },
+    "shapetest": {
+      "oid": "ebdcfd41d1b7df0bccd0fe318487731925164a69"
+    },
+    "symlink": {
+      "oid": "fcdcd4a6a4376531e32e946999eceaf9ca98693a"
     },
     "typo": {
       "oid": "64bf2ecb7d39c70ffdc1a0766d4e933acec6e034"

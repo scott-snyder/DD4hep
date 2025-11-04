@@ -1,0 +1,8 @@
+Bottom: 833c96923b32aa3eda9982b53110f8695784119c
+Top:    5c8f0408e835c8519031ec08766fdc3e7d83ba5f
+Author: sss <sss@karma>
+Date:   2025-11-04 15:45:19 -0500
+
+Fix shape test.
+
+Test was writing a reference file rather then reading and comparing.
