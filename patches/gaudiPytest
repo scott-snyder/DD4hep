@@ -1,0 +1,14 @@
+Bottom: 58bad655bf28012718679bcf813e5e122a60bced
+Top:    b015867c3bb24ddbf8269c14fe2014d90ea9196c
+Author: sss <sss@karma>
+Date:   2025-11-04 15:44:24 -0500
+
+In dev3 builds, at least, some of the python tests were failing.
+This is because they pick up a pytest plugin ctest_measurements_reporter
+provided by Gaudi.  This adds DartMeasurement xml entities to the log
+output, which includes the source of the test.  However, the test source
+contains the string ERROR, which the test runner sees and thus concludes
+that the test fails.
+
+We can disable this behavior by setting the environment variable
+DISABLE_CTEST_MEASUREMENTS=1.

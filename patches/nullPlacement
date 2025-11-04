@@ -1,0 +1,6 @@
+Bottom: 34bbb03f04eec123eaeb378cdc1919f5100180dd
+Top:    58bad655bf28012718679bcf813e5e122a60bced
+Author: sss <sss@karma>
+Date:   2025-11-04 15:44:24 -0500
+
+Protect against null placement during printPlacements.
