@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "181162b953d0466ccf5ee4e036a3142e00870578",
-  "head": "cdaa2defec60a1bca90ba852ab13b7991d5bf0f9",
+  "prev": "7dbedc832ce226b365a5a63235ae71d0a8d9b37e",
+  "head": "64bf2ecb7d39c70ffdc1a0766d4e933acec6e034",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -14,16 +14,26 @@
     "instdel",
     "except",
     "clang",
-    "cxx23"
+    "cxx23",
+    "argpassing",
+    "ub",
+    "cmakewarn",
+    "typo"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
+    "argpassing": {
+      "oid": "43e64b91edb9259dd95b84fb3e794279c0395f17"
+    },
     "assimp-cmake": {
       "oid": "a83059cbde3cc55dd54dde93daeeb3fb9e968b5e"
     },
     "clang": {
       "oid": "4168598842c891bfd9ffe28ae66c54b3281e9de8"
+    },
+    "cmakewarn": {
+      "oid": "dce0345938d07515e83220c96bd18e9d6608e34d"
     },
     "cxx23": {
       "oid": "cdaa2defec60a1bca90ba852ab13b7991d5bf0f9"
@@ -54,6 +64,12 @@
     },
     "pyvers": {
       "oid": "1609180be7d9c5649b1ecd0c7fab31e58983256f"
+    },
+    "typo": {
+      "oid": "64bf2ecb7d39c70ffdc1a0766d4e933acec6e034"
+    },
+    "ub": {
+      "oid": "4e9d7e3df7edb1a2f6ba36b7dc4e538bcbfa84cb"
     }
   }
 }

@@ -1,0 +1,41 @@
+Bottom: 2905e20daad6ac41262a64c81ba4c6d6b8ec99de
+Top:    6864af8957b5d6d1fa0311c7f4c1b8bb04f70345
+Author: sss <sss@karma>
+Date:   2025-11-04 15:44:54 -0500
+
+Suppress cmake developer warnings.
+
+Text from other packages (needs updating...)
+
+With a recent cmake (tested with 3.31.6), we get warnings at the cmake step:
+
+```
+CMake Warning (dev) at /usr/share/cmake/Modules/CMakeFindDependencyMacro.cma
+6 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Environment variable BOOST_ROOT is set to:
+
+    /home/sss/atlas/extern/boost/boost_1_87_0
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /home/sss/fcc/soft/inst/cmake/DD4hepConfig.cmake:49 (FIND_DEPENDENCY)
+  CMakeLists.txt:47 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /home/sss/fcc/soft/inst/cmake/DD4hepConfig.cmake:49 (FIND_DEPENDENCY)
+  CMakeLists.txt:47 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+```
+
+Get rid of these by switching the CMP0144 and CMP0167 policies to NEW.
