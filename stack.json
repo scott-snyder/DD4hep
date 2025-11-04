@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "7dbedc832ce226b365a5a63235ae71d0a8d9b37e",
-  "head": "64bf2ecb7d39c70ffdc1a0766d4e933acec6e034",
+  "prev": "258a2fa209907bba389de5d7a8ca5045e91032b7",
+  "head": "0865ac2994753db189188ea1205fff7e0d4a9534",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -18,11 +18,20 @@
     "argpassing",
     "ub",
     "cmakewarn",
-    "typo"
+    "typo",
+    "nosystem",
+    "actswarn",
+    "actswarn2"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
+    "actswarn": {
+      "oid": "caf44c84467a2fa3eb95de36ae97d70081cc4798"
+    },
+    "actswarn2": {
+      "oid": "0865ac2994753db189188ea1205fff7e0d4a9534"
+    },
     "argpassing": {
       "oid": "43e64b91edb9259dd95b84fb3e794279c0395f17"
     },
@@ -55,6 +64,9 @@
     },
     "instdel": {
       "oid": "50c5c4a8527afbedb3214a774cf9867304788738"
+    },
+    "nosystem": {
+      "oid": "e7de01dd8545e941c1bd0a18781fc6898eb1a4b4"
     },
     "nullPlacement": {
       "oid": "f26d0310064ea31bcae30bc4490c62bc3dc108fe"
