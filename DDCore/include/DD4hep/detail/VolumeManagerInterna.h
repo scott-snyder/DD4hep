@@ -30,6 +30,8 @@
 // ROOT include files
 #include <TGeoMatrix.h>
 
+#include <unordered_map>
+
 /// Namespace for the AIDA detector description toolkit
 namespace dd4hep {
 
@@ -69,7 +71,7 @@ namespace dd4hep {
       /// The volume managers for the individual subdetector elements
       std::map<VolumeID, VolumeManager>         managers;
       /// The container of placements managed by this instance
-      std::map<VolumeID, VolumeManagerContext*> volumes;
+      std::unordered_map<VolumeID, VolumeManagerContext*> volumes;
       /// The Detector element handle managed by this instance
       DetElement             detector;
       /// The ID descriptor object
