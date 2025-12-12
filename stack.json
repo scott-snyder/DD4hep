@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "709007aa4677652096d6dfb8591f9eeeead9a2df",
-  "head": "a79ce42e30f76479d5545801d3ff8193598ad2b1",
+  "prev": "9094861e9971ec6ec607154d7bc9d4ef9f9fd890",
+  "head": "1d56ab1f75b7d8185cf7de05cf9947cbb9b0ad49",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -26,7 +26,8 @@
     "symlink",
     "shapetest",
     "volmanUOMap",
-    "warn"
+    "warn",
+    "gcc16warn"
   ],
   "unapplied": [],
   "hidden": [],
@@ -69,6 +70,9 @@
     },
     "gaudiPytest": {
       "oid": "9b8eb7146d2c89b571cf515b3bdc4c1f76ddf9f8"
+    },
+    "gcc16warn": {
+      "oid": "1d56ab1f75b7d8185cf7de05cf9947cbb9b0ad49"
     },
     "instdel": {
       "oid": "50c5c4a8527afbedb3214a774cf9867304788738"
