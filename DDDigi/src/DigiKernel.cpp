@@ -176,6 +176,11 @@ public:
   }
 };
 
+#if __GNUC__ >= 16
+// From cyclic dependency
+# pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+#endif
+
 /// Standard constructor
 DigiKernel::DigiKernel(Detector& description_ref)
   : DigiAction(*this, "DigiKernel"), m_detDesc(&description_ref)
