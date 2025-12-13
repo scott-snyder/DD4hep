@@ -11,6 +11,10 @@
 //
 //==========================================================================
 
+#if __GNUC__ >= 16
+#pragma GCC optimize "-fno-var-tracking-assignments"
+#endif
+
 // Framework include files
 #include <XML/XMLElements.h>
 #ifndef __TIXML__
