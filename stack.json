@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "5c46795283f881f528bd7fd81fcdcdb58ca15ee3",
-  "head": "fd18db8d13fd577b97b17002783faa0ed0ff8697",
+  "prev": "4de2c1f5ba91fcc423bb86536859619526dceef1",
+  "head": "c79eb0c29791889c291926f64ef54d70eb0d2c67",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -29,8 +29,7 @@
     "warn",
     "gcc16warn",
     "gcc16-xxx",
-    "vartrack",
-    "refresh-temp"
+    "vartrack"
   ],
   "unapplied": [],
   "hidden": [],
@@ -95,9 +94,6 @@
     "pyvers": {
       "oid": "1609180be7d9c5649b1ecd0c7fab31e58983256f"
     },
-    "refresh-temp": {
-      "oid": "fd18db8d13fd577b97b17002783faa0ed0ff8697"
-    },
     "shapetest": {
       "oid": "ebdcfd41d1b7df0bccd0fe318487731925164a69"
     },
@@ -111,7 +107,7 @@
       "oid": "4e9d7e3df7edb1a2f6ba36b7dc4e538bcbfa84cb"
     },
     "vartrack": {
-      "oid": "c10dc452372602b2429f2cf2af27792993e342f2"
+      "oid": "c79eb0c29791889c291926f64ef54d70eb0d2c67"
     },
     "volmanUOMap": {
       "oid": "fe538a4d4dbe766aff6c0dbce355eecd74ced30d"
