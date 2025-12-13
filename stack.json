@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "3085582f639cb64b24ad098c504cd5a87db3953a",
-  "head": "c402e270a932d5fbbf83b6c7b4ab80f8cba67d05",
+  "prev": "8056ac8a26d9665e0683ba755d9ac1913b6c6065",
+  "head": "c10dc452372602b2429f2cf2af27792993e342f2",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -28,7 +28,8 @@
     "volmanUOMap",
     "warn",
     "gcc16warn",
-    "gcc16-xxx"
+    "gcc16-xxx",
+    "vartrack"
   ],
   "unapplied": [],
   "hidden": [],
@@ -104,6 +105,9 @@
     },
     "ub": {
       "oid": "4e9d7e3df7edb1a2f6ba36b7dc4e538bcbfa84cb"
+    },
+    "vartrack": {
+      "oid": "c10dc452372602b2429f2cf2af27792993e342f2"
     },
     "volmanUOMap": {
       "oid": "fe538a4d4dbe766aff6c0dbce355eecd74ced30d"
