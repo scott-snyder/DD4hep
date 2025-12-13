@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "8056ac8a26d9665e0683ba755d9ac1913b6c6065",
-  "head": "c10dc452372602b2429f2cf2af27792993e342f2",
+  "prev": "5c46795283f881f528bd7fd81fcdcdb58ca15ee3",
+  "head": "fd18db8d13fd577b97b17002783faa0ed0ff8697",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -29,7 +29,8 @@
     "warn",
     "gcc16warn",
     "gcc16-xxx",
-    "vartrack"
+    "vartrack",
+    "refresh-temp"
   ],
   "unapplied": [],
   "hidden": [],
@@ -93,6 +94,9 @@
     },
     "pyvers": {
       "oid": "1609180be7d9c5649b1ecd0c7fab31e58983256f"
+    },
+    "refresh-temp": {
+      "oid": "fd18db8d13fd577b97b17002783faa0ed0ff8697"
     },
     "shapetest": {
       "oid": "ebdcfd41d1b7df0bccd0fe318487731925164a69"
