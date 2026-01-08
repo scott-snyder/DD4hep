@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "4de2c1f5ba91fcc423bb86536859619526dceef1",
-  "head": "c79eb0c29791889c291926f64ef54d70eb0d2c67",
-  "applied": [
+  "prev": "60e3d34987859ec2b00cf807574f29772d5541f4",
+  "head": "e369490a18a9857d5a61771f340c1791e8f9f7a3",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -31,7 +32,6 @@
     "gcc16-xxx",
     "vartrack"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "actswarn": {
