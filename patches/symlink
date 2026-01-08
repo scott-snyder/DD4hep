@@ -1,9 +1,0 @@
-Bottom: a1c92cf0c89e44ee3166e8bd190f7c958cb91131
-Top:    a1c92cf0c89e44ee3166e8bd190f7c958cb91131
-Author: sss <sss@karma>
-Date:   2026-01-08 16:40:22 -0500
-
-Work with CMAKE_INSTALL_MODE=ABS_SYMLINK
-
-If we do installation by symlinking, scripts in the reco need to have
-execute permission.
