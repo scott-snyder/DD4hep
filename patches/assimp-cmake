@@ -1,7 +1,7 @@
-Bottom: 890617b08ed3810314b2d580ae72acfe60752652
-Top:    c6e05125afa1c57d619f969d19d84c362572c214
+Bottom: 99fdd374eee506d35e5c6afdac37249fb4cb46f8
+Top:    8be8b48508a34a68230559ac3d662902b520edf0
 Author: scott snyder <sss@karma>
-Date:   2025-11-04 15:44:08 -0500
+Date:   2026-01-08 16:40:22 -0500
 
 Fix cmake problem with assimp.
 
