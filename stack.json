@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "1697aa19c4820ca3785116f5ed0733b806fb5bad",
+  "prev": "d9a1c56a8bb93722ad83ae8cea0d25a40ce9dbe4",
   "head": "58912056f3dc0871506cf7900406227477997751",
   "applied": [
     "assimp-cmake",
@@ -29,7 +29,7 @@
     "gcc16-xxx",
     "vartrack",
     "podio",
-    "symlink.DD4hep"
+    "symlink"
   ],
   "unapplied": [],
   "hidden": [],
@@ -100,7 +100,7 @@
     "shapetest": {
       "oid": "03a63029ff361654b9cc283636e1a970ca21a948"
     },
-    "symlink.DD4hep": {
+    "symlink": {
       "oid": "58912056f3dc0871506cf7900406227477997751"
     },
     "typo": {
