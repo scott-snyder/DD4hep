@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "d21cbffacea5456cd83fc84a114d92a19eddaecf",
-  "head": "a398011660cc5ba539d1353d7a5c357f7fe46f1f",
+  "prev": "1697aa19c4820ca3785116f5ed0733b806fb5bad",
+  "head": "58912056f3dc0871506cf7900406227477997751",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -28,7 +28,8 @@
     "gcc16warn",
     "gcc16-xxx",
     "vartrack",
-    "podio"
+    "podio",
+    "symlink.DD4hep"
   ],
   "unapplied": [],
   "hidden": [],
@@ -98,6 +99,9 @@
     },
     "shapetest": {
       "oid": "03a63029ff361654b9cc283636e1a970ca21a948"
+    },
+    "symlink.DD4hep": {
+      "oid": "58912056f3dc0871506cf7900406227477997751"
     },
     "typo": {
       "oid": "0be0fc36213b195b50270162fca37057b7fcf2f8"
