@@ -1,0 +1,6 @@
+Bottom: 2b36210472fcd660db79d13476e8dde561eae1fc
+Top:    2b36210472fcd660db79d13476e8dde561eae1fc
+Author: sss <sss@karma>
+Date:   2026-01-08 20:24:06 -0500
+
+Don't search for old podio version.  Avoids a cmake warning.

@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "c6f1e75063736161840560fc51688cb33408dc6d",
-  "head": "1f93835ff7a1d0ac9a7236ece18a72db087cbcc1",
+  "prev": "d5f62c36bc77d964c7b2005a8b82a778cd3f5e93",
+  "head": "7a35d3f56e0b30c4fbc898d7d1cda17f839cb5b2",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -27,7 +27,8 @@
     "volmanUOMap",
     "gcc16warn",
     "gcc16-xxx",
-    "vartrack"
+    "vartrack",
+    "podio"
   ],
   "unapplied": [],
   "hidden": [],
@@ -85,6 +86,9 @@
     },
     "nullPlacement": {
       "oid": "99bb628aafe6aa7161f09400142ec52d2c6796a1"
+    },
+    "podio": {
+      "oid": "7a35d3f56e0b30c4fbc898d7d1cda17f839cb5b2"
     },
     "pydepr": {
       "oid": "bf2ffb1641d9234831d6dbea4de16ee0ffd482ec"
