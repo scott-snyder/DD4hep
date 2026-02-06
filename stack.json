@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "6fcd374bf3a72bb0401f60e781ca7c5889e62ba8",
-  "head": "9978058a009b283a45d405d41e9611672864ea69",
+  "prev": "3a95904164298b2b2fd57a4978471a84ee218efc",
+  "head": "5cc9bc20bc452ffc83d3f5359885a983dbacb103",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -28,7 +28,6 @@
     "gcc16warn",
     "gcc16-xxx",
     "vartrack",
-    "podio",
     "symlink"
   ],
   "unapplied": [],
@@ -88,9 +87,6 @@
     "nullPlacement": {
       "oid": "ca749062c32e861218d6a6ea82f3b7bb625156b6"
     },
-    "podio": {
-      "oid": "698ddd64927a32db38bc32c91a34d44c02f6eb2a"
-    },
     "pydepr": {
       "oid": "386b8501d1020acb292da4aff64472f1b21a2d67"
     },
@@ -101,7 +97,7 @@
       "oid": "99e63bc1dd1aa4bb2dbe3fc72ac89929a8f6c6c6"
     },
     "symlink": {
-      "oid": "9978058a009b283a45d405d41e9611672864ea69"
+      "oid": "5cc9bc20bc452ffc83d3f5359885a983dbacb103"
     },
     "typo": {
       "oid": "91385854c101f8d714d8974312264fe12814df1e"
