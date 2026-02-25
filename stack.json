@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "e920495f301b3eec07dcc177718d049b86aad87c",
-  "head": "4bc17d775404bd5171808c5284a4b327185126b9",
-  "applied": [
+  "prev": "be7f46c021b42f21c868fd8680aa785f299d693c",
+  "head": "10610a5e9ba0905ff0ada26485c80d8d7558d000",
+  "applied": [],
+  "unapplied": [
     "assimp-cmake",
     "depr",
     "doc",
@@ -29,7 +30,6 @@
     "symlink",
     "cxx23"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "actswarn": {
