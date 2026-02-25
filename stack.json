@@ -1,10 +1,9 @@
 {
   "version": 5,
-  "prev": "687959a558572590212b40d5d55a0dc168081bd0",
-  "head": "50a8ad5b659804c28d946bf5d2c8ee6c1373dbaf",
+  "prev": "0809c67930f106b8daa982513c177854a1477146",
+  "head": "a5df0d8eda08bc020dd09868e79700439fc9292e",
   "applied": [
-    "except",
-    "refresh-temp"
+    "except"
   ],
   "unapplied": [
     "assimp-cmake",
@@ -68,7 +67,7 @@
       "oid": "48f74899231bdbe41314e1bd202357d305d73bcb"
     },
     "except": {
-      "oid": "9b34f6c34ba3f71b20adb5afb84054f82fa280ee"
+      "oid": "a5df0d8eda08bc020dd09868e79700439fc9292e"
     },
     "gaudiPytest": {
       "oid": "2050e93d87f4b139e88ea635212c1e51d2f71665"
@@ -90,9 +89,6 @@
     },
     "pyvers": {
       "oid": "d29bc00b6194863892f60728c40d06847926f37a"
-    },
-    "refresh-temp": {
-      "oid": "50a8ad5b659804c28d946bf5d2c8ee6c1373dbaf"
     },
     "shapetest": {
       "oid": "73e6f0ab8f07d8808cde6330db0b1c0f8404fbfc"
