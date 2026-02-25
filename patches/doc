@@ -1,6 +1,6 @@
-Bottom: 5097c41733b195c352117556bb5f849c10820fb8
-Top:    52109815d5c953914bcd04d9a33cde4048b46fe5
+Bottom: fdd821aa50f7b50ae492c01000e3d42416a5268a
+Top:    12cdaaa7187c112c88a069e9055cec0bc5cee352
 Author: scott snyder <sss@karma>
-Date:   2026-02-05 21:12:27 -0500
+Date:   2026-02-25 17:27:01 -0500
 
 Fix latex package order issue.
