@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "0809c67930f106b8daa982513c177854a1477146",
-  "head": "a5df0d8eda08bc020dd09868e79700439fc9292e",
+  "prev": "0002e51002f3d4f465b4eea0f767232fb4219045",
+  "head": "07bdaca9ab0bc8dcfe9704c18d6f1a3977dea65e",
   "applied": [
     "except"
   ],
@@ -67,7 +67,7 @@
       "oid": "48f74899231bdbe41314e1bd202357d305d73bcb"
     },
     "except": {
-      "oid": "a5df0d8eda08bc020dd09868e79700439fc9292e"
+      "oid": "07bdaca9ab0bc8dcfe9704c18d6f1a3977dea65e"
     },
     "gaudiPytest": {
       "oid": "2050e93d87f4b139e88ea635212c1e51d2f71665"
