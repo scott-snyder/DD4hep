@@ -1,8 +1,10 @@
 {
   "version": 5,
-  "prev": "be7f46c021b42f21c868fd8680aa785f299d693c",
-  "head": "10610a5e9ba0905ff0ada26485c80d8d7558d000",
-  "applied": [],
+  "prev": "970999fca04396a9e305434f870fdf629b4bb3c9",
+  "head": "9b34f6c34ba3f71b20adb5afb84054f82fa280ee",
+  "applied": [
+    "except"
+  ],
   "unapplied": [
     "assimp-cmake",
     "depr",
@@ -12,7 +14,6 @@
     "gaudiPytest",
     "duckvers",
     "instdel",
-    "except",
     "clang",
     "argpassing",
     "ub",
@@ -66,7 +67,7 @@
       "oid": "48f74899231bdbe41314e1bd202357d305d73bcb"
     },
     "except": {
-      "oid": "5893f4dba276b88fa3b9a5ffd226bfa9559163c6"
+      "oid": "9b34f6c34ba3f71b20adb5afb84054f82fa280ee"
     },
     "gaudiPytest": {
       "oid": "2050e93d87f4b139e88ea635212c1e51d2f71665"
