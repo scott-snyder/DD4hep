@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "457c8be8ae8eb8c1859ac68fe2a229a570d1d97f",
-  "head": "3796908945bd4bf0d512f24e21fcaf334c34c9c3",
+  "prev": "91a63bf2498ef5a4e98f4ccbcd2f6684939038fa",
+  "head": "22e0d386a9a56121efd5a3b46cea8f68b2780432",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -13,7 +13,6 @@
     "instdel",
     "except",
     "clang",
-    "cxx23",
     "argpassing",
     "ub",
     "cmakewarn",
@@ -29,17 +28,19 @@
     "vartrack",
     "symlink"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "cxx23"
+  ],
   "hidden": [],
   "patches": {
     "actswarn": {
-      "oid": "cb1caa7258d578d3c7168c6ab0f5cc7fac9c8d1a"
+      "oid": "55ce389e5ee23b9e1970fc10dab49b5aa5caa0a0"
     },
     "actswarn2": {
-      "oid": "b161c4fd9f6efc21ad0f22df09e8a99b96de8264"
+      "oid": "a975808057f56053d7a03f6254f97c430064bfb8"
     },
     "argpassing": {
-      "oid": "f49a88d20613c235d5823febf0b217a640b66e4b"
+      "oid": "34e6458022e86d5f06cb2b31dbcde15b9007c7c8"
     },
     "assimp-cmake": {
       "oid": "f8437cac9717f0609e8cea87d23016be37430ae5"
@@ -48,10 +49,10 @@
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
     },
     "cmakewarn": {
-      "oid": "89522f6fcbc85e4415e908991cb294d2e2a1f435"
+      "oid": "18071f2a98e0bc2e735ddff9f1051a4e36b232c5"
     },
     "constSel": {
-      "oid": "0e360d6d15996955fd4cd77c57000e6dbef33ed8"
+      "oid": "8689c6c2e46b007e14f959417ce2a687b5aa4fe1"
     },
     "cxx23": {
       "oid": "67676e82f9a69dc2098f565f8dab09387882e3c5"
@@ -72,16 +73,16 @@
       "oid": "2050e93d87f4b139e88ea635212c1e51d2f71665"
     },
     "gcc16-xxx": {
-      "oid": "ba9fcd039c6a4f5cdc7ec8bfb1b3d78b48b8dc7c"
+      "oid": "45fc7865ed6846908494c91cfdd44f4f3cc0afe0"
     },
     "gcc16warn": {
-      "oid": "87762687c85ebbc16d09322ca6b3a310d70dadbe"
+      "oid": "3ba674ead9edb9bedc6debdc3117fb4f1368dfbe"
     },
     "instdel": {
       "oid": "051bb6f2df88befdf9b2708f9405f8d53a5a43a3"
     },
     "nosystem": {
-      "oid": "7dee052a6b24131603c60204eaa0b9a00428dc4e"
+      "oid": "66568e111e88b5e1f622664b1d46bad51460a89a"
     },
     "nullPlacement": {
       "oid": "15053e1904548856c4ffbb1f406060e711dd5b14"
@@ -90,22 +91,22 @@
       "oid": "d29bc00b6194863892f60728c40d06847926f37a"
     },
     "shapetest": {
-      "oid": "df1fde91cd989f53865663eed2dad6eddfe629f3"
+      "oid": "73e6f0ab8f07d8808cde6330db0b1c0f8404fbfc"
     },
     "symlink": {
-      "oid": "3796908945bd4bf0d512f24e21fcaf334c34c9c3"
+      "oid": "22e0d386a9a56121efd5a3b46cea8f68b2780432"
     },
     "typo": {
-      "oid": "5a01c83edce48b65ce9dddd3c807c39715ba4b7a"
+      "oid": "eb96bcfb81a78ecaa7397206b1f833455813c473"
     },
     "ub": {
-      "oid": "8c5bb246bf723fe09cea4dc736f1ae14484a40a1"
+      "oid": "14ab685b8a2b56d3cd9617bdb0059a777356dc18"
     },
     "vartrack": {
-      "oid": "36e4363e924615c3563ccaa31aa505dac6a5651f"
+      "oid": "d7817d8d126d31bee749dbc159d5595b9e00a958"
     },
     "volmanUOMap": {
-      "oid": "c252925b0862fd329a76e4116395a139862787ae"
+      "oid": "2da9db23706661e12bf98374037e0ad00fbdeeda"
     }
   }
 }
