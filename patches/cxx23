@@ -1,7 +1,7 @@
 Bottom: 24495867a6941c0abe2de0df7222b60d99373415
 Top:    a4691a89f2e76f255b499d7025a2888cee1ab9b8
 Author: sss <sss@karma>
-Date:   2026-02-25 17:49:11 -0500
+Date:   2026-02-25 18:06:06 -0500
 
 Fix compilation with C++23.
 
@@ -11,3 +11,18 @@ from a non-const pair, then the move constructor can be called
 instead of the copy constructor, with OBJECT=OpaqueDataBlock&.
 Since that's a reference type, the new expression then won't compile.
 Fix by adding an OpaqueDataBlock ctor taking a non-const reference.
+
+Symptom is these warnings:
+
+```
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h: In member function
+ ‘T& dd4hep::OpaqueDataBlock::bind(T&&) [with T = dd4hep::OpaqueDataBlock]’:
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:208:35: warning: infinite recursion detected [-Winfinite-recursion]
+  208 |   template <typename T> inline T& OpaqueDataBlock::bind(T&& obj)   {
+      |                                   ^~~~~~~~~~~~~~~
+In constructor ‘dd4hep::OpaqueDataBlock::OpaqueDataBlock(OBJECT&&) [with OBJECT = dd4hep::OpaqueDataBlock]’,
+    inlined from ‘T& dd4hep::OpaqueDataBlock::bind(T&&) [with T = dd4hep::OpaqueDataBlock]’ at /home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:210:14:
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:188:9: note: recursive call
+  188 |     bind(std::move(obj));
+      |     ~~~~^~~~~~~~~~~~~~~~
+```

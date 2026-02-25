@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "91a63bf2498ef5a4e98f4ccbcd2f6684939038fa",
+  "prev": "0ef92be50e41360d4a8f2d3d5b0e3c3fa2b07c4f",
   "head": "22e0d386a9a56121efd5a3b46cea8f68b2780432",
   "applied": [
     "assimp-cmake",
@@ -55,7 +55,7 @@
       "oid": "8689c6c2e46b007e14f959417ce2a687b5aa4fe1"
     },
     "cxx23": {
-      "oid": "67676e82f9a69dc2098f565f8dab09387882e3c5"
+      "oid": "a38c866015406ce6dd24506d7cb177cbf69eb9db"
     },
     "depr": {
       "oid": "aa695451dc3cf2498b67a63e40a940ff4862a93b"
