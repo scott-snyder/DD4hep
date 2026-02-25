@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "2601a4cf8266ce46d72cae63827eaee9d29ebefc",
+  "prev": "457c8be8ae8eb8c1859ac68fe2a229a570d1d97f",
   "head": "3796908945bd4bf0d512f24e21fcaf334c34c9c3",
   "applied": [
     "assimp-cmake",
@@ -29,9 +29,7 @@
     "vartrack",
     "symlink"
   ],
-  "unapplied": [
-    "pydepr"
-  ],
+  "unapplied": [],
   "hidden": [],
   "patches": {
     "actswarn": {
@@ -87,9 +85,6 @@
     },
     "nullPlacement": {
       "oid": "15053e1904548856c4ffbb1f406060e711dd5b14"
-    },
-    "pydepr": {
-      "oid": "13176ddbecc1490cbb59beab2d364861a6785bc0"
     },
     "pyvers": {
       "oid": "d29bc00b6194863892f60728c40d06847926f37a"
