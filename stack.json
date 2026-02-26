@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "667c0a76788027cb358539e169533872fccac05b",
+  "prev": "efc24fc50c19973a087b6c453ca5f3581e5d9603",
   "head": "4e71592e758c5a37d34e74cbbdda0681f61d1970",
   "applied": [
     "except",
@@ -15,7 +15,6 @@
     "gaudiPytest",
     "duckvers",
     "instdel",
-    "argpassing",
     "ub",
     "cmakewarn",
     "typo",
@@ -39,9 +38,6 @@
     },
     "actswarn2": {
       "oid": "a975808057f56053d7a03f6254f97c430064bfb8"
-    },
-    "argpassing": {
-      "oid": "34e6458022e86d5f06cb2b31dbcde15b9007c7c8"
     },
     "assimp-cmake": {
       "oid": "f8437cac9717f0609e8cea87d23016be37430ae5"
