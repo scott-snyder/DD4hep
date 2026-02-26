@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "efc24fc50c19973a087b6c453ca5f3581e5d9603",
+  "prev": "6c1d3543d55eb319190682905c8ac553e1786cbb",
   "head": "4e71592e758c5a37d34e74cbbdda0681f61d1970",
   "applied": [
     "except",
@@ -25,11 +25,11 @@
     "shapetest",
     "volmanUOMap",
     "gcc16-xxx",
-    "vartrack",
     "symlink",
     "cxx23"
   ],
   "hidden": [
+    "vartrack",
     "clang"
   ],
   "patches": {
