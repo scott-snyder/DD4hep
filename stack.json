@@ -1,9 +1,10 @@
 {
   "version": 5,
-  "prev": "0002e51002f3d4f465b4eea0f767232fb4219045",
-  "head": "07bdaca9ab0bc8dcfe9704c18d6f1a3977dea65e",
+  "prev": "5fe7a5d7c7cd9a0706ada23f65b9a6617f0b68c7",
+  "head": "4e71592e758c5a37d34e74cbbdda0681f61d1970",
   "applied": [
-    "except"
+    "except",
+    "gcc16warn"
   ],
   "unapplied": [
     "assimp-cmake",
@@ -25,7 +26,6 @@
     "constSel",
     "shapetest",
     "volmanUOMap",
-    "gcc16warn",
     "gcc16-xxx",
     "vartrack",
     "symlink",
@@ -76,7 +76,7 @@
       "oid": "45fc7865ed6846908494c91cfdd44f4f3cc0afe0"
     },
     "gcc16warn": {
-      "oid": "3ba674ead9edb9bedc6debdc3117fb4f1368dfbe"
+      "oid": "4e71592e758c5a37d34e74cbbdda0681f61d1970"
     },
     "instdel": {
       "oid": "051bb6f2df88befdf9b2708f9405f8d53a5a43a3"
