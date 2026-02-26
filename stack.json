@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "5fe7a5d7c7cd9a0706ada23f65b9a6617f0b68c7",
+  "prev": "667c0a76788027cb358539e169533872fccac05b",
   "head": "4e71592e758c5a37d34e74cbbdda0681f61d1970",
   "applied": [
     "except",
@@ -15,7 +15,6 @@
     "gaudiPytest",
     "duckvers",
     "instdel",
-    "clang",
     "argpassing",
     "ub",
     "cmakewarn",
@@ -31,7 +30,9 @@
     "symlink",
     "cxx23"
   ],
-  "hidden": [],
+  "hidden": [
+    "clang"
+  ],
   "patches": {
     "actswarn": {
       "oid": "55ce389e5ee23b9e1970fc10dab49b5aa5caa0a0"
