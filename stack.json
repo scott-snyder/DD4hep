@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "85675e352337ad31808d169cc63ab04d83aed18d",
-  "head": "c2fc37e8a1ee9c7d15383f27518d1a66180133b4",
+  "prev": "4ca6270c0392a2023d9aba021ae645e20d73374e",
+  "head": "ad6a89b4a587d45ca74db6d577c29811534be990",
   "applied": [
     "except",
     "gcc16warn",
@@ -24,11 +24,10 @@
     "volmanUOMap",
     "gcc16-xxx",
     "symlink",
-    "cxx23"
-  ],
-  "unapplied": [
+    "cxx23",
     "vartrack"
   ],
+  "unapplied": [],
   "hidden": [
     "clang"
   ],
@@ -100,7 +99,7 @@
       "oid": "fcb650b868c6dbfa3d324adecbcd8349f2585de6"
     },
     "vartrack": {
-      "oid": "d7817d8d126d31bee749dbc159d5595b9e00a958"
+      "oid": "ad6a89b4a587d45ca74db6d577c29811534be990"
     },
     "volmanUOMap": {
       "oid": "6c2bee819774616cda325b76065344fa37d04fb9"
