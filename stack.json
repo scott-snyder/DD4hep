@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "1118cb7749b29720c6a9f612f6c664bfa48edd99",
+  "prev": "85675e352337ad31808d169cc63ab04d83aed18d",
   "head": "c2fc37e8a1ee9c7d15383f27518d1a66180133b4",
   "applied": [
     "except",
@@ -26,9 +26,10 @@
     "symlink",
     "cxx23"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "vartrack"
+  ],
   "hidden": [
-    "vartrack",
     "clang"
   ],
   "patches": {
