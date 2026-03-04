@@ -1,15 +1,13 @@
 {
   "version": 5,
-  "prev": "7c03f0d8db066e2c20381a52a10c2e325483d6b2",
-  "head": "23136e55ee4bef7cc032d22e3fa7608823557560",
+  "prev": "5f6e7bf09b7a1605fbfe4ccadeaeed6ae67de9ee",
+  "head": "0e19047965e143750a95d930a601f3a7c54e89ac",
   "applied": [
     "except",
     "gcc16warn",
     "assimp-cmake",
     "depr",
-    "doc"
-  ],
-  "unapplied": [
+    "doc",
     "pyvers",
     "nullPlacement",
     "gaudiPytest",
@@ -29,15 +27,16 @@
     "cxx23",
     "vartrack"
   ],
+  "unapplied": [],
   "hidden": [
     "clang"
   ],
   "patches": {
     "actswarn": {
-      "oid": "dbf85a2ef76930051ff6ddb960b3b316ad1e852d"
+      "oid": "9616ae93e5c57253ae8f8c908d496c9dce5c8542"
     },
     "actswarn2": {
-      "oid": "67a39f5dd7e5865525b44c636fd48795d1ab3f20"
+      "oid": "80db31ebcf0d815400b8bc6232412857e7277164"
     },
     "assimp-cmake": {
       "oid": "86bd4386bc3ccf72d31bd7fe84b317d2863d8f35"
@@ -46,13 +45,13 @@
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
     },
     "cmakewarn": {
-      "oid": "6b252333850cab5e0e62ae90e0ff4e97ceed73ed"
+      "oid": "e84b3a08ac47f92775b6874283614884c84ebfda"
     },
     "constSel": {
-      "oid": "2c542ab7530efa8185e3286f995092d1559382e9"
+      "oid": "961b8ada24988e2c98453b09f4fed07573c09c34"
     },
     "cxx23": {
-      "oid": "c2fc37e8a1ee9c7d15383f27518d1a66180133b4"
+      "oid": "5ce1e837f13f441abef1828fbc54d4f869e120da"
     },
     "depr": {
       "oid": "eadc3acc7212621d1e7cbbf500bc4353e0c49c4a"
@@ -61,49 +60,49 @@
       "oid": "23136e55ee4bef7cc032d22e3fa7608823557560"
     },
     "duckvers": {
-      "oid": "4fcc9146048b277db18415cc822b1f608e226d2d"
+      "oid": "2af8bb20f665584014aaf8d8db5f96a8a34134bc"
     },
     "except": {
       "oid": "2150f0706e5e616b0adaa0d08bcd2d03fb4c3d96"
     },
     "gaudiPytest": {
-      "oid": "c16f54869a5465b03d403745043af46612517517"
+      "oid": "04ba71dcb84a4a9efeca5fe42759e16fbbeb736e"
     },
     "gcc16-xxx": {
-      "oid": "ff7e56f1f505f334cf4b1a53616a41f7cac166a0"
+      "oid": "a14154200d99f886edd0a442b64b0289834e468c"
     },
     "gcc16warn": {
       "oid": "55462268846e7b170238fe64703316409b8f6236"
     },
     "instdel": {
-      "oid": "41bbc1f2c44a400fd185ba44d94d59ddec8a27df"
+      "oid": "b48d45dc27efb05d4de26459c729d972ec4c339f"
     },
     "nosystem": {
-      "oid": "60df77b016f2e2ea5ed85579dca6e4734ad15153"
+      "oid": "5a7c7bca99b915e018f5090bb5e367d8e3a0e75f"
     },
     "nullPlacement": {
-      "oid": "7337a6699246ad77ffb12cc0c2a636c4e9b5b39a"
+      "oid": "6cbabe6dab42baa5d624d3b2fb7fb08a5d1c78e0"
     },
     "pyvers": {
-      "oid": "c1e53997c81568c35d0bd165661e2fa7fea2d953"
+      "oid": "2b5fe9c5893e24b12c0a904abdb50900a0088c43"
     },
     "shapetest": {
-      "oid": "9ae141437f3238c286d835978a6f0ff97e40b735"
+      "oid": "c5a8ecf8747d92c8421fb88626e9fb86b98f3fa3"
     },
     "symlink": {
-      "oid": "4a74262035daa30f3c8a89290e058d5e2d94c441"
+      "oid": "f09a80a0b9eb741996fa9af850af63429db8c16c"
     },
     "typo": {
-      "oid": "ade46d26fc859591e0262d8a45453702b14d5c13"
+      "oid": "17b843a312ee3b95c31654dc36a58aef6de788bd"
     },
     "ub": {
-      "oid": "fcb650b868c6dbfa3d324adecbcd8349f2585de6"
+      "oid": "f90ca3d7b94c9691baad7e83fbf4ec8d2d636677"
     },
     "vartrack": {
-      "oid": "ad6a89b4a587d45ca74db6d577c29811534be990"
+      "oid": "0e19047965e143750a95d930a601f3a7c54e89ac"
     },
     "volmanUOMap": {
-      "oid": "6c2bee819774616cda325b76065344fa37d04fb9"
+      "oid": "12bed63456651624dd30e9ce680eb4f0ff9380fa"
     }
   }
 }
