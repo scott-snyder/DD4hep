@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "4ca6270c0392a2023d9aba021ae645e20d73374e",
-  "head": "ad6a89b4a587d45ca74db6d577c29811534be990",
-  "applied": [
+  "prev": "1bedd85b601f265be2de47f7ba07dfd2d416029b",
+  "head": "10610a5e9ba0905ff0ada26485c80d8d7558d000",
+  "applied": [],
+  "unapplied": [
     "except",
     "gcc16warn",
     "assimp-cmake",
@@ -27,7 +28,6 @@
     "cxx23",
     "vartrack"
   ],
-  "unapplied": [],
   "hidden": [
     "clang"
   ],
