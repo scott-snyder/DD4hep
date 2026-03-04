@@ -1,0 +1,9 @@
+Bottom: 6b5ee795b0dfb8da13892585cac3c38b5880f968
+Top:    f95199ecb60bad51eb8e0e83c9c92dc74565e99c
+Author: scott snyder <sss@karma>
+Date:   2026-02-25 21:53:14 -0500
+
+Fix cmake problem with assimp.
+
+The system assimp cmake setup works only for Release builds.
+Hack to make it work for RelWithDebInfo as well.

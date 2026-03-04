@@ -1,0 +1,22 @@
+Bottom: 9611482ebb27d36fdd4a4a38b9fdbac7ccd5d4f9
+Top:    f7c3baedc7540507c9d5a82e4da9991a2875f194
+Author: sss <sss@karma>
+Date:   2026-02-25 21:53:14 -0500
+
+Fix undefined behavior.
+
+Referencing argv[0] is undefined if argv is empty.
+Fixed.
+Also clean up the previous line
+
+```
+      argv.emplace_back(&((*i)[0]));
+```
+
+to use data() instead:
+
+```
+      argv.emplace_back(i->data());
+```
+
+which is much more readable.

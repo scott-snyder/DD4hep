@@ -1,9 +1,0 @@
-<lccdd>
-
-  <info name="NS" title="NS" author="Test" url="https://cern.ch" status="development" version="1.0">
-    <comment>
-      Memory leak demonstrator
-    </comment>
-  </info>
-
-</lccdd>

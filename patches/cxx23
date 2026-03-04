@@ -1,0 +1,28 @@
+Bottom: 488a607cc5b554e091ba140b6d1a4b43ee1f6d39
+Top:    701507e993bf0a8c6edf822f4c263ce8946f198c
+Author: sss <sss@karma>
+Date:   2026-02-25 21:53:14 -0500
+
+Fix compilation with C++23.
+
+P2321R2 adds a pair<> constructor taking a non-const reference.
+In that case, when we contruct a pair involving OpaqueDataBlock
+from a non-const pair, then the move constructor can be called
+instead of the copy constructor, with OBJECT=OpaqueDataBlock&.
+Since that's a reference type, the new expression then won't compile.
+Fix by adding an OpaqueDataBlock ctor taking a non-const reference.
+
+Symptom is these warnings:
+
+```
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h: In member function
+ ‘T& dd4hep::OpaqueDataBlock::bind(T&&) [with T = dd4hep::OpaqueDataBlock]’:
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:208:35: warning: infinite recursion detected [-Winfinite-recursion]
+  208 |   template <typename T> inline T& OpaqueDataBlock::bind(T&& obj)   {
+      |                                   ^~~~~~~~~~~~~~~
+In constructor ‘dd4hep::OpaqueDataBlock::OpaqueDataBlock(OBJECT&&) [with OBJECT = dd4hep::OpaqueDataBlock]’,
+    inlined from ‘T& dd4hep::OpaqueDataBlock::bind(T&&) [with T = dd4hep::OpaqueDataBlock]’ at /home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:210:14:
+/home/sss/fcc/soft/DD4hep/DDCore/include/DD4hep/OpaqueData.h:188:9: note: recursive call
+  188 |     bind(std::move(obj));
+      |     ~~~~^~~~~~~~~~~~~~~~
+```
