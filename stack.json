@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "a1d82e54219e8bc666d8a8a190b9a8941cab5ffd",
+  "prev": "5d793a375a54edf3b6351e05464895fa594105bd",
   "head": "d43469a777d0e71a53af8a8d80ce1afe9fad18d9",
   "applied": [
     "doc",
@@ -24,10 +24,9 @@
     "vartrack",
     "subdetVolman"
   ],
-  "unapplied": [
-    "depr"
-  ],
+  "unapplied": [],
   "hidden": [
+    "depr",
     "assimp-cmake",
     "clang"
   ],
