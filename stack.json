@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "c52a0a90053cd5fff0f3a7f7e674428fb52c2e9b",
-  "head": "647faf73b2ca2c86fe100c270f04a0351a091316",
+  "prev": "b718b781693b441cde8aa1ed1b73525ddf29609f",
+  "head": "6befec7a225419a4f4b90de749ac691f79d8229c",
   "applied": [
     "assimp-cmake",
     "depr",
@@ -23,7 +23,8 @@
     "gcc16-xxx",
     "symlink",
     "cxx23",
-    "vartrack"
+    "vartrack",
+    "subdetVolman"
   ],
   "unapplied": [],
   "hidden": [
@@ -80,6 +81,9 @@
     },
     "shapetest": {
       "oid": "60e4c0949a908db78fdd2be0ca799d74322ed293"
+    },
+    "subdetVolman": {
+      "oid": "6befec7a225419a4f4b90de749ac691f79d8229c"
     },
     "symlink": {
       "oid": "81539c78e3608e62f778a4bcff0b9596e3ddc222"
