@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "81e49fdfff7a81a3d650fa785a33b5edc5e34d25",
+  "prev": "1242bd3114d6e80e944d4d446ef49c63cef7e4ad",
   "head": "b9f563d19a0276752c659ba8c8fd88fa9e0a3258",
   "applied": [
     "doc",
@@ -23,10 +23,9 @@
     "vartrack",
     "subdetVolman"
   ],
-  "unapplied": [
-    "pyvers"
-  ],
+  "unapplied": [],
   "hidden": [
+    "pyvers",
     "depr",
     "assimp-cmake",
     "clang"
