@@ -1,11 +1,10 @@
 {
   "version": 5,
-  "prev": "1242bd3114d6e80e944d4d446ef49c63cef7e4ad",
-  "head": "b9f563d19a0276752c659ba8c8fd88fa9e0a3258",
+  "prev": "9f5dfe9535992d72f90553551c2bad89ac0bfc2d",
+  "head": "54e857b9d68d3e0cfc18c650969b604aa0c47d12",
   "applied": [
     "doc",
     "nullPlacement",
-    "gaudiPytest",
     "duckvers",
     "instdel",
     "ub",
@@ -23,7 +22,9 @@
     "vartrack",
     "subdetVolman"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "gaudiPytest"
+  ],
   "hidden": [
     "pyvers",
     "depr",
@@ -32,10 +33,10 @@
   ],
   "patches": {
     "actswarn": {
-      "oid": "8dddd93bb5862f0b7c6a0b35d63a2059c1f91f78"
+      "oid": "5c66308258357437d83c5c23e02a79e5b79d0104"
     },
     "actswarn2": {
-      "oid": "c61f6b393e757b4dfcdef7cf9850e6f513c4720f"
+      "oid": "ec0a1d18f27dcd131f58ee1dd50dd9f367a834a1"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
@@ -44,13 +45,13 @@
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
     },
     "cmakewarn": {
-      "oid": "6a8e5faea1390d5078efcc352522af694f635f47"
+      "oid": "3708f851f3528a262010613dcf90068953e89b6f"
     },
     "constSel": {
-      "oid": "ea297df1b768d13246a9532d722857906d4f3933"
+      "oid": "ad681933206fb6839f8e03b26e5b0943c635b820"
     },
     "cxx23": {
-      "oid": "c4904337bd24238f02104d962392e9ffa95dcddb"
+      "oid": "a1ef19d39d475afc8449477f74b621e618bd4e5c"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -59,19 +60,19 @@
       "oid": "2ebc29892154d28a2359ca9cbf6b94030b9a6208"
     },
     "duckvers": {
-      "oid": "0a4f66d2a732afb890aec1cc4cc260d5e75f3752"
+      "oid": "d246e96f6115e22bc2c73568fd252ca674664693"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "fb1b1f5a6f841cf6b35aea5ebf9a3f792af429d8"
+      "oid": "c0187e3ef0a8d1c01f6fe800d2488644b6052bab"
     },
     "instdel": {
-      "oid": "7a7779f452945430ec5f8422158cb2477d357c31"
+      "oid": "378e38c6d66503b606b8174807470b4acfa99f06"
     },
     "nosystem": {
-      "oid": "29bb6b19fa3baa8642b504aac364237bc56635bf"
+      "oid": "e8a8a344e63b332b50493758ed950c4d99183d5c"
     },
     "nullPlacement": {
       "oid": "83ca002cafea66651d9dc399ddbd4f7858f5d113"
@@ -80,25 +81,25 @@
       "oid": "c17eaeba2d7c3d0c9536c7a4ef0dafd934c268d6"
     },
     "shapetest": {
-      "oid": "0d581cfb51f6b6bf99dd415cf94cb110535ba3a1"
+      "oid": "93ff7ae82ec0d4bf7d18e0b32b0101ff529a4dad"
     },
     "subdetVolman": {
-      "oid": "b9f563d19a0276752c659ba8c8fd88fa9e0a3258"
+      "oid": "54e857b9d68d3e0cfc18c650969b604aa0c47d12"
     },
     "symlink": {
-      "oid": "0ef5bbd1e90abd06fe5e41f2ec8adb886c141a35"
+      "oid": "1322d447d3961da4fe61823c7738f2e3a0a98355"
     },
     "typo": {
-      "oid": "dcaf1817486e9bc10f110a13d2225c56211ff17d"
+      "oid": "cc04a8eb2b8dfbcf785e3ec54e6d9f9f13294282"
     },
     "ub": {
-      "oid": "9ae0cb9127fbb3057662e73ec9e3c8adc97cc73c"
+      "oid": "48ffbf1993144069e519074e227d1a8d9d2d8a6c"
     },
     "vartrack": {
-      "oid": "2056a452c9d1a5e3e9287527ea01cd8a16714f56"
+      "oid": "257e5e72ffe86a2aaf69499644f3ae3ba38f90ab"
     },
     "volmanUOMap": {
-      "oid": "ce7433708d28e37ffb59d096b36d6e40bc5b98e2"
+      "oid": "ffdad88d4bfcba0141155c1cae346a6d804aa02b"
     }
   }
 }
