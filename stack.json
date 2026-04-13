@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "1a06da9c89ebfa7cef24faef90c89e16b266bded",
-  "head": "d701e032d78933484519e7fb8316e2490d1786c7",
+  "prev": "115c65376e724334a4261ce4e083026d131795ae",
+  "head": "3568d99185754c0b2be7ead5af2158175f29b424",
   "applied": [
     "doc",
     "nullPlacement",
@@ -19,11 +19,10 @@
     "cxx23",
     "vartrack",
     "subdetVolman",
-    "duckvers"
-  ],
-  "unapplied": [
+    "duckvers",
     "gcc16-xxx"
   ],
+  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -66,7 +65,7 @@
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "277053fc7817560a59973d16382ccb2028a298f9"
+      "oid": "3568d99185754c0b2be7ead5af2158175f29b424"
     },
     "instdel": {
       "oid": "28752f895b5789a3960843f35034b16ab0724447"
