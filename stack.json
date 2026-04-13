@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "69c088cab22351f1a1ed178680bd5f3e4787494d",
-  "head": "4c9228415cb997c7bf9b61b901833286d6f0a024",
+  "prev": "3c223f793e0b860526e59604b8f01140d42d3828",
+  "head": "88e015eda14d047aae8003151fc319eba82b574f",
   "applied": [
     "typo",
     "subdetVolman",
@@ -19,11 +19,10 @@
     "gcc16-xxx",
     "cxx23",
     "actswarn",
-    "actswarn2"
-  ],
-  "unapplied": [
+    "actswarn2",
     "vartrack"
   ],
+  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -96,7 +95,7 @@
       "oid": "7f9337a86dee53607fc5c17aab0c52f55f2abe1b"
     },
     "vartrack": {
-      "oid": "62eee2c3dea35ec6caec0cb0eb9743406ee328dd"
+      "oid": "88e015eda14d047aae8003151fc319eba82b574f"
     },
     "volmanUOMap": {
       "oid": "60c0e47075237e110893086bcfa059e45adb799d"
