@@ -700,7 +700,7 @@ std::ostream& dd4hep::operator<<(std::ostream& os, const VolumeManager& mgr) {
   if (!(o.managers.empty() && o.volumes.empty()))
     os << std::endl;
   std::vector<std::pair<VolumeID, VolumeManagerContext*> > sorted (o.volumes.begin(), o.volumes.end());
-  std::ranges::sort (sorted);
+  std::sort (sorted.begin(), sorted.end());
   for ( const auto& i : sorted ) {
     const VolumeManagerContext* c = i.second;
     os << prefix
