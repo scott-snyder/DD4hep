@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "811f979c5e38ded76693284417e7af00b37ff5d6",
-  "head": "421d5ad695dab792fff20464fa608fed86b43b04",
+  "prev": "69c088cab22351f1a1ed178680bd5f3e4787494d",
+  "head": "4c9228415cb997c7bf9b61b901833286d6f0a024",
   "applied": [
     "typo",
     "subdetVolman",
@@ -15,14 +15,15 @@
     "shapetest",
     "volmanUOMap",
     "symlink",
-    "vartrack",
     "duckvers",
     "gcc16-xxx",
     "cxx23",
     "actswarn",
     "actswarn2"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "vartrack"
+  ],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -32,10 +33,10 @@
   ],
   "patches": {
     "actswarn": {
-      "oid": "e44df7df3310ee4bb87a617480f8399bb5c61189"
+      "oid": "225c9d9aaa8801a75bbf8c85db38b1cab05fd0cf"
     },
     "actswarn2": {
-      "oid": "421d5ad695dab792fff20464fa608fed86b43b04"
+      "oid": "4c9228415cb997c7bf9b61b901833286d6f0a024"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
@@ -50,7 +51,7 @@
       "oid": "73a17072380e30b8ec380ff3c7c4b0d0eba31cd6"
     },
     "cxx23": {
-      "oid": "d2b99301f5c6f4c8d11b724f0f7e2d7bed3ca381"
+      "oid": "1b3429b0a900214d5acde092ea65f87d491b89ae"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -59,13 +60,13 @@
       "oid": "ea3e22767897eb265a1f49c5529ee8b8389679b4"
     },
     "duckvers": {
-      "oid": "eadde4cc27312ef7745cdf86622e03c7ed849238"
+      "oid": "d605e8241d816a788f981ac9e7e4f61db5ba948f"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "60232f27f51a51fffb0c2a83520349c261d2ac5a"
+      "oid": "60079f0d252e913f2f0554b98af6f90d65cec4e7"
     },
     "instdel": {
       "oid": "f1768e82b33563c5a7cf413af892e259642727d0"
