@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "fd2d9202f89f6a4e3cafea5964b08603f8deda39",
-  "head": "e1176c054d60f0237cabead83bc51c4efd4c5295",
+  "prev": "538231298284e1f9c3db98fdd8bc775e3ef22474",
+  "head": "d11ecca23dec4506a3bf30a1b9995594e607101f",
   "applied": [
     "doc",
     "nullPlacement",
@@ -18,12 +18,11 @@
     "subdetVolman",
     "duckvers",
     "gcc16-xxx",
-    "cxx23"
-  ],
-  "unapplied": [
+    "cxx23",
     "actswarn",
     "actswarn2"
   ],
+  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -33,10 +32,10 @@
   ],
   "patches": {
     "actswarn": {
-      "oid": "4effd5ac75d0652e9ee28e7dfd5bbc1c85215f0b"
+      "oid": "6dcb1e27bc219380018b9509fcdd4fb2463647f2"
     },
     "actswarn2": {
-      "oid": "c6076953f26eb81ec15470d7c6d0a15331bc31cd"
+      "oid": "d11ecca23dec4506a3bf30a1b9995594e607101f"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
