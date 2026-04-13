@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "9f5dfe9535992d72f90553551c2bad89ac0bfc2d",
+  "prev": "bfddf24a798843364cb49132e33bf7d5cb4301a0",
   "head": "54e857b9d68d3e0cfc18c650969b604aa0c47d12",
   "applied": [
     "doc",
@@ -22,10 +22,9 @@
     "vartrack",
     "subdetVolman"
   ],
-  "unapplied": [
-    "gaudiPytest"
-  ],
+  "unapplied": [],
   "hidden": [
+    "gaudiPytest",
     "pyvers",
     "depr",
     "assimp-cmake",
