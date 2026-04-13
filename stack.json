@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "0ddeaca4f975c32ff3cc1aeeb2240c78bc0be50b",
-  "head": "4c1ec625609422964e5cf6732e864f3c78ca50db",
+  "prev": "fd2d9202f89f6a4e3cafea5964b08603f8deda39",
+  "head": "e1176c054d60f0237cabead83bc51c4efd4c5295",
   "applied": [
     "doc",
     "nullPlacement",
@@ -10,8 +10,6 @@
     "cmakewarn",
     "typo",
     "nosystem",
-    "actswarn",
-    "actswarn2",
     "constSel",
     "shapetest",
     "volmanUOMap",
@@ -22,7 +20,10 @@
     "gcc16-xxx",
     "cxx23"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "actswarn",
+    "actswarn2"
+  ],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -47,10 +48,10 @@
       "oid": "e9ef64d970f37f63d8456349ab6f597a5581aeba"
     },
     "constSel": {
-      "oid": "0bb314404e3c77cc8e8e7da021c7adf42df2d317"
+      "oid": "8fdc970a0c4b6b1152ca25ca8d9853c580289de6"
     },
     "cxx23": {
-      "oid": "4c1ec625609422964e5cf6732e864f3c78ca50db"
+      "oid": "e1176c054d60f0237cabead83bc51c4efd4c5295"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -59,13 +60,13 @@
       "oid": "2ebc29892154d28a2359ca9cbf6b94030b9a6208"
     },
     "duckvers": {
-      "oid": "31cec8c3ab4c3507cd01cfe56a52bd25fbe158c8"
+      "oid": "dd3d9d380fb8ec52f2c69207ce7789b68e2af035"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "15ab9176642099c0dde278075b685d8b8d9ae83c"
+      "oid": "63ce5d8037a27f8c1f94a25ed5811b3055abccd2"
     },
     "instdel": {
       "oid": "28752f895b5789a3960843f35034b16ab0724447"
@@ -80,13 +81,13 @@
       "oid": "c17eaeba2d7c3d0c9536c7a4ef0dafd934c268d6"
     },
     "shapetest": {
-      "oid": "5c5005d6863138fdda01e0042070639e41edcb25"
+      "oid": "6319ff2fad4e3009d59613a95ab4ea06e79d4fcb"
     },
     "subdetVolman": {
-      "oid": "bc93f73d9a6c8c7f33f31b852974352cef687759"
+      "oid": "7aa96dc22869a520b17c954ca3345646b052f063"
     },
     "symlink": {
-      "oid": "457c4ccdef36bd63ade1254a8ca64b3b13d7a346"
+      "oid": "f5b29e41f4aa03687d92eb188a8591b6a173ca6b"
     },
     "typo": {
       "oid": "c6a5d2b9e741ae4f4afccbbe94d94cdedc145f7d"
@@ -95,10 +96,10 @@
       "oid": "b5685a86833c45407af04f7ddb3e4eeb0e673a6a"
     },
     "vartrack": {
-      "oid": "e27c5fbf4673738c47ee713c0639297cadbb194e"
+      "oid": "5b32150c7c57be69707d46eb15056f9f4d831a5d"
     },
     "volmanUOMap": {
-      "oid": "6fb7383a893afbf858c5e5ee4c90947c314c3565"
+      "oid": "e0dd31c6cdbf8b65d92e2290d38c93128e5de7ba"
     }
   }
 }
