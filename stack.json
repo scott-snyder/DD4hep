@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "115c65376e724334a4261ce4e083026d131795ae",
-  "head": "3568d99185754c0b2be7ead5af2158175f29b424",
+  "prev": "ec70ddbd36529e96b0d8ec24b39234bc121085ea",
+  "head": "15ab9176642099c0dde278075b685d8b8d9ae83c",
   "applied": [
     "doc",
     "nullPlacement",
@@ -16,13 +16,14 @@
     "shapetest",
     "volmanUOMap",
     "symlink",
-    "cxx23",
     "vartrack",
     "subdetVolman",
     "duckvers",
     "gcc16-xxx"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "cxx23"
+  ],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -59,13 +60,13 @@
       "oid": "2ebc29892154d28a2359ca9cbf6b94030b9a6208"
     },
     "duckvers": {
-      "oid": "d701e032d78933484519e7fb8316e2490d1786c7"
+      "oid": "31cec8c3ab4c3507cd01cfe56a52bd25fbe158c8"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "3568d99185754c0b2be7ead5af2158175f29b424"
+      "oid": "15ab9176642099c0dde278075b685d8b8d9ae83c"
     },
     "instdel": {
       "oid": "28752f895b5789a3960843f35034b16ab0724447"
@@ -83,7 +84,7 @@
       "oid": "5c5005d6863138fdda01e0042070639e41edcb25"
     },
     "subdetVolman": {
-      "oid": "51e87e68a8cdce4ad71e5496e48e6b5ffae4fb3c"
+      "oid": "bc93f73d9a6c8c7f33f31b852974352cef687759"
     },
     "symlink": {
       "oid": "457c4ccdef36bd63ade1254a8ca64b3b13d7a346"
@@ -95,7 +96,7 @@
       "oid": "b5685a86833c45407af04f7ddb3e4eeb0e673a6a"
     },
     "vartrack": {
-      "oid": "5980c27bf9e70d32833acaea7d45ee4dba20e471"
+      "oid": "e27c5fbf4673738c47ee713c0639297cadbb194e"
     },
     "volmanUOMap": {
       "oid": "6fb7383a893afbf858c5e5ee4c90947c314c3565"
