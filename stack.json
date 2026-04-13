@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "538231298284e1f9c3db98fdd8bc775e3ef22474",
-  "head": "d11ecca23dec4506a3bf30a1b9995594e607101f",
-  "applied": [
+  "prev": "6dd49c4458e0260c188ad6ce0986598b53c490e9",
+  "head": "1829429cd1b67b117e1ed549a80ea174b75dfb13",
+  "applied": [],
+  "unapplied": [
     "doc",
     "nullPlacement",
     "instdel",
@@ -22,7 +23,6 @@
     "actswarn",
     "actswarn2"
   ],
-  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
