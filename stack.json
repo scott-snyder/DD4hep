@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "4060245f2f106eea89a155f12a7aee11166355be",
-  "head": "6e8399d2cc2090f15805f87db6bb86a618d4c230",
+  "prev": "1a06da9c89ebfa7cef24faef90c89e16b266bded",
+  "head": "d701e032d78933484519e7fb8316e2490d1786c7",
   "applied": [
     "doc",
     "nullPlacement",
@@ -15,14 +15,15 @@
     "constSel",
     "shapetest",
     "volmanUOMap",
-    "gcc16-xxx",
     "symlink",
     "cxx23",
     "vartrack",
     "subdetVolman",
     "duckvers"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "gcc16-xxx"
+  ],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -50,7 +51,7 @@
       "oid": "0bb314404e3c77cc8e8e7da021c7adf42df2d317"
     },
     "cxx23": {
-      "oid": "705da3395d0b443b6b5fea5e78b2ac9dd9e8e4ab"
+      "oid": "db62cdce3003f189aa01dcd3d018e8b254cd4b80"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -59,7 +60,7 @@
       "oid": "2ebc29892154d28a2359ca9cbf6b94030b9a6208"
     },
     "duckvers": {
-      "oid": "6e8399d2cc2090f15805f87db6bb86a618d4c230"
+      "oid": "d701e032d78933484519e7fb8316e2490d1786c7"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
@@ -83,10 +84,10 @@
       "oid": "5c5005d6863138fdda01e0042070639e41edcb25"
     },
     "subdetVolman": {
-      "oid": "6bbae4cc2222d13f3c9baf30e79030cbb3275556"
+      "oid": "51e87e68a8cdce4ad71e5496e48e6b5ffae4fb3c"
     },
     "symlink": {
-      "oid": "24c36265038b4b978461aa255f8f45dfb4940fdf"
+      "oid": "457c4ccdef36bd63ade1254a8ca64b3b13d7a346"
     },
     "typo": {
       "oid": "c6a5d2b9e741ae4f4afccbbe94d94cdedc145f7d"
@@ -95,7 +96,7 @@
       "oid": "b5685a86833c45407af04f7ddb3e4eeb0e673a6a"
     },
     "vartrack": {
-      "oid": "ef175b0db8758ffe960ff8377801ffa99140f2cb"
+      "oid": "5980c27bf9e70d32833acaea7d45ee4dba20e471"
     },
     "volmanUOMap": {
       "oid": "6fb7383a893afbf858c5e5ee4c90947c314c3565"
