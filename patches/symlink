@@ -1,8 +1,0 @@
-Bottom: ec6beff8759fa9f6efb43948eb1a45aa66ca74ec
-Top:    ec6beff8759fa9f6efb43948eb1a45aa66ca74ec
-Author: sss <sss@karma>
-Date:   2026-04-14 13:55:38 -0400
-
-Fix for building with CMAKE_INSTALL_MODE=ABS_SYMLINK.
-
-Need to make scripts executable in the repo.

@@ -1,8 +1,0 @@
-Bottom: 6ae08d280d6699545edbc4c9311594e7d6bcfeb5
-Top:    6ae08d280d6699545edbc4c9311594e7d6bcfeb5
-Author: sss <sss@karma>
-Date:   2026-04-14 13:55:38 -0400
-
-Change DetectorSelector to take a const reference.
-
-To help with moving interfaces to be const whenever possible.
