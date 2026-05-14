@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "695a5c7266dbd1d73f752a1a4b29192a2fd547a8",
-  "head": "cf9f3c4cb17071bf0c1aa6e90e179e88689107c9",
+  "prev": "476714baf38dc79b6479a736176ef4c09f10cf6e",
+  "head": "5fb2e4ffea1051bf9cdc6285fd483abd74667fdd",
   "applied": [
     "doc",
     "nullPlacement",
@@ -16,7 +16,8 @@
     "actswarn",
     "actswarn2",
     "vartrack",
-    "volmanUOMap"
+    "volmanUOMap",
+    "childVec"
   ],
   "unapplied": [],
   "hidden": [
@@ -35,6 +36,9 @@
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
+    },
+    "childVec": {
+      "oid": "5fb2e4ffea1051bf9cdc6285fd483abd74667fdd"
     },
     "clang": {
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
