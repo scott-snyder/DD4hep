@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "37c959d550e10d10f9c340c279424879e96f9aa3",
-  "head": "da9f9647ba0580b32727d655146373b2adcb0a62",
+  "prev": "4e31f21f51ba436a4be5b46c4e869c88a9096fbf",
+  "head": "69a5895316050ad67af6cf00b20b671019f2826a",
   "applied": [
     "doc",
     "nullPlacement",
@@ -10,7 +10,6 @@
     "cmakewarn",
     "nosystem",
     "shapetest",
-    "volmanUOMap",
     "duckvers",
     "gcc16-xxx",
     "cxx23",
@@ -18,7 +17,9 @@
     "actswarn2",
     "vartrack"
   ],
-  "unapplied": [],
+  "unapplied": [
+    "volmanUOMap"
+  ],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -28,10 +29,10 @@
   ],
   "patches": {
     "actswarn": {
-      "oid": "6ae3ad215ec5d8c6e4cfe401cd479d99f97df993"
+      "oid": "7111bce4becf23264cd04308c8563eb47a8e65c7"
     },
     "actswarn2": {
-      "oid": "9c479f4d9a2f9d793c86ffb882b285d1e338176e"
+      "oid": "709c339f9244ca303692f74f6f66f035d131bcba"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
@@ -43,7 +44,7 @@
       "oid": "e0e068be0a68a2086eb673ac133fcc1a8936f923"
     },
     "cxx23": {
-      "oid": "13c77c0b4414f85703ea0a8928ba78ec9b60626c"
+      "oid": "2969d5d6506ff6373634d12a377e859123e7a59a"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -52,13 +53,13 @@
       "oid": "8661472d8af5efc0a7c3463a86d974a30e10ca4b"
     },
     "duckvers": {
-      "oid": "61985b2299fdf1c066f98c1e1f70eb615cb3761b"
+      "oid": "ffed56bc0f52c6c1ad57ae894591422604b6d043"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "5b7608def074c51dc001b0d31e39f6502704f663"
+      "oid": "3a7c498826c1acb81fb29d6b3d3d1e22b577341d"
     },
     "instdel": {
       "oid": "9568725b0cb4fbdcd2d30e151d5d799078bc786a"
@@ -79,7 +80,7 @@
       "oid": "1ae82416f37fef08f9af7baeaf758bf48318152c"
     },
     "vartrack": {
-      "oid": "da9f9647ba0580b32727d655146373b2adcb0a62"
+      "oid": "69a5895316050ad67af6cf00b20b671019f2826a"
     },
     "volmanUOMap": {
       "oid": "f23350a3f543a59298efeec10387692ae666cc05"
