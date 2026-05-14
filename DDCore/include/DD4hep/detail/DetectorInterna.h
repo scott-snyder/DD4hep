@@ -129,6 +129,7 @@ namespace dd4hep {
     DetElement           parent;
     /// The array of children
     DetElement::Children children;
+    std::vector<DetElement> childVec;
     /// Placeholder for structure with update callbacks
     UpdateCallbacks      updateCalls;  //! Not ROOT persistent
 
