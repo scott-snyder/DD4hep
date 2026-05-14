@@ -446,6 +446,7 @@ namespace dd4hep {
     DetElement&  add(DetElement sub_element);
     /// Access to the list of children
     const Children& children() const;
+    std::span<DetElement> childVec() const;
     /// Access to individual children by name
     DetElement child(const std::string& name) const;
     /// Access to individual children by name. Have option to not throw an exception

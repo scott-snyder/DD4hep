@@ -249,6 +249,10 @@ const DetElement::Children& DetElement::children() const {
   return access()->children;
 }
 
+std::span<DetElement> DetElement::childVec() const {
+  return access()->childVec;
+}
+
 /// Access to individual children by name
 DetElement DetElement::child(const std::string& child_name) const {
   if (isValid()) {
@@ -301,6 +305,7 @@ DetElement& DetElement::add(DetElement sdet) {
     auto r = object<Object>().children.emplace(sdet.name(), sdet);
     if (r.second) {
       sdet.access()->parent = *this;
+      object<Object>().childVec.push_back(sdet);
       return *this;
     }
     except("dd4hep",
