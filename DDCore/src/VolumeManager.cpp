@@ -140,9 +140,9 @@ namespace dd4hep {
               /// Check if this particular volume is the placement of one of the
               /// children of this detector element. If the daughter placement is also
               /// a detector child, then we must reset the node chain.
-              for( const auto& de : e.children() )  {
-                if ( de.second.placement().ptr() == daughter )  {
-                  de_dau = de.second;
+              for( const DetElement& de : e.childVec() )  {
+                if ( de.placement().ptr() == daughter )  {
+                  de_dau = de;
                   break;
                 }
               }
