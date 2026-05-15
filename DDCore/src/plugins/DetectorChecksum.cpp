@@ -1086,7 +1086,7 @@ void DetectorChecksum::analyzeDetector(DetElement top)      {
     throw std::runtime_error("Attempt to call analyzeDetector with an invalid geometry!");
   }
   GeometryInfo& geo = *(m_dataPtr = new GeometryInfo);
-  m_data->clear();
+  m_data.clear();
   handleHeader();
   collect_det_elements(top);
   for (const auto& fld : description.fields() )

@@ -125,6 +125,12 @@ namespace {
       handle(o, i->second, pmf);
     }
   }
+  template <typename O, typename C, typename F> void handleRVec(const O* o, const C& c, F pmf) {
+    for (typename C::const_reverse_iterator i = c.rbegin(); i != c.rend(); ++i)  {
+      //cout << "Handle RMAP [ " << (*i).first << " ]" << std::endl;
+      handle(o, *i, pmf);
+    }
+  }
   template <typename O, typename C, typename F> void handleRMap_(const O* o, const C& c, F pmf) {
     for (typename C::const_iterator i = c.begin(); i != c.end(); ++i)  {
       const auto& cc = (*i).second;
@@ -1756,15 +1762,13 @@ void* Geant4Converter::printPlacement(const std::string& name, const TGeoNode* n
 
 /// Create geometry conversion
 Geant4Converter& Geant4Converter::create(DetElement top) {
-  typedef std::map<const TGeoNode*, std::vector<TGeoNode*> > _DAU;
   TTimeStamp start;
-  _DAU daughters;
   Geant4GeometryInfo& geo = this->init();
   World wrld = top.world();
 
-  m_data->clear();
-  m_set_data->clear();
-  m_daughters = &daughters;
+  m_data.clear();
+  m_set_data.clear();
+  m_daughters.clear();
   geo.manager = &wrld.detectorDescription().manager();
   this->collect(top, geo);
   this->checkOverlaps = false;
@@ -1785,12 +1789,11 @@ Geant4Converter& Geant4Converter::create(DetElement top) {
   printout(outputLevel, "Geant4Converter", "++ Handled %ld regions.", geo.regions.size());
   handle(this,     geo.volumes, &Geant4Converter::handleVolume);
   printout(outputLevel, "Geant4Converter", "++ Handled %ld volumes.", geo.volumes.size());
-  handleRMap(this, *m_data,     &Geant4Converter::handleAssembly);
+  handleRVec(this, m_data,     &Geant4Converter::handleAssembly);
   // Now place all this stuff appropriately
   //handleRMap(this, *m_data,     &Geant4Converter::handlePlacement);
-  std::map<int, std::vector<const TGeoNode*> >::const_reverse_iterator i = m_data->rbegin();
-  for ( ; i != m_data->rend(); ++i )  {
-    for ( const TGeoNode* node : i->second )  {
+  for (auto i = m_data.rbegin(); i != m_data.rend(); ++i )  {
+    for ( const TGeoNode* node : *i )  {
       this->handlePlacement(node->GetName(), node);
     }
   }
@@ -1803,10 +1806,10 @@ Geant4Converter& Geant4Converter::create(DetElement top) {
     handleMap(this, geo.sensitives, &Geant4Converter::printSensitive);
   }
   if ( printPlacements )  {
-    handleRMap(this, *m_data, &Geant4Converter::printPlacement);
+    handleRVec(this, m_data, &Geant4Converter::printPlacement);
   }
 
-  m_daughters = nullptr;
+  m_daughters.clear();
   geo.setWorld(top.placement().ptr());
   geo.valid = true;
   TTimeStamp stop;

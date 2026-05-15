@@ -132,7 +132,7 @@ xml_doc_t dd4hep::detail::Vis2XmlExtract::createVis( DetElement top ) {
   }
 
   GeometryInfo& geo = *(m_dataPtr = new GeometryInfo);
-  m_data->clear();
+  m_data.clear();
   collect(top, geo);
   printout(ALWAYS,"Vis2XmlExtract","++ ==> Dump visualisation attributes "
            "from in memory detector description...");
