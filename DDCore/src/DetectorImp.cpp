@@ -649,12 +649,11 @@ namespace {
       : detail::GeoScan(e), m_volManager(m), m_world(e) {
     }
     void patchShapes() {
-      auto&  data = *m_data;
       char   text[32];
       std::string nam;
       printout(INFO,"Detector","+++ Patching names of anonymous shapes....");
-      for (auto i = data.rbegin(); i != data.rend(); ++i) {
-        for( const TGeoNode* n : (*i).second )  {
+      for (auto i = m_data.rbegin(); i != m_data.rend(); ++i) {
+        for( const TGeoNode* n : (*i) )  {
           TGeoVolume* vol = n->GetVolume();
           TGeoShape*  s   = vol->GetShape();
           const char* sn  = s->GetName();

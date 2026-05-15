@@ -52,41 +52,26 @@ namespace {
 
 /// Default constructor
 detail::GeoHandler::GeoHandler()  {
-  m_data = new std::map<int, std::vector<const TGeoNode*> >();
-  m_set_data = new std::map<int, std::set<const TGeoNode*> >();
 }
 
 /// Initializing constructor
-detail::GeoHandler::GeoHandler(std::map<int, std::vector<const TGeoNode*> >* ptr,
-                std::map<int, std::set<const TGeoNode*> >* ptr_set,
-                std::map<const TGeoNode*, std::vector<TGeoNode*> >* daus)
-  : m_data(ptr), m_set_data(ptr_set), m_daughters(daus)
+detail::GeoHandler::GeoHandler(std::vector<std::vector<const TGeoNode*> >&& ptr,
+                std::vector<std::unordered_set<const TGeoNode*> >&& ptr_set,
+                std::unordered_map<const TGeoNode*, std::vector<TGeoNode*> >&& daus)
+  : m_data(std::move(ptr)), m_set_data(std::move(ptr_set)), m_daughters(std::move(daus))
 {
 }
 
 /// Default destructor
 detail::GeoHandler::~GeoHandler() {
-  if (m_data)
-    delete m_data;
-  if (m_set_data)
-    delete m_set_data;
-
-  m_data = nullptr;
-  m_set_data = nullptr;
 }
 
-std::map<int, std::vector<const TGeoNode*> >* detail::GeoHandler::release() {
-  /// release the std::vector geometry container (preserves order)
-  std::map<int, std::vector<const TGeoNode*> >* d = m_data;
-  m_data = nullptr;
-
+std::vector<std::vector<const TGeoNode*> > detail::GeoHandler::release() {
   /// the std::set container (for lookup purpose) is not needed anymore, so delete it
-  /// the container is always present since the call of the constructor
-  /// we never expect to call release() twice (will release nullptr)
-  delete m_set_data;
-  m_set_data = nullptr;
+  m_set_data.clear();
 
-  return d;
+  std::vector<std::vector<const TGeoNode*> > out = std::move (m_data);
+  return out;
 }
 
 /// Propagate regions. Returns the previous value
@@ -99,19 +84,23 @@ bool detail::GeoHandler::setPropagateRegions(bool value)   {
 detail::GeoHandler& detail::GeoHandler::collect(DetElement element) {
   DetElement par = element.parent();
   TGeoNode*  par_node = par.isValid() ? par.placement().ptr() : nullptr;
-  m_data->clear();
-  m_set_data->clear();
+  m_data.clear();
+  m_data.reserve(20);
+  m_set_data.clear();
+  m_set_data.reserve(20);
   return i_collect(par_node, element.placement().ptr(), 0, Region(), LimitSet());
 }
 
 detail::GeoHandler& detail::GeoHandler::collect(DetElement element, GeometryInfo& info) {
   DetElement par = element.parent();
   TGeoNode* par_node = par.isValid() ? par.placement().ptr() : nullptr;
-  m_data->clear();
-  m_set_data->clear();
+  m_data.clear();
+  m_data.reserve(20);
+  m_set_data.clear();
+  m_set_data.reserve(20);
   i_collect(par_node, element.placement().ptr(), 0, Region(), LimitSet());
-  for ( auto i = m_data->rbegin(); i != m_data->rend(); ++i ) {
-    const auto& mapped = (*i).second;
+  for ( auto i = m_data.rbegin(); i != m_data.rend(); ++i ) {
+    const auto& mapped = (*i);
     for ( const TGeoNode* n : mapped )  {
       TGeoVolume* v = n->GetVolume();
       if ( v ) {
@@ -165,15 +154,20 @@ detail::GeoHandler& detail::GeoHandler::i_collect(const TGeoNode* /* parent */,
   }
   /// Collect the hierarchy of placements
   /// perform lookup using std::set::emplace (faster than std::find for very large number of volumes)
-  if ( (*m_set_data)[level].emplace(current).second ) {
-    (*m_data)[level].push_back(current);
+  if (level >= static_cast<int>(m_data.size())) {
+    m_data.resize (level+1);
+    m_set_data.resize (level+1);
+  }
+  if ( m_set_data[level].emplace(current).second ) {
+    m_data[level].push_back(current);
   }
   int num = nodes ? nodes->GetEntriesFast() : 0;
   for (int i = 0; i < num; ++i)
     i_collect(current, (TGeoNode*)nodes->At(i), level + 1, region, limits);
   /// Now collect all the daughters of this volume, so that we can reconnect them in the correct order
-  if ( m_daughters && m_daughters->find(current) == m_daughters->end() )  {
-    auto [idau,success] = m_daughters->emplace(current, std::vector<TGeoNode*>());
+  auto [idau,success] = m_daughters.try_emplace(current, std::vector<TGeoNode*>());
+  if (success) {
+    idau->second.reserve (num);
     for (int i = 0; i < num; ++i)
       idau->second.push_back((TGeoNode*)nodes->At(i));
   }
@@ -194,8 +188,6 @@ detail::GeoScan::GeoScan(DetElement e, bool propagate) {
 
 /// Default destructor
 detail::GeoScan::~GeoScan() {
-  delete m_data;
-  m_data = nullptr;
 }
 
 /// Work callback
