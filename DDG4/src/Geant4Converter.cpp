@@ -880,7 +880,7 @@ void* Geant4Converter::handleVolume(const std::string& name, const TGeoVolume* v
       }
       else   {
         g4vol->SetRegion(g4region);
-        g4region->AddRootLogicalVolume(g4vol);
+        g4region->AddRootLogicalVolume(g4vol, false);
       }
     }
     G4VisAttributes* g4vattr = vis.isValid()
