@@ -17,7 +17,7 @@
 
 // C/C++ include files
 #include <set>
-#include <regex>
+#include "boost/regex.hpp"
 
 /// Namespace for the AIDA detector description toolkit
 namespace dd4hep {
@@ -49,7 +49,7 @@ namespace dd4hep {
                                   std::set<Volume>&               visited,
                                   PlacedVolume                    pv,
                                   std::string&                    path,
-                                  const std::vector<std::regex>&  matches);
+                                  const std::vector<boost::regex>&  matches);
     public:
       /// Initializing constructor for DDG4
       Geant4RegexSensitivesConstruction(Geant4Context* ctxt, const std::string& nam);
@@ -103,15 +103,15 @@ Geant4RegexSensitivesConstruction::collect_volumes(std::set<Volume>&            
                                                    std::set<Volume>&               visited,
                                                    PlacedVolume                    pv,
                                                    std::string&                    path,
-                                                   const std::vector<std::regex>&  matches)
+                                                   const std::vector<boost::regex>&  matches)
 {
   std::size_t count = 0;
   // visited guards on logical volume: each unique Volume is walked exactly once
   // regardless of how many times it is placed in the geometry tree.
   if ( visited.insert(pv.volume()).second )  {
     for( const auto& match : matches )  {
-      std::smatch sm;
-      if( std::regex_search(path, sm, match) )  {
+      boost::smatch sm;
+      if( boost::regex_search(path, sm, match) )  {
         volumes.insert(pv.volume());
         ++count;
         break;
@@ -154,10 +154,10 @@ void Geant4RegexSensitivesConstruction::constructSensitives(Geant4DetectorConstr
   TTimeStamp start;
   std::size_t num_nodes = 0;
   if( !m_volumes_cached )  {
-    int flags = std::regex_constants::icase | std::regex_constants::ECMAScript;
-    std::vector<std::regex> expressions;
+    int flags = boost::regex_constants::icase | boost::regex_constants::ECMAScript;
+    std::vector<boost::regex> expressions;
     for( const auto& val : regex_values )  {
-      std::regex e(val, (std::regex_constants::syntax_option_type)flags);
+      boost::regex e(val, (boost::regex_constants::syntax_option_type)flags);
       expressions.emplace_back(e);
     }
     info("%s Starting to scan volume....", det);
