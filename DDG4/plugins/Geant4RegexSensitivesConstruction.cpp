@@ -17,7 +17,7 @@
 
 // C/C++ include files
 #include <set>
-#include <regex>
+#include "boost/regex.hpp"
 
 /// Namespace for the AIDA detector description toolkit
 namespace dd4hep {
@@ -43,7 +43,7 @@ namespace dd4hep {
       std::size_t collect_volumes(std::set<Volume>&  volumes,
                                   PlacedVolume       pv,
                                   const std::string& path,
-                                  const std::vector<std::regex>& matches);
+                                  const std::vector<boost::regex>& matches);
     public:
       /// Initializing constructor for DDG4
       Geant4RegexSensitivesConstruction(Geant4Context* ctxt, const std::string& nam);
@@ -96,15 +96,15 @@ std::size_t
 Geant4RegexSensitivesConstruction::collect_volumes(std::set<Volume>&  volumes,
                                                    PlacedVolume       pv,
                                                    const std::string& path,
-                                                   const std::vector<std::regex>& matches)
+                                                   const std::vector<boost::regex>& matches)
 {
   std::size_t count = 0;
   // Try to minimize a bit the number of regex matches.
   if ( volumes.find(pv.volume()) == volumes.end() )  {
     if( !path.empty() )  {
       for( const auto& match : matches )  {
-        std::smatch sm;
-        bool stat = std::regex_search(path, sm, match);
+        boost::smatch sm;
+        bool stat = boost::regex_search(path, sm, match);
         if( stat )  {
           volumes.insert(pv.volume());
           ++count;
@@ -144,10 +144,10 @@ void Geant4RegexSensitivesConstruction::constructSensitives(Geant4DetectorConstr
   G4VSensitiveDetector* g4sd = this->createSensitiveDetector(typ, nam);
 
   std::set<Volume> volumes;
-  int flags = std::regex_constants::icase | std::regex_constants::ECMAScript;
-  std::vector<std::regex> expressions;
+  int flags = boost::regex_constants::icase | boost::regex_constants::ECMAScript;
+  std::vector<boost::regex> expressions;
   for( const auto& val : regex_values )  {
-    std::regex e(val, (std::regex_constants::syntax_option_type)flags);
+    boost::regex e(val, (boost::regex_constants::syntax_option_type)flags);
     expressions.emplace_back(e);
   }
   TTimeStamp start;
