@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "c53b6b08e04883dcacf8baf6d5233cf9d3012c75",
-  "head": "2b04002b3433c37779651003f34f3b482b60e34a",
+  "prev": "29315b843c6bb661a944808baf35a2cf6b1f9b20",
+  "head": "69a5895316050ad67af6cf00b20b671019f2826a",
   "applied": [
     "doc",
     "nullPlacement",
@@ -15,14 +15,15 @@
     "cxx23",
     "actswarn",
     "actswarn2",
-    "vartrack",
+    "vartrack"
+  ],
+  "unapplied": [
     "volmanUOMap",
     "childVec",
     "geohand",
     "addlogvol",
     "boostre"
   ],
-  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
