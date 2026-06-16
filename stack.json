@@ -1,8 +1,9 @@
 {
   "version": 5,
-  "prev": "29315b843c6bb661a944808baf35a2cf6b1f9b20",
-  "head": "69a5895316050ad67af6cf00b20b671019f2826a",
-  "applied": [
+  "prev": "84e3b49ce32caa842033ab7d961a886ee7399dda",
+  "head": "92f5d9d0a34a75704174c8f51ac8694306be5944",
+  "applied": [],
+  "unapplied": [
     "doc",
     "nullPlacement",
     "instdel",
@@ -15,9 +16,7 @@
     "cxx23",
     "actswarn",
     "actswarn2",
-    "vartrack"
-  ],
-  "unapplied": [
+    "vartrack",
     "volmanUOMap",
     "childVec",
     "geohand",
