@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "702818fbc1465e1ea486da8023f8ba83f11425cd",
-  "head": "e87ccddaf20a4de24abda1a71e14065314c95a57",
+  "prev": "4e698e9129ba7a96af327942b6562e1633b36338",
+  "head": "7149c03def6ccfbc4bd0fbe988315e014ce6f09b",
   "applied": [
     "doc",
     "nullPlacement",
@@ -10,9 +10,7 @@
     "cmakewarn",
     "nosystem",
     "shapetest",
-    "duckvers"
-  ],
-  "unapplied": [
+    "duckvers",
     "gcc16-xxx",
     "cxx23",
     "actswarn",
@@ -24,6 +22,7 @@
     "addlogvol",
     "boostre"
   ],
+  "unapplied": [],
   "hidden": [
     "gaudiPytest",
     "pyvers",
@@ -33,22 +32,22 @@
   ],
   "patches": {
     "actswarn": {
-      "oid": "7111bce4becf23264cd04308c8563eb47a8e65c7"
+      "oid": "4ec633d99110301884b7be727e741506b69e38a1"
     },
     "actswarn2": {
-      "oid": "709c339f9244ca303692f74f6f66f035d131bcba"
+      "oid": "0c8ec2b5733bdae972b4f40cd57197cf94f6dbeb"
     },
     "addlogvol": {
-      "oid": "e99551658a7ecc0864d4445cd2882e123b21cc77"
+      "oid": "503315dd42351ef424493b202505deba8dbe34f1"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
     },
     "boostre": {
-      "oid": "2b04002b3433c37779651003f34f3b482b60e34a"
+      "oid": "7149c03def6ccfbc4bd0fbe988315e014ce6f09b"
     },
     "childVec": {
-      "oid": "9ca8fb8b67a3839606f76edc0eeddc3725b4d455"
+      "oid": "22cc9957609564ac0f360edb2fdce9692ae64de7"
     },
     "clang": {
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
@@ -57,7 +56,7 @@
       "oid": "2902bf03c772b6a91b0dc35cc8fbf55d1f55746f"
     },
     "cxx23": {
-      "oid": "2969d5d6506ff6373634d12a377e859123e7a59a"
+      "oid": "97041c42da9cbc664f1076e42467d978c2f038f9"
     },
     "depr": {
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
@@ -72,10 +71,10 @@
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
     },
     "gcc16-xxx": {
-      "oid": "3a7c498826c1acb81fb29d6b3d3d1e22b577341d"
+      "oid": "8e93913bb6fd746af4db962cda9bdb1c6e818aff"
     },
     "geohand": {
-      "oid": "9baec233dfad758fad2de6fb09977f96abc3bf40"
+      "oid": "a5462c11fd5ab77388579d8ef1824489273c87be"
     },
     "instdel": {
       "oid": "6f7d1e31496d3a43396c8e6cdd6f31ab2fbfd0d0"
@@ -96,10 +95,10 @@
       "oid": "e6c79159a0700532dc7d44c8f70994d9ae4cfecd"
     },
     "vartrack": {
-      "oid": "69a5895316050ad67af6cf00b20b671019f2826a"
+      "oid": "d3275ea11f2b1d9731cc8ad360471f490113ff6b"
     },
     "volmanUOMap": {
-      "oid": "cf9f3c4cb17071bf0c1aa6e90e179e88689107c9"
+      "oid": "2c3e86d556eb25fbd130f77194f093cd9574a378"
     }
   }
 }
