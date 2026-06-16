@@ -1,9 +1,8 @@
 {
   "version": 5,
-  "prev": "760fba8f80a33079e5fecbbda7e0f9723a0ed5ba",
-  "head": "7693cca27dd057bb22414c86b95fedbab49f6ae5",
-  "applied": [],
-  "unapplied": [
+  "prev": "702818fbc1465e1ea486da8023f8ba83f11425cd",
+  "head": "e87ccddaf20a4de24abda1a71e14065314c95a57",
+  "applied": [
     "doc",
     "nullPlacement",
     "instdel",
@@ -11,7 +10,9 @@
     "cmakewarn",
     "nosystem",
     "shapetest",
-    "duckvers",
+    "duckvers"
+  ],
+  "unapplied": [
     "gcc16-xxx",
     "cxx23",
     "actswarn",
@@ -53,7 +54,7 @@
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
     },
     "cmakewarn": {
-      "oid": "e0e068be0a68a2086eb673ac133fcc1a8936f923"
+      "oid": "2902bf03c772b6a91b0dc35cc8fbf55d1f55746f"
     },
     "cxx23": {
       "oid": "2969d5d6506ff6373634d12a377e859123e7a59a"
@@ -62,10 +63,10 @@
       "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
     },
     "doc": {
-      "oid": "8661472d8af5efc0a7c3463a86d974a30e10ca4b"
+      "oid": "dc6024cbacacfa97d20bd1f7590b3662ae6e822e"
     },
     "duckvers": {
-      "oid": "ffed56bc0f52c6c1ad57ae894591422604b6d043"
+      "oid": "e87ccddaf20a4de24abda1a71e14065314c95a57"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
@@ -77,22 +78,22 @@
       "oid": "9baec233dfad758fad2de6fb09977f96abc3bf40"
     },
     "instdel": {
-      "oid": "9568725b0cb4fbdcd2d30e151d5d799078bc786a"
+      "oid": "6f7d1e31496d3a43396c8e6cdd6f31ab2fbfd0d0"
     },
     "nosystem": {
-      "oid": "6968dceb1a8f8aa5b3261ff88da048fb4c6ced15"
+      "oid": "e0615c3166b76c45b9a79d216c91cbe0fd708dcc"
     },
     "nullPlacement": {
-      "oid": "b343ab6bc89e70487485d097a1a1dfb37a0a1a1e"
+      "oid": "f32b0febc4e7a3e5c4505ace51811b9de1ccfe3c"
     },
     "pyvers": {
       "oid": "c17eaeba2d7c3d0c9536c7a4ef0dafd934c268d6"
     },
     "shapetest": {
-      "oid": "60306ce1663a37af42f97de50132c13c8120ca52"
+      "oid": "63ef4e932ced36414a1750d78fc4da046953b75f"
     },
     "ub": {
-      "oid": "1ae82416f37fef08f9af7baeaf758bf48318152c"
+      "oid": "e6c79159a0700532dc7d44c8f70994d9ae4cfecd"
     },
     "vartrack": {
       "oid": "69a5895316050ad67af6cf00b20b671019f2826a"
