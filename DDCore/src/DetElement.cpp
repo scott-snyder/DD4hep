@@ -264,7 +264,7 @@ DetElement& DetElement::add(DetElement sdet) {
     auto r = object<Object>().children.emplace(sdet.name(), sdet);
     if (r.second) {
       sdet.access()->parent = *this;
-      sdet.access()->childVec.push_back(sdet);
+      object<Object>().childVec.push_back(sdet);
       return *this;
     }
     except("dd4hep",
