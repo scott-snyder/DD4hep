@@ -140,7 +140,7 @@ detail::GeoHandler& detail::GeoHandler::i_collect(const TGeoNode* /* parent */,
   /// Daughters of a TGeoVolume are the same TGeoNode pointers for every placement of
   /// that volume; without this guard the subtree would be traversed once per placement
   /// (N times for a volume placed N times) with all but the first producing no output.
-  if ( !(*m_set_data)[level].emplace(current).second )
+  if ( !m_set_data[level].emplace(current).second )
     return *this;
 
   TGeoVolume* vol    = current->GetVolume();
