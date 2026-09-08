@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "b41c2740cc1ec54761cdfb015fa166fb7ec95308",
-  "head": "e2ed62ab3b65088bc9cd224173c517221d136fbb",
+  "prev": "f1e3f2779cf85faf7503057d818ef6348180dc78",
+  "head": "08c7d548e04e91cd4c201a5920ea80709c438c45",
   "applied": [
     "doc",
     "nullPlacement",
@@ -15,11 +15,11 @@
     "actswarn",
     "actswarn2",
     "vartrack",
-    "volmanUOMap"
+    "volmanUOMap",
+    "addlogvol"
   ],
   "unapplied": [
     "geohand",
-    "addlogvol",
     "boostre",
     "childVec"
   ],
@@ -38,7 +38,7 @@
       "oid": "cf2e37044182302055dc3dabb60a66325e25d1e7"
     },
     "addlogvol": {
-      "oid": "cf4f490fdb319681f848c7f5e90a2f7627258f40"
+      "oid": "08c7d548e04e91cd4c201a5920ea80709c438c45"
     },
     "assimp-cmake": {
       "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
