@@ -49,7 +49,7 @@ namespace dd4hep {
                                   std::set<Volume>&               visited,
                                   PlacedVolume                    pv,
                                   std::string&                    path,
-                                  const std::vector<boolst::regex>&  matches);
+                                  const std::vector<boost::regex>&  matches);
     public:
       /// Initializing constructor for DDG4
       Geant4RegexSensitivesConstruction(Geant4Context* ctxt, const std::string& nam);
@@ -110,7 +110,7 @@ Geant4RegexSensitivesConstruction::collect_volumes(std::set<Volume>&            
   // regardless of how many times it is placed in the geometry tree.
   if ( visited.insert(pv.volume()).second )  {
     for( const auto& match : matches )  {
-      std::smatch sm;
+      boost::smatch sm;
       if( boost::regex_search(path, sm, match) )  {
         volumes.insert(pv.volume());
         ++count;
