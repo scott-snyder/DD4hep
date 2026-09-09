@@ -106,7 +106,7 @@ namespace dd4hep {
       /// Never call Copy constructor
       GeoHandler(const GeoHandler&) {
       }
-      /// Never callb assignment operator
+      /// Never call assignment operator
       GeoHandler& operator=(const GeoHandler&) {
         return *this;
       }
