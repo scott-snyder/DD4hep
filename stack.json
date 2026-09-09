@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "fcee853c0cb124bf4d277a6ff2c1bee5ae9156cf",
-  "head": "be24b99ddc8b1aef8752bd91d904ed13070fbdd0",
+  "prev": "c857b63a4a4576b62d2cfbe9aaaa9f8d2df2413e",
+  "head": "d283f093359d8cce2449c78ffbdba5a05d51d3a0",
   "applied": [
     "doc",
     "nullPlacement",
@@ -17,11 +17,11 @@
     "vartrack",
     "volmanUOMap",
     "addlogvol",
-    "boostre"
+    "boostre",
+    "childVec"
   ],
   "unapplied": [
-    "geohand",
-    "childVec"
+    "geohand"
   ],
   "hidden": [
     "gaudiPytest",
@@ -47,7 +47,7 @@
       "oid": "be24b99ddc8b1aef8752bd91d904ed13070fbdd0"
     },
     "childVec": {
-      "oid": "a3613c1670508b777467fd7e770118f6798f093b"
+      "oid": "d283f093359d8cce2449c78ffbdba5a05d51d3a0"
     },
     "clang": {
       "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
