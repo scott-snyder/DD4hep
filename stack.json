@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "1ccd055590038a2f8508dd08c86f7e6b54da1ddf",
-  "head": "fbf5bd1a6594f507ca12724d9c02b9902d633d45",
+  "prev": "fac743e4ce4895ed1c4e4ee088e25db9df02c9d2",
+  "head": "f39b2d57e08d3c2638be5d42f615a58e2452c60e",
   "applied": [
     "doc",
     "nullPlacement",
@@ -19,7 +19,8 @@
     "addlogvol",
     "boostre",
     "childVec",
-    "geohand"
+    "geohand",
+    "gcc16"
   ],
   "unapplied": [],
   "hidden": [
@@ -65,6 +66,9 @@
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
+    },
+    "gcc16": {
+      "oid": "f39b2d57e08d3c2638be5d42f615a58e2452c60e"
     },
     "gcc16-xxx": {
       "oid": "7719e677809b8857ec132cd056202b637fbfbe38"
