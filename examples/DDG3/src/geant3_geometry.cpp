@@ -52,10 +52,9 @@ dd4hep::geant3_geometry::geant3_geometry(Detector& desc)
     this->materials_z[iz] = tab->GetElement(i)->GetName();
   }
   TIter next(mgr.GetListOfMaterials());
-  TGeoMaterial *m;
-  while ((m = (TGeoMaterial*)next()))  {
-    int iz = ::round( m->GetZ() * Z_FACTOR );
-    this->materials_z[iz] = m->GetName();
+  while (TGeoMaterial* mat = static_cast<TGeoMaterial*>(next()))  {
+    int iz = ::round( mat->GetZ() * Z_FACTOR );
+    this->materials_z[iz] = mat->GetName();
   }
   // tab->Print();
 }
@@ -661,7 +660,6 @@ dd4hep::geant3_geometry::add_placement( int                index,
 dd4hep::Solid
 dd4hep::geant3_geometry::create_solid( const TClass* typ, const params_t& p)  {
   Solid  solid;
-  double cm = units::cm;
   double dg = units::degree;
 
   if( typ == TGeoTubeSeg::Class() && p.size() == 3 )  {
