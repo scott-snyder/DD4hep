@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "ef0dd44e53a36abde7d1d85b7670af82b1673d22",
+  "prev": "a274252d3cfba81ddb4fc7f5ca8144b73b977cf5",
   "head": "29c74408cbd66f9731479cc0edb1d131764879d0",
   "applied": [
     "doc",
@@ -22,7 +22,7 @@
     "geohand",
     "gcc16",
     "warn2",
-    "warn4"
+    "nullptr"
   ],
   "unapplied": [],
   "hidden": [
@@ -90,7 +90,7 @@
     "warn2": {
       "oid": "e0c0a18d1699572471bbbfd7ad2ab858bf42bbaf"
     },
-    "warn4": {
+    "nullptr": {
       "oid": "29c74408cbd66f9731479cc0edb1d131764879d0"
     },
     "gaudiPytest": {
