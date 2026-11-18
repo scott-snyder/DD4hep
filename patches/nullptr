@@ -3,4 +3,6 @@ Top:    50b09dcffa2ceecb7664ce44295a80bd04eafd0a
 Author: sss <sss@karma>
 Date:   2026-11-18 11:33:32 -0500
 
-Compilation warning.
+Fix null pointer derefreence in error handling.
+
+Clears a gcc16 warning.
