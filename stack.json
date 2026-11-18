@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "01d9ebaf60e749f28784e73ee6c4cfe2ecb5a23f",
-  "head": "e0c0a18d1699572471bbbfd7ad2ab858bf42bbaf",
+  "prev": "2f21777ab06104dd4c0db7bf323cf13e9372724e",
+  "head": "85d23736d08f342feae61172cd1f6444c1e6ce0e",
   "applied": [
     "doc",
     "nullPlacement",
@@ -21,7 +21,8 @@
     "childVec",
     "geohand",
     "gcc16",
-    "warn2"
+    "warn2",
+    "warn4"
   ],
   "unapplied": [],
   "hidden": [
@@ -32,68 +33,38 @@
     "clang"
   ],
   "patches": {
+    "doc": {
+      "oid": "c18fecb6aff77e4750f7f2c5379442d0155c02dd"
+    },
+    "nullPlacement": {
+      "oid": "1f43fa98a2b42f28f7a14a45d43d78abe046c5c6"
+    },
+    "instdel": {
+      "oid": "24d29fe7523f46230c13332813d2802897fefbc7"
+    },
+    "ub": {
+      "oid": "bc0cec90c082961b0db8e9105c7d945c11ee34aa"
+    },
+    "cmakewarn": {
+      "oid": "d91fe73e6bdc6b68fdadcaff62aea14eed13d77c"
+    },
+    "nosystem": {
+      "oid": "ce5bd0ecd45f8b47c0915debbc1b3d175a9df7be"
+    },
+    "shapetest": {
+      "oid": "2f4eb33d1c702cb614e155db6a744ef0c37fa4d4"
+    },
+    "gcc16-xxx": {
+      "oid": "3abfd6121e51bd111a3b5452b30149334842b227"
+    },
+    "cxx23": {
+      "oid": "c877af99d35d923627bd8b1a644b894711431388"
+    },
     "actswarn": {
       "oid": "70259619f4f2954e3c58934718c4505f2595f645"
     },
     "actswarn2": {
       "oid": "eae49a4e021b5110a51286c9f2c42cdcd200dec1"
-    },
-    "addlogvol": {
-      "oid": "bec0596860d31977cb374e2080dc0a8c246fa0b5"
-    },
-    "assimp-cmake": {
-      "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
-    },
-    "boostre": {
-      "oid": "edf7cc33ff6110a1cf5af1c1a25c224482f98022"
-    },
-    "childVec": {
-      "oid": "0e8810b350c1637a6944d96dfc163e52d66a321c"
-    },
-    "clang": {
-      "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
-    },
-    "cmakewarn": {
-      "oid": "d91fe73e6bdc6b68fdadcaff62aea14eed13d77c"
-    },
-    "cxx23": {
-      "oid": "c877af99d35d923627bd8b1a644b894711431388"
-    },
-    "depr": {
-      "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
-    },
-    "doc": {
-      "oid": "c18fecb6aff77e4750f7f2c5379442d0155c02dd"
-    },
-    "gaudiPytest": {
-      "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
-    },
-    "gcc16": {
-      "oid": "a17feacf149e9614ea1fb6138dce9f141fe278f6"
-    },
-    "gcc16-xxx": {
-      "oid": "3abfd6121e51bd111a3b5452b30149334842b227"
-    },
-    "geohand": {
-      "oid": "a4b09ea147e176faa3efbfe75711ec4efa70478a"
-    },
-    "instdel": {
-      "oid": "24d29fe7523f46230c13332813d2802897fefbc7"
-    },
-    "nosystem": {
-      "oid": "ce5bd0ecd45f8b47c0915debbc1b3d175a9df7be"
-    },
-    "nullPlacement": {
-      "oid": "1f43fa98a2b42f28f7a14a45d43d78abe046c5c6"
-    },
-    "pyvers": {
-      "oid": "c17eaeba2d7c3d0c9536c7a4ef0dafd934c268d6"
-    },
-    "shapetest": {
-      "oid": "2f4eb33d1c702cb614e155db6a744ef0c37fa4d4"
-    },
-    "ub": {
-      "oid": "bc0cec90c082961b0db8e9105c7d945c11ee34aa"
     },
     "vartrack": {
       "oid": "c4dd5f892af6a8f215148e94751872476bf7d630"
@@ -101,8 +72,41 @@
     "volmanUOMap": {
       "oid": "e3cbae36b86d6152dfb2acf82a3f56d96277152a"
     },
+    "addlogvol": {
+      "oid": "bec0596860d31977cb374e2080dc0a8c246fa0b5"
+    },
+    "boostre": {
+      "oid": "edf7cc33ff6110a1cf5af1c1a25c224482f98022"
+    },
+    "childVec": {
+      "oid": "0e8810b350c1637a6944d96dfc163e52d66a321c"
+    },
+    "geohand": {
+      "oid": "a4b09ea147e176faa3efbfe75711ec4efa70478a"
+    },
+    "gcc16": {
+      "oid": "a17feacf149e9614ea1fb6138dce9f141fe278f6"
+    },
     "warn2": {
       "oid": "e0c0a18d1699572471bbbfd7ad2ab858bf42bbaf"
+    },
+    "warn4": {
+      "oid": "85d23736d08f342feae61172cd1f6444c1e6ce0e"
+    },
+    "gaudiPytest": {
+      "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"
+    },
+    "pyvers": {
+      "oid": "c17eaeba2d7c3d0c9536c7a4ef0dafd934c268d6"
+    },
+    "depr": {
+      "oid": "652c0307eb7a5a1b5b6ee8fcd0ed4a698896e044"
+    },
+    "assimp-cmake": {
+      "oid": "f29269fc2bc9602c121fec02607c09d3eb189d01"
+    },
+    "clang": {
+      "oid": "fcb3eeb79d76be94e9dcf82757c10a8d76e85d68"
     }
   }
 }
