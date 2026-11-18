@@ -628,7 +628,7 @@ dd4hep::geant3_geometry::add_placement( int                index,
     if( !new_solid.isValid() )  {
       printout(WARNING, "geant3_geometry",
                "+++ add_placement: Unhandled shape placement with parameters: %s of type %s",
-               volume.c_str(), new_solid->IsA()->GetName() );
+               volume.c_str(), vol.solid()->IsA()->GetName() );
     }
     vol = Volume(volnam, new_solid, mat);
     if( vis.isValid() )  {
