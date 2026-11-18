@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "7b34da083b82baebba6b792a81df7f251822eace",
-  "head": "cbceb3fd70aff7fe4c99bf2c251d77eb3ce8afe4",
+  "prev": "396993cfcea23c13182db609cbf057ca8df44c2f",
+  "head": "3ca9c0ad2e5992da0896e0ca2154e625d91a8676",
   "applied": [
     "doc",
     "nullPlacement",
@@ -22,7 +22,8 @@
     "geohand",
     "gcc16",
     "warn2",
-    "nullptr"
+    "nullptr",
+    "warn3"
   ],
   "unapplied": [],
   "hidden": [
@@ -92,6 +93,9 @@
     },
     "nullptr": {
       "oid": "cbceb3fd70aff7fe4c99bf2c251d77eb3ce8afe4"
+    },
+    "warn3": {
+      "oid": "3ca9c0ad2e5992da0896e0ca2154e625d91a8676"
     },
     "gaudiPytest": {
       "oid": "e1bf7fe6af1c852249efcb4bbed0f1c03d1d373b"

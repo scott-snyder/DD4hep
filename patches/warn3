@@ -1,0 +1,9 @@
+Bottom: 50b09dcffa2ceecb7664ce44295a80bd04eafd0a
+Top:    50b09dcffa2ceecb7664ce44295a80bd04eafd0a
+Author: sss <sss@karma>
+Date:   2026-11-18 11:52:55 -0500
+
+Work around var-tracking warning.
+
+(Should really change how this code is generated, but the input file
+isn't in this repo.)
